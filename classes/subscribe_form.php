@@ -5,26 +5,27 @@ $csvfn = "subscribed_people.csv";
 require_once("phorms/phorms.php");
 require_once("ReCAPTCHA_Widget.class.php");
 require_once("ReCAPTCHA_Field.class.php");
+require_once("i10n.class.php");
 
 /* Check that the address provided isn't insane */
 
 function sane_address($value) {
 	 if (strlen($value) > 255) {
-		throw new Phorm_ValidationError("The address provided was too long");
+		throw new Phorm_ValidationError(_i10n_get("The address provided was too long"));
 	 }
 }
 
 class SubscribeForm extends Phorm_Phorm {
 	protected function define_fields() {
-		$this->name = new Phorm_Field_Text("Your Name", 40, 255, array('required'));
-		$this->email = new Phorm_Field_Email("Email Address", 40, 255, array('required'));
-		$this->phone = new Phorm_Field_Text("Phone Number", 40, 255);
-		$this->school_name = new Phorm_Field_Text("School Name", 40, 255, array('required'));
-		$this->school_address = new Phorm_Field_TextArea("School Address", 5, 40, array('required', 'sane_address'));
-		$this->more_teams = new Phorm_Field_CheckBox("Would you like to enter two teams if there is free space?");
-		$this->captcha = new Phorm_Field_ReCAPTCHA("Please enter the text shown in the image below");
+		$this->name = new Phorm_Field_Text(_i10n_get("Your Name"), 40, 255, array('required'));
+		$this->email = new Phorm_Field_Email(_i10n_get("Email Address"), 40, 255, array('required'));
+		$this->phone = new Phorm_Field_Text(_i10n_get("Phone Number"), 40, 255);
+		$this->school_name = new Phorm_Field_Text(_i10n_get("School Name"), 40, 255, array('required'));
+		$this->school_address = new Phorm_Field_TextArea(_i10n_get("School Address"), 5, 40, array('required', 'sane_address'));
+		$this->more_teams = new Phorm_Field_CheckBox(_i10n_get("Two teams?", "Would you like to enter two teams if there is free space?"));
+		$this->captcha = new Phorm_Field_ReCAPTCHA(_i10n_get("Please enter the text shown in the image below"));
 
-		$this->phone->help_text("School Extension or Mobile");
+		$this->phone->help_text(_i10n_get("School Extension or Mobile"));
 	}
 }
 

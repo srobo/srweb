@@ -1,12 +1,58 @@
 //TITLE:	Participant
 //DESCRIPTION:
 //KEYWORDS:
-//CONTENT_TYPE:	markdown
+//CONTENT_TYPE:	php
 
-Participant
-===========
+<?php
+// Internationalisation bodgery
+include("i10n.class.php");
 
+$i10n = i10n::getInstance();
+$i10n->set('Your Name', 'I am a lump of cheese');
+$i10n->set('Email Address', 'I am a lump of cheese');
+$i10n->set('Phone Number', 'I am a lump of cheese');
+$i10n->set('School Name', 'I am a lump of cheese');
+$i10n->set('School Address', 'I am a lump of cheese');
+$i10n->set('Two teams?', 'I am a lump of cheese');
+$i10n->set('Please enter the text shown in the image below', 'I am a lump of cheese');
+$i10n->set('The address provided was too long', 'I am a lump of cheese');
+$i10n->set('School Extension or Mobile', 'I am a lump of cheese');
+
+// Form definition, validation and processing
+// Relative to 'classes'
+include("subscribe_form.php");
+?>
+
+<h1>Participant</h1>
+
+<p>
 Si vous êtes un lycée dans le département de l'Isère, et vous avez envie de participer dans notre concours,
-[veuillez n'hésiter pas à nous contacter](/about/contactus) pour enregistrer votre intérêt.
+<a href="/about/contactus">veuillez n'hésiter pas à nous contacter</a> pour enregistrer votre intérêt.
+</p>
+
+<h2>Subscribe to SR2012</h2>
 
 Cette année, nous ne pouvons pas soutenir qu'une ou deux équipes, donc cela peut-être le cas que vous devez attendre jusqu'au debut de SR 2012 (qui commence en Septembre 2011).
+
+<?php
+
+if ($form->bound && $form->is_valid()) {
+	echo "<p>Thanks for subscribing to SR2012, we will contact you shortly to confirm your place.</p>";
+} else {
+	echo "<p>This year there are sufficient spaces for 24 teams &mdash; to confirm a place, as either a new or returning team, please fill in the form below.</p>";
+
+	if ($form->has_errors())
+		echo '<p class="validation-error-msg">Please correct the following errors.</p>';
+	echo $form->open($_SERVER['REQUEST_URI']);
+
+	foreach($form->fields() as $name => $field) {
+		echo $field->label();
+		echo $field->html();
+		echo $field->errors();
+	}
+
+	echo '<input type="submit" value="Submit" />';
+	echo $form->close();
+}
+
+?>
