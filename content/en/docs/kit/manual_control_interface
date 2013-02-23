@@ -46,5 +46,5 @@ The servo board has eight sliders, one for each output on the servo board. Each 
 When you first power up the board, all the sliders will be orange. This means that the board hasn't positioned any servos yet, so their position is unknown. To position a servo, select it, turn the right knob until the slider shows the position you want, and press the right knob. The slider will turn blue to show that the position is now known. Turning the knob will now move the servo immediately.
 
 <div class=warning>
-Some servos have a smaller range of movement than others, and may be damaged if set to 100.
+Some servos have a smaller range of movement than others, and may be damaged if set to the extremes of the available range.  Please refer to the <a href="/docs/programming/sr/servos/#ServoAngle">servo board programming docs</a> for more information on this topic.
 </div>
