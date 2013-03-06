@@ -12,12 +12,12 @@
 	<div class="ie6-wrapper">
 	<ul>
 		<li><a href="{$root_uri}">Home</a></li>
-		<li><a href="{$root_uri}ide">IDE</a></li>
+		<li><a href="{$root_uri}ide/">IDE</a></li>
 		<li><a href="{$root_uri}docs/">Docs</a></li>
-		<li><a href="{$root_uri}schools/">Schools</a></li>
-		<li><a href="{$root_uri}about/sponsors">Sponsors</a></li>
+		<li><a href="{$root_uri}forum/">Forum</a></li>
+		<li><a href="{$root_uri}teams/">Teams</a></li>
+		<li><a href="{$root_uri}about/">About Us</a></li>
 		<li><a href="{$root_uri}news/">News</a></li>
-		<li><a href="{$root_uri}about">About Us</a></li>
 	</ul>
 	</div>
 </div>
