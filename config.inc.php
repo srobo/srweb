@@ -24,7 +24,7 @@ ini_set('display_errors', 1);
 /* This should always be set to false except on the live site */
 default_define('LIVE_SITE',	false);
 
-/* Whether the signups page (currently /schools/joining) shows a signup form,
+/* Whether the signups page (currently /schools/how_to_enter) shows a signup form,
  * or a message that the SR year is underway & to check back later */
 default_define('ENABLE_SIGNUP', false);
 
@@ -71,7 +71,6 @@ $MENU_PAGES = array(
 
 	'Schools &amp; Colleges'=> 'schools/',
 	'Competing Teams'=> 'teams/',
-	'Joining'		=> 'schools/joining',
 	'Documentation'		=> 'schools/docs/',
 	'Forum'			=> 'forum/',
 	'Kit'			=> 'schools/kit/',
@@ -81,6 +80,7 @@ $MENU_PAGES = array(
 	'Key Dates'     => 'key_dates',
 
 	'The Game'		=> 'schools/game',
+	'How to Enter'  => 'schools/how_to_enter',
 
 	'About Us'		=> 'about/',
 	'Sponsors'		=> 'about/sponsors',
