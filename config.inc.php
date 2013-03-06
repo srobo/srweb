@@ -66,7 +66,7 @@ default_define('MEMCACHE_PORT',		11211);
  */
 $MENU_PAGES = array(
 //	TITLE/NAME		=>  PATH
-//     =====================================================
+//	=====================================================
 	'Home' 			=> 'home',
 
 	'Schools &amp; Colleges'=> 'schools/',
@@ -84,9 +84,7 @@ $MENU_PAGES = array(
 
 	'About Us'		=> 'about/',
 	'The Team'		=> 'about/team',
-	'Media'			=> 'about/media',
 	'Mission Statement'	=> 'about/mission',
-	'Public Documents'	=> 'about/publicdocs',
 	'Contact Us'		=> 'about/contactus',
 
 	'News'			=> 'news/'
