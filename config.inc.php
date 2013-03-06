@@ -78,6 +78,7 @@ $MENU_PAGES = array(
 	'Team Leaders'          => 'schools/team-leaders/',
 
 	'Docs'			=> 'docs/',
+	'Key Dates'     => 'key_dates',
 
 	'The Game'		=> 'schools/game',
 
