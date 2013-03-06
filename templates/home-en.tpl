@@ -121,7 +121,7 @@
 							<li><a href="{$root_uri}events/sr2013/2012-11-03-kickstart">3<sup>rd</sup> November</a></li>
 						</ul>
 
-						<a href="{$root_uri}schools/competition">Competition:</a>
+						<a href="{$root_uri}schools/game">Competition:</a>
 						<ul>
 							<li><a href="{$root_uri}events/sr2013/2013-04-13-competition">13<sup>th</sup> &amp; 14<sup>th</sup> April</a></li>
 						</ul>
