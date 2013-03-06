@@ -84,6 +84,7 @@ $MENU_PAGES = array(
 
 	'About Us'		=> 'about/',
 	'The Team'		=> 'about/team',
+	'How to Help'   => 'about/how_to_help',
 	'Mission Statement'	=> 'about/mission',
 	'Contact Us'		=> 'about/contactus',
 

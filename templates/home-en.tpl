@@ -67,7 +67,7 @@
 			<div id="boxWrapper">
 
 				<div class="box">
-					<h3><a href="{$root_uri}about/gettinginvolved">Want to Get Involved?</a></h3>
+					<h3><a href="{$root_uri}about/how_to_help">Want to Get Involved?</a></h3>
 					<p>
 						Student Robotics is always looking for more people to get involved, and not just schools.
 						Whether you're a University student or a company considering sponsoring the competition,
