@@ -80,10 +80,10 @@ $MENU_PAGES = array(
 
 	'Docs'			=> 'docs/',
 
-	'Sponsors'		=> 'sponsors/',
 
 	'About Us'		=> 'about/',
 	'The Team'		=> 'about/team',
+	'Sponsors'		=> 'about/sponsors',
 	'How to Help'   => 'about/how_to_help',
 	'Mission Statement'	=> 'about/mission',
 	'Contact Us'		=> 'about/contactus',

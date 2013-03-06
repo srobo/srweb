@@ -64,7 +64,7 @@ Rules:
      + Do it properly, and by that I mean use CSS, and in 'css/content_extra.css'
        -- you can address your specific element(s) using an ID for the content 
        <div> (the content <div> is given an ID of the page name e.g. 
-       'sponsors/index' with slashes '/' replaced by underscores '_').
+       'about/index' with slashes '/' replaced by underscores '_').
 
        For example, a page 'bees/bob' like:
 
