@@ -164,9 +164,15 @@ if ($page == 'home'){
 		}//if function_exists
 
 		//if the file is a special redirection file, do the redirection
-		if ($content->getMeta('REDIRECT') != ""){
+		$redirect = $content->getMeta('REDIRECT');
+		if ($redirect != ""){
 			header("HTTP/1.1 302 Found");
-			header("Location: " . $content->getMeta('REDIRECT'));
+			// Is the redirect target a local link?
+			if (substr($redirect, 0, 1) === '/') {
+				header("Location: " . BASE_URI . substr($redirect, 1));
+			} else {
+				header("Location: " . $redirect);
+			}
 		}
 
 		//make the content object accessible in the templates (used by a custom smarty plugin)
