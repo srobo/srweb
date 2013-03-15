@@ -123,7 +123,7 @@
 
 						<a href="{$root_uri}schools/competition">Competition:</a>
 						<ul>
-							<li>13<sup>th</sup> &amp; 14<sup>th</sup> April</li>
+							<li><a href="{$root_uri}events/sr2013/2013-04-13-competition">13<sup>th</sup> &amp; 14<sup>th</sup> April</a></li>
 						</ul>
 
 					</div>

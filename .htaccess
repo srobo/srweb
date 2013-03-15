@@ -22,4 +22,4 @@ RewriteCond %{REQUEST_URI}	!(resources/2013/markers(.*))$
 
 
 RewriteRule ^(.+)$ 	index.php?page=$1	[L,QSA]
-Redirect /comp https://www.studentrobotics.org/events/sr2012/2012-04-14-competition
+Redirect /comp https://www.studentrobotics.org/events/sr2013/2013-04-13-competition
