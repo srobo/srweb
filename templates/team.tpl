@@ -11,10 +11,10 @@
 	<link rel="alternate" type="application/rss+xml" title="SR RSS" href="{$root_uri}feed.php" />
 	<link rel="shortcut icon" href="{$root_uri}images/template/favicon.ico" />
 
-	{include file=tracking.tpl}
+	{include file="tracking.tpl"}
 </head>
 <body>
-{include file=tracking-image.tpl}
+{include file="tracking-image.tpl"}
 <div id="pageWrapper">
 	{include file=$header_file}
 

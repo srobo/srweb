@@ -21,12 +21,12 @@ function smarty_function_newsPage($params, &$smarty)
 	//specify it differently because index.php's definition screws things up
 	$MEMCACHE_TTL = 600;
 
-	$p = $smarty->get_template_vars('p');
+	$p = $smarty->GetTemplateVars('p');
 
 	//do some caching stuff
 	$output = CacheWrapper::getCacheItem('[news_page_' . $p . ']', $MEMCACHE_TTL, function() use (&$p, &$smarty){
 
-		return _getOutputForPage($p, $smarty->get_template_vars('base_uri'), $smarty->get_template_vars('root_uri'));
+		return _getOutputForPage($p, $smarty->GetTemplateVars('base_uri'), $smarty->GetTemplateVars('root_uri'));
 
 	});
 

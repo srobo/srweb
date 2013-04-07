@@ -40,14 +40,14 @@
 		var TroubleshooterDataURL = "{$root_uri}resources/troubleshooter/data.json";
 	</script>
 
-	{include file=tracking.tpl}
+	{include file="tracking.tpl"}
 </head>
 
 <body>
-{include file=tracking-image.tpl}
+{include file="tracking-image.tpl"}
 <div id="pageWrapper">
 
-	{include file=$header_file}
+	{include file="$header_file"}
 
 
 	<div id="{$page_id}" class="content docs">
@@ -71,7 +71,7 @@
 	</div>
 
 
-	{include file=$footer_file}
+	{include file="$footer_file"}
 
 </div>
 

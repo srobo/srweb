@@ -42,11 +42,11 @@
 	{/literal}
 {/if}
 
-	{include file=tracking.tpl}
+	{include file="tracking.tpl"}
 </head>
 
 <body data-ng-controller="CompMode">
-{include file=tracking-image.tpl}
+{include file="tracking-image.tpl"}
 <div id="pageWrapper">
 
 {if $smarty.const.COMPETITION_MODE}
