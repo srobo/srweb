@@ -123,3 +123,14 @@ div.team-page div.blog-post-content h3 a {
          * Ugly but I can't think of a way around it. */
 	color: #DE6400;
 }
+
+div#live iframe.twitter-timeline, div#live object.video {
+	border:1px solid silver !important;
+	padding:3px;
+	margin-bottom:10px;
+}
+div#live iframe.twitter-timeline {
+	clear:right;
+	float:right;
+	margin-left:20px;
+}
