@@ -20,70 +20,8 @@
 	<script type="text/javascript">
 	  $(document).ready(function() {
 	    $("#date_tabs").tabs();
-
-            setInterval(function() {
-              $("#event_sched").load("screens/event_sched.html");
-              $("#match_sched").load("screens/match_sched.html");
-              $("#leaderboard").load("screens/leaderboard.html");
-            }, 10000);
 	  });
 	</script>
-	{/literal}
-
-	{literal}
-	<style type="text/css">
-		div.content div#competition {
-			margin-top: -20px;
-			position: relative;
-			margin-bottom: 20px;
-			border-bottom:1px solid silver;
-			overflow: hidden;
-		}
-
-		div#header {
-			float:right;
-			width:960px;
-		}
-
-		div#header div#navwrapper {
-			float: right;
-			margin-top: 50px;
-			margin-right: 30px;
-			font-size: 30px;
-			font-weight: bold;
-		}
-
-		div#header a {
-			float:left;
-			margin-top:20px;
-			margin-left:20px;
-		}
-
-		div#header ul {
-			clear:both;
-			display: block;
-			margin-top:-8px;
-		}
-
-		div#header ul li {
-			float:left;
-			margin-left:20px;
-		}
-
-		div#header ul li a {
-			text-decoration:none;
-			color:#8b8884;
-			padding:8px;
-			letter-spacing:1px;
-			margin-top:0px;
-			margin-left:0px;
-			display:block;
-		}
-
-		div#header ul li a:hover, div#header ul li a:focus {
-			color: #DE6400;
-		}
-	</style>
 	{/literal}
 
 	{include file=tracking.tpl}
@@ -93,71 +31,27 @@
 {include file=tracking-image.tpl}
 <div id="pageWrapper">
 
-	<div id="header">
-		<a href="{$root_uri}"><img src="{$root_uri}images/template/website_logo.png" alt="Student Robotics Logo" /></a>
-
-		<div id="navwrapper">
-		<ul>
-			<li><a href="{$root_uri}about">About Us</a></li>
-			<li><a href="{$root_uri}ide">IDE</a></li>
-			<li><a href="{$root_uri}docs/">Docs</a></li>
-		</ul>
-		</div>
-	</div>
+	{include file="header-en.tpl"}
 
 	<div class="content">
 
+		<div id="topBanner">
+			<img src="{$root_uri}images/content/srobo_website_robot.png" alt="Image of Robot" />
 
-		<div id="competition">
-			<a style="position: absolute; right:0; margin-top: 20px; margin-right: 100px;" href="{$root_uri}events/sr2013/2013-04-13-competition">Tell me more...</a>
-			<h1 style="text-align: center;">SR2013 Live!</h1>
-			<p style="float: left;"><object
-			    class="video"
-			    type="application/x-shockwave-flash"
-			    data="http://www.justin.tv/widgets/live_embed_player.swf?channel=studentrobotics"
-			    id="live_embed_player_flash"
-			    height="300"
-			    width="400"
-			    >
-				<param name="allowFullScreen" value="true"/>
-				<param name="allowScriptAccess" value="always" />
-				<param name="allowNetworking" value="all" />
-				<param name="movie" value="http://www.justin.tv/widgets/live_embed_player.swf" />
-				<param name="flashvars" value="hostname=www.justin.tv&amp;channel=studentrobotics&amp;auto_play=true&amp;start_volume=26" />
-			</object></p>
+			<h1>Welcome to Student Robotics</h1>
 
-			<p style="float: left;"><a
-			    width="500"
-			    height="300"
-			    class="twitter-timeline"
-			    data-dnt="true"
-			    data-chrome="noheader nofooter"
-			    data-widget-id="321728443496660993"
-			    href="https://twitter.com/StudentRobotics"
-			    >
-				Tweets from @StudentRobotics
-			</a>
-			<script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script></p>
+			<p>Student Robotics is an exciting competition, held at
+			the University of Southampton, between teams of students from sixth
+			form schools and colleges, to build fully autonomous robots. Led by
+			a group of students from the Universities of Southampton and
+			Bristol, participating teams will have to design, build and test 
+			their robots, ready to compete against other teams.</p>
+		</div>
 
-			<br style="clear: both;" />
+		<div id="latestNews">
 
-			<div style="width: 300px; float: left;">
-			<h2>Event Schedule</h2>
-			<div id="event_sched">
-			</div>
-			</div>
+			{latestRSS}
 
-			<div style="width: 300px; float: left;">
-			<h2>Match Schedule</h2>
-			<div id="match_sched">
-			</div>
-			</div>
-
-			<div style="width: 300px; float: left;">
-			<h2>Leaderboard</h2>
-			<div id="leaderboard">
-			</div>
-			</div>
 		</div>
 
 		<div id="expMenuAndBoxWrapper">
@@ -173,8 +67,11 @@
 			<div id="boxWrapper">
 
 				<div class="box">
-					<h3><a href="{$root_uri}about">Who are we?</a></h3>
-					<p>Student Robotics is an exciting competition, held at the University of Southampton, between teams of students from sixth form schools and colleges to build fully autonomous robots. Led by a group of students from the Universities of Southampton and Bristol, participating teams will have to design, build and test their robots, ready to compete against other teams.
+					<h3><a href="{$root_uri}about/gettinginvolved">Want to Get Involved?</a></h3>
+					<p>
+						Student Robotics is always looking for more people to get involved, and not just schools.
+						Whether you're a University student or a company considering sponsoring the competition,
+						you are more than welcome to get involved.
 					</p>
 
 				</div>
