@@ -308,6 +308,11 @@ div.content p video.right {
 	margin-left:20px;
 }
 
+div.content iframe.center {
+	display:block;
+	margin:10px auto;
+}
+
 div.content ul {
 	list-style:disc;
 	margin-left:30px;
