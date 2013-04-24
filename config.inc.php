@@ -71,24 +71,25 @@ $MENU_PAGES = array(
 
 	'News'			=> 'news/',
 
-	'Key Dates'     => 'key_dates',
+	'Key Dates'     	=> 'key_dates',
 
-	'About the Competition'=> 'schools/',
-	'The Game'		=> 'schools/game',
-	'Support'       => 'schools/support',
-	'How to Enter'  => 'schools/how_to_enter',
+	'About the Competition'	=> 'schools/',
+	'How to Enter'  	=> 'schools/how_to_enter',
+	'KickStart'     	=> 'schools/kickstart',
 	'Kit'			=> 'schools/kit/',
-	'Team Leaders'  => 'schools/team-leaders/',
-	'Tech Days'     => 'schools/tech_days',
-	'KickStart'     => 'schools/kickstart',
+	'Support'       	=> 'schools/support',
+	'Team Leaders'  	=> 'schools/team-leaders/',
+	'Tech Days'     	=> 'schools/tech_days',
+	'The Game'		=> 'schools/game',
+
 	'Competing Teams'=> 'teams/',
 
 	'About Us'		=> 'about/',
-	'Sponsors'		=> 'about/sponsors',
-	'The Committee' => 'about/committee',
-	'How to Help'   => 'about/how_to_help',
+	'Contact Us'		=> 'about/contactus',
+	'How to Help'   	=> 'about/how_to_help',
 	'Mission Statement'	=> 'about/mission',
-	'Contact Us'		=> 'about/contactus'
+	'Sponsors'		=> 'about/sponsors',
+	'The Committee' 	=> 'about/committee',
 );
 
 
