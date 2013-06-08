@@ -313,6 +313,22 @@ div.content iframe.center {
 	margin:10px auto;
 }
 
+div.content iframe.video {
+	border:1px solid silver;
+	padding:3px;
+	margin-bottom:10px;
+}
+
+div.content iframe.video.left {
+	float:left;
+	margin-right:20px;
+}
+
+div.content iframe.video.right {
+	float:right;
+	margin-left:20px;
+}
+
 div.content ul {
 	list-style:disc;
 	margin-left:30px;
