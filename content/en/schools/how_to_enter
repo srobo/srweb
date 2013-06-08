@@ -3,16 +3,6 @@
 //KEYWORDS:
 //CONTENT_TYPE:	php
 
-<?php
-
-// Form definition, validation and processing
-// Relative to 'classes'
-if (ENABLE_SIGNUP) {
-	include("subscribe_form.php");
-}
-
-?>
-
 <h1>How to Enter</h1>
 
 <p>
@@ -31,29 +21,21 @@ if (ENABLE_SIGNUP) {
 	but note that the presence of a responsible adult team-leader is required.
 </p>
 
-<h2>Subscribe to SR2013</h2>
+<h2>Interested in SR2014?</h2>
+
+<p>
+	Please fill out this form if you're intending on being the <a href="/schools/team-leaders/">team leader</a>
+	for your Student Robotics team. You should be a teacher or parent,
+	or otherwise able to take responsibility for the team members at events.
+</p>
+<p>
+	If you're a competitor, please find a suitable team leader and get them to fill this form out.
+</p>
 
 <?php
 if (ENABLE_SIGNUP) {
-	if ($form->bound && $form->is_valid()) {
-		echo "<p>Thanks for subscribing to SR2013, we will contact you shortly to confirm your place.</p>";
-	} else {
-		echo "<p>This year there is sufficient space for 36 teams.  To confirm a place, as either a new or returning team, please fill in the form below.</p>";
-
-		if ($form->has_errors())
-			echo '<p class="validation-error-msg">Please correct the following errors.</p>';
-		echo $form->open($_SERVER['REQUEST_URI']);
-
-		foreach($form->fields() as $name => $field) {
-			echo $field->label();
-			echo $field->html();
-			echo $field->errors();
-		}
-
-		echo '<input type="submit" value="Submit" />';
-		echo $form->close();
-	}
+	echo '<iframe src="https://docs.google.com/forms/d/1Ryg2cfAxfwMOBnT01aj-fzsp51F3B182S5e53ye8aMw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>';
 } else {
-	echo '<p>SR2013 is now fully subscribed and <a href="/news/2012-11-05_sr2013_underway">underway</a>. Watch this space for joining details for SR2014.</p>';
+	echo '<p>SR2014 is now fully subscribed and <a href="/news/2012-11-05_sr2013_underway">underway</a>. Watch this space for joining details for SR2014.</p>';
 }
 ?>
