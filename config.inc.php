@@ -26,7 +26,7 @@ default_define('LIVE_SITE',	false);
 
 /* Whether the signups page (currently /schools/how_to_enter) shows a signup form,
  * or a message that the SR year is underway & to check back later */
-default_define('ENABLE_SIGNUP', false);
+default_define('ENABLE_SIGNUP', true);
 
 /* Memcache(d) --
  * for the site to function, memcached is required (including the memcache)
