@@ -133,6 +133,7 @@ function _get_team_image($team_id) {
 
 function _fill_team_latest_post(&$team) {
 	$url = $team->feed;
+	$team->feed = new LiveStatusItem($url);
 
 	$feed = new SimplePie();
 	$feed->set_feed_url($url);
@@ -141,12 +142,16 @@ function _fill_team_latest_post(&$team) {
 
 	if ($feed->get_item_quantity() > 0) {
 		$item = $feed->get_item(0);
-		$team->feed->latest->title = $item->get_title();
-		$team->feed->latest->url = $item->get_link();
-		$team->feed->latest->description = $item->get_description();
-		$team->feed->latest->date->day = $item->get_date("d");
-		$team->feed->latest->date->month = $item->get_date("M");
-		$team->feed->latest->date->year = $item->get_date("Y");
+		$latest = new stdClass();
+		$latest->title = $item->get_title();
+		$latest->url = $item->get_link();
+		$latest->description = $item->get_description();
+		$date = new stdClass();
+		$date->day = $item->get_date("d");
+		$date->month = $item->get_date("M");
+		$date->year = $item->get_date("Y");
+		$latest->date = $date;
+		$team->feed->latest = $latest;
 	}
 }
 
