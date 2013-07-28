@@ -437,9 +437,24 @@ div#footer {
 	color:#333;
 }
 
-div#footer span.rss {
+div#footer .rss {
 	position:absolute;
 	right:10px;
+}
+
+div#footer .youtube {
+	position:absolute;
+	right:40px;
+}
+
+div#footer .twitter {
+	position:absolute;
+	right:99px;
+}
+
+div#footer .facebook {
+	position:absolute;
+	right:124px;
 }
 
 div#footer span.copyright {
