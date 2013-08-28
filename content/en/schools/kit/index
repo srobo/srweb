@@ -1,29 +1,26 @@
-//TITLE:	The Kit
-//DESCRIPTION:	
-//KEYWORDS:	
-//CONTENT_TYPE:	markdown
+//TITLE: The Kit
+//DESCRIPTION: A description of the SR kit
+//KEYWORDS: kit autonomous hardware electronics
+//CONTENT_TYPE: markdown
 
 The Kit
 =======
 
-We design, build, test, and ship a unique and powerful robotics kit to
-schools.  We don't stop there.  We then support its use in those
-schools.  This is made possible through the generosity of our
-[sponsors](/about/sponsors) coupled with the enthusiasm of our team of
-volunteers.
+All teams who take part in SR receive a Student Robotics kit. This kit is
+designed and custom built for the competition.
 
-For Student Robotics 2011 (which finished in April 2011) we thoroughly
-redesigned our electronics kit based on our years of experience with
-our previous kit in schools.  We produced a kit that was robust,
-powerful, and easy to use.
+The kit is modular, with sensors and a vision system to allow your robot to
+observe the world, as well as motors and servos to allow it to move. These
+are controlled autonomously by a python program written by the team. Our kit
+lets you interact with these devices, without needing to worry about the
+intermediate electronics.
 
-We are always aiming to push the boundaries of what teams can do with
-our kit.  The [BeagleBoard](http://beagleboard.org/) that sits at the
-heart of the new kit provides us with an excellent platform for us to
-build an intensely engrossing robotics experience on top of.  We have
-just begun to scratch the surface of what our software will allow
-teams to achieve.  Stay tuned.
+Our kit is easy to use and hard to break, with good [documentation](/docs/kit)
+and [support](/schools/support) available. SR provides a web based development
+environment, through which you program your robot, meaning you can use any
+computer with a web browser.
 
-More information about the kit is available in the
-[documentation](/docs/kit) where, alongside the basic specification,
-you'll also find the schematics and source code for what we ship.
+We also try not to limit you with what we provide: you can extend the kit in
+interesting and exciting ways. You are encouraged to attach your own
+electronics, whether off the shelf or homemade. We also provide teams with a
+small [budget](/schools/support#Budget) to aid this.
