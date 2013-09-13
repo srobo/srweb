@@ -33,7 +33,6 @@ Indicators
 | Charging        | The battery is flat            | Off
 | Motor Rail      | The Motor Rail is powered      | On
 | Token           | The token-ring is functioning  | On
-| SRIC Activity   | Data is being transferred      | Off
 | Blown Fuse      | The main fuse has blown or is missing | Off
 | User            | Controllable from user code    | Off
 
