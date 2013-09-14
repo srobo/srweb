@@ -127,6 +127,12 @@
                             <ul>
                                 <li><i>To be announced</i></li>
                             </ul>
+                            <a href="{$root_uri}schools/kickstart">Kickstart:</a>
+                            <ul>
+                                <li><a href="{$root_uri}events/sr2014/2013-10-12-norfolk_kickstart">12<sup>th</sup> October</a></li>
+                            </ul>
+
+
 						</div>
 						<div id="date_munich">
 							<a href="{$root_uri}schools/tech_days">Tech Days:</a>
