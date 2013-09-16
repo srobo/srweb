@@ -65,20 +65,7 @@ function _build_team_info($path, $team_id) {
 	$json_text = file_get_contents($path);
 	$team_raw = json_decode($json_text);
 	$team = new stdClass();
-	if (empty($team_raw->image->live)) {
-		$team->thumb = null;
-		$team->image = null;
-	} else {
-		$team->thumb = new LiveStatusItem(_get_team_thumb($team_id));
-		$team->image = new LiveStatusItem(_get_team_image($team_id));
-		$age = intval(floor(time() - filemtime(ROOT_DIR.'/'.TEAM_STATUS_IMG.'/'.$team_id.'.png')) / 86400);
-		if ($age == 0)
-			$team->image->date = "today";
-		elseif ($age == 1)
-			$team->image->date = "yesterday";
-		else
-			$team->image->date = sprintf("%d days ago", $age);
-	}
+	_set_team_image($team_raw, $team, $team_id);
 	$team->team_name = empty($team_raw->name->live) ? "Team $team_id" : new LiveStatusItem(strip_tags($team_raw->name->live));
 	foreach (array('url', 'feed', 'description') as $item) {
 		$team->$item = empty($team_raw->$item->live) ? null : new LiveStatusItem(strip_tags($team_raw->$item->live));
@@ -89,6 +76,35 @@ function _build_team_info($path, $team_id) {
 	$team->college = array_key_exists($team_id, $team_info_college_lut) ? $team_info_college_lut[$team_id] : null;
 
 	return $team;
+}
+
+/**
+ * Sets the team's image & its info (including the thumbnail).
+ */
+function _set_team_image($status, $team, $team_id) {
+	if (empty($status->image->live)) {
+		$team->thumb = null;
+		$team->image = null;
+		return;
+	}
+	$team->thumb = new LiveStatusItem(_get_team_thumb($team_id));
+	$team->image = new LiveStatusItem(_get_team_image($team_id));
+	if (!file_exists(ROOT_DIR.'/'.$team->thumb)) {
+		$team->thumb = null;
+	}
+	$image_path = ROOT_DIR.'/'.$team->image;
+	if (!file_exists($image_path)) {
+		$team->image = null;
+		return;
+	}
+
+	$age = intval(floor(time() - filemtime($image_path)) / 86400);
+	if ($age == 0)
+		$team->image->date = "today";
+	elseif ($age == 1)
+		$team->image->date = "yesterday";
+	else
+		$team->image->date = sprintf("%d days ago", $age);
 }
 
 /**
