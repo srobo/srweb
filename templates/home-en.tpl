@@ -88,46 +88,46 @@
 							<li><a href="#date_surrey">Surrey</a></li>
 						</ul>
 						<div id="date_soton">
-							<a href="{$root_uri}schools/tech_days">Tech Days</a>:
+							<a href="{$root_uri}events/tech_days">Tech Days</a>:
                             <ul>
                                 <li><i>To be announced</i></li>
                             </ul>
 
-                            <a href="{$root_uri}schools/kickstart">Kickstart:</a>
+                            <a href="{$root_uri}events/kickstart">Kickstart:</a>
                             <ul>
                                 <li><a href="{$root_uri}events/sr2014/2013-10-12-soton_kickstart">12<sup>th</sup> October</a></li>
                             </ul>
 						</div>
 						<div id="date_bristol">
-							<a href="{$root_uri}schools/tech_days">Tech Days:</a>
+							<a href="{$root_uri}events/tech_days">Tech Days:</a>
                             <ul>
                                 <li><i>To be announced</i></li>
                             </ul>
 
-                            <a href="{$root_uri}schools/kickstart">Kickstart:</a>
+                            <a href="{$root_uri}events/kickstart">Kickstart:</a>
                             <ul>
                                 <li><a href="{$root_uri}events/sr2014/2013-10-12-bristol_kickstart">12<sup>th</sup> October</a></li>
                             </ul>
 						</div>
 						<div id="date_oxford">
-							<a href="{$root_uri}schools/tech_days">Tech Days:</a>
+							<a href="{$root_uri}events/tech_days">Tech Days:</a>
                             <ul>
                                 <li><i>To be announced</i></li>
                             </ul>
 						</div>
 						<div id="date_surrey">
-							<a href="{$root_uri}schools/tech_days">Tech Days:</a>
+							<a href="{$root_uri}events/tech_days">Tech Days:</a>
                             <ul>
                                 <li><a href="{$root_uri}events/sr2014/2013-12-07-surrey_tech_day_1">7<sup>th</sup> December</a></li>
                                 <li><a href="{$root_uri}events/sr2014/2014-03-01-surrey_tech_day_2">1<sup>st</sup> March</a></li>
                             </ul>
 						</div>
 						<div id="date_norfolk">
-							<a href="{$root_uri}schools/tech_days">Tech Days:</a>
+							<a href="{$root_uri}events/tech_days">Tech Days:</a>
                             <ul>
                                 <li><i>To be announced</i></li>
                             </ul>
-                            <a href="{$root_uri}schools/kickstart">Kickstart:</a>
+                            <a href="{$root_uri}events/kickstart">Kickstart:</a>
                             <ul>
                                 <li><a href="{$root_uri}events/sr2014/2013-10-12-norfolk_kickstart">12<sup>th</sup> October</a></li>
                             </ul>
@@ -135,18 +135,17 @@
 
 						</div>
 						<div id="date_munich">
-							<a href="{$root_uri}schools/tech_days">Tech Days:</a>
+							<a href="{$root_uri}events/tech_days">Tech Days:</a>
                             <ul>
                                 <li><i>To be announced</i></li>
                             </ul>
 						</div>
 					</div>
 					<div>
-						<a href="{$root_uri}schools/game">Competition:</a>
+						<a href="{$root_uri}events/competition">Competition:</a>
                         <ul>
                             <li><i>To be announced</i></li>
                         </ul>
-
 					</div>
 
 				</div>
