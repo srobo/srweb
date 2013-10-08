@@ -6,8 +6,7 @@
 Batteries and Charging
 ======================
 
-<img src="/images/content/kit/imaxb6.jpg" alt="A photo of the iMAX B6 battery charger." title="An imax B6 battery charger" />
-The electronics kit contains two 11.1V 2.2Ah lithium-ion polymer batteries and an iMAX B6 battery charger. Lithium-ion polymer (LiPo) batteries, similar to those used in laptops, are small and light for the amount of energy they contain. This is great for your robot but it is vital to treat such a high concentration of energy with respect. The battery charger controls the electrical current passed through the batteries to ensure they are charged safely.
+The electronics kit contains two 11.1V 2.2Ah lithium-ion polymer batteries and a battery charger. Lithium-ion polymer (LiPo) batteries, similar to those used in laptops, are small and light for the amount of energy they contain. This is great for your robot but it is vital to treat such a high concentration of energy with respect. The battery charger controls the electrical current passed through the batteries to ensure they are charged safely.
 
 <div class="warning">
 <p>
@@ -25,6 +24,13 @@ LiPo batteries can get hot or catch fire when charging and in use.
 [Using the Battery](/docs/kit/batteries#UsingTheBattery) {#UsingTheBattery}
 -------------------
 Each battery should only ever be connected to either the supplied charger or the power board.  These batteries **must never** be discharged below 9V, or they will be irreparably damaged.  The power board will start beeping when the battery voltage nears this point.  So when it starts beeping, turn the power board off immediately and switch to using your other battery, which you should have already charged.
+
+iMAX B6 Chargers
+================
+
+<img src="/images/content/kit/imaxb6.jpg" alt="A photo of the iMAX B6 battery charger." title="An imax B6 battery charger" />
+
+Some electronics kits contain blue iMAX B6 chargers.
 
 [Charging Checklist](/docs/kit/batteries#ChargingChecklist) {#ChargingChecklist}
 ------------------
