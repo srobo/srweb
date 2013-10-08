@@ -12,7 +12,7 @@ It runs the code that you write in the SR IDE and controls all of the other boar
 Your kit includes a single Power Board which is connected into the [Token Ring](/docs/kit/token_ring), it also has a USB hub connected to it which allows both the webcam and the USB memory stick to be plugged in.
 
 <div class="warning" markdown=1>
-The LiPo batteries do *not* support charging through the power board.
+The LiPo [batteries](/docs/kit/batteries) do *not* support charging through the power board.
 They must be charged using the charger provided.
 The power board is supplied with tape over the charger fuse slot and this should not be removed.
 </div>
