@@ -27,16 +27,19 @@ As well as the aforementioned boards the kit also contains the following items.
 
 |        Part       | Qty |  Specification                       | Part Number(s)   | Notes
 |-------------------|-----|--------------------------------------|------------------|------
-| USB Hub           | 1   | 4-Port                               | [Akasa AK-HB-03BK][AK-HB-03BK] | The hub does *not* require a power cable
+| USB Hub           | 2   | 7-Port                               | [StarTech ST7202USBGB][ST7202USBGB] | The hub does *not* require a power cable
 | USB Webcam        | 1   | Either Logitech C500 or Logitech C270 | [Ebuyer 170140][EB-170140] |
 | USB Memory Stick  | 1   | Kingston Datatraveler G2 2GB or G3 8GB | [Ebuyer 159052][EB-159052] |
-| Battery (LiPo)    | 2   | 11.1V 2.2Ah Lithium Polymer          | N/A |
-| Battery Charger   | 1   | iMAX B6                              | N/A | Documentation is available on [charging the batteries](/docs/kit/batteries) using this
+| Standard USB cable | 3  | Standard USB A to B connector        | N/A | For connecting the ruggeduino (via a hub) and USB hubs to the power board
+| Micro USB cable   | 2   | Standard USB A to Micro USB B        | N/A | For connecting the motor boards to the power board
+| Battery (LiPo)    | 2   | 11.1V 2.2Ah Lithium Polymer          | N/A | Please read the [documentation](/docs/kit/batteries) for storage and usage information
+| Battery Bag       | 1   | HPI Plazma Pouch Lipo Safe Bag (18x22cm) | [HPI 101289][HPI-101289] | Batteries should always be stored in the battery bag
+| Battery Charger   | 1   | iMAX B6 or HobbyKing E4              | N/A | Documentation is available on [charging the batteries](/docs/kit/batteries) using this
 | Battery Charger Supply | 1 | 12V 5A                            | N/A |
-| Cat5 Patch Lead   | 3   | 0.3m                                 | [CommsExpress<br />Booted RJ45 Patch Lead][CE-RJ45-Lead] | SRIC Cable
-| Cat5 Patch Lead   | 4   | 0.5m                                 | [CommsExpress<br />Booted RJ45 Patch Lead][CE-RJ45-Lead] | SRIC Cable
-| Cat5 Patch Lead   | 2   | 1m                                   | [CommsExpress<br />Booted RJ45 Patch Lead][CE-RJ45-Lead] | SRIC Cable
-| Battery Cable     | 1   | 0.5m<br />2mm<sup>2</sup><br />30A   | [Farnell 3653018][F-3653018]<br />[Farnell 3653006][F-3653006]<br />[Farnell 1793033][F-1793033] | Pre-assembled
+| Cat5 Patch Lead   | 2   | 0.3m                                 | [CommsExpress<br />Booted RJ45 Patch Lead][CE-RJ45-Lead] | SRIC Cable
+| Cat5 Patch Lead   | 2   | 0.5m                                 | [CommsExpress<br />Booted RJ45 Patch Lead][CE-RJ45-Lead] | SRIC Cable
+| Cat5 Patch Lead   | 1   | 1m                                   | [CommsExpress<br />Booted RJ45 Patch Lead][CE-RJ45-Lead] | SRIC Cable
+| Battery Cable     | 1   | 0.3-0.5m<br />2mm<sup>2</sup><br />30A | [Farnell 3653018][F-3653018]<br />[Farnell 3653006][F-3653006]<br />[Farnell 1793033][F-1793033]<br />[HobbyKing 9573 (Male)][HK-9572] | Pre-assembled
 | Blue Hook-up Wire | 1   | 1.5m<br />0.75mm<sup>2</sup><br />6A | [Farnell 1465870][F-1465870] | To connect motors to the motor boards
 | Red Power Wire    | 1   | 1.5m<br />0.75mm<sup>2</sup><br />6A | [Farnell 1465872][F-1465872] | To connect power from the power board to the motor/servo boards
 | Black Power Wire  | 1   | 1.5m<br />0.75mm<sup>2</sup><br />6A | [Farnell 1465869][F-1465869] | To connect power from the power board to the motor/servo boards
@@ -44,14 +47,14 @@ As well as the aforementioned boards the kit also contains the following items.
 | Black Hook-up Wire | 1  | 3m<br />0.5mm<sup>2</sup><br />4A    | [Farnell 1285922][F-1285922] | General purpose wire
 | Blue Hook-up Wire | 1   | 3m<br />0.5mm<sup>2</sup><br />4A    | [Farnell 1285923][F-1285923] | General purpose wire
 | Green Hook-up Wire | 1  | 3m<br />0.5mm<sup>2</sup><br />4A    | [Farnell 1285926][F-1285926] | General purpose wire
-| CamCon            | 10  | 2 way<br />12A                       | [Farnell 3882275][F-3882275] | To connect 12V from the power board to the motor and servo boards and to connect motors to the motor boards
-| MiniCamCon 4way   | 3   | 4 way<br />10A                       | [Farnell 1717049][F-1717049] | To connect power from the jointio board to your custom electronics
-| MiniCamCon 8way   | 3   | 8 way<br />10A                       | [Farnell 1717053][F-1717053] | To connect io from the jointio board to your custom electronics
+| CamCon            | 10  | 2 way<br />7.5mm<br />12A            | [Farnell 3882275][F-3882275] | To connect 12V from the power board to the motor and servo boards
+| MiniCamCon        | 5   | 2 way<br />5mm<br />12A              | [Farnell 3881854][F-3881854] | To connect motors to the motor boards
 
-[AK-HB-03BK]: http://www.akasa.com.tw/update.php?tpl=product/product.detail.tpl&no=181&type=Card%20Reader/Hub&type_sub=USB%20Hub&model=AK-HB-03BK
+[ST7202USBGB]: http://uk.startech.com/Cards-Adapters/USB-2/Hub/7-Port-USB-20-Hub-UK~ST7202USBGB
 [EB-159052]: http://www.ebuyer.com/product/159052
 [EB-170140]: http://www.ebuyer.com/product/170140
 [CE-RJ45-Lead]: http://www.comms-express.com/products/booted-rj45-patch-leads/
+<!--- Farnell links go via https://xgoat.com/wp/2009/01/17/part-number-permalinks/ since they don't provide this themselves. -->
 [F-3653018]: http://www.xgoat.com/p/farnell/3653018
 [F-3653006]: http://www.xgoat.com/p/farnell/3653006
 [F-1793033]: http://www.xgoat.com/p/farnell/1793033
@@ -63,5 +66,6 @@ As well as the aforementioned boards the kit also contains the following items.
 [F-1285923]: http://www.xgoat.com/p/farnell/1285923
 [F-1285926]: http://www.xgoat.com/p/farnell/1285926
 [F-3882275]: http://www.xgoat.com/p/farnell/3882275
-[F-1717049]: http://www.xgoat.com/p/farnell/1717049
-[F-1717053]: http://www.xgoat.com/p/farnell/1717053
+[F-3881854]: http://www.xgoat.com/p/farnell/3881854
+[HK-9572]: http://www.hobbyking.com/hobbyking/store/__9572__Nylon_XT60_Connectors_Male_Female_5_pairs_GENUINE.html
+[HPI-101289]: http://www.modelsport.co.uk/hpi-plazma-pouch-lipo-safe-bag-18x22cm-/rc-car-products/39499
