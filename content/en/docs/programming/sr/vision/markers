@@ -23,12 +23,14 @@ The table below lists the *libkoki* markers that your robot will know about and 
 |-------------|-------|---------------|
 | Arena       | 00-27 | 250mm x 250mm |
 | Robots      | 28-31 | 100mm x 100mm |
-| Pedestals   | 32-40 | 200mm x 200mm |
-| Tokens      | 41-64 | 200mm x 200mm |
+| Slots       | 32-39 | 160mm x 160mm |
+| Token Top   | 40-43 | 160mm x 160mm |
+| Token Bottom| 44-47 | 160mm x 160mm |
+| Token Sides | 48-51 | 160mm x 160mm |
 
 
-You can download all of these markers, as PDFs, in a single [ZIP file](/resources/2013/markers/sr-dev-markers.zip).
-Alternatively, you may download individual markers [here](/resources/2013/markers/).
+You can download all of these markers, as PDFs, in a single [ZIP file](/resources/2014/markers/sr-dev-markers-2014.zip).
+Alternatively, you may download individual markers [here](/resources/2014/markers/).
 The *Arena* markers, due to their size, need to be printed on A3 paper.
 All of the other markers can be printed on A4 paper.
 Please make sure your system is not scaling the PDFs when printing them.
