@@ -20,6 +20,7 @@ RewriteCond %{REQUEST_URI}  !^(/docs/python(.*))$
 # like when it's in a public_html
 RewriteCond %{REQUEST_URI}	!(resources/2012/markers(.*))$
 RewriteCond %{REQUEST_URI}	!(resources/2013/markers(.*))$
+RewriteCond %{REQUEST_URI}	!(resources/2014/markers(.*))$
 
 
 RewriteRule ^(.+)$ 	index.php?page=$1	[L,QSA]
