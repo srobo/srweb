@@ -1,0 +1,222 @@
+{
+    "BAY":{
+        "URL":"http://www.bayhouse.hants.sch.uk/",
+        "name":"Bay House School & Sixth Form"
+    },
+    "BDF":{
+        "URL":"http://www.bedfordschool.org.uk/",
+        "name":"Bedford School"
+    },
+    "BGS":{
+        "URL":"http://www.bristolgrammarschool.co.uk/",
+        "name":"Bristol Grammar School"
+    },
+    "BPV":{
+        "URL":"http://www.barton-peveril.ac.uk/",
+        "name":"Barton Peveril College"
+    },
+    "BRK":{
+        "URL":"http://www.brock.ac.uk/",
+        "name":"Brockenhurst College"
+    },
+    "BRN":{
+        "URL":"http://www.stbrn.ac.uk/",
+        "name":"St Brendan's Sixth Form College"
+    },
+    "BWS":{
+        "URL":"http://www.bws.wilts.sch.uk/",
+        "name":"Bishop Wordsworth School"
+    },
+    "CCR":{
+        "URL":"http://www.cirencester.ac.uk/",
+        "name":"Cirencester College"
+    },
+    "CGS":{
+        "URL":"http://www.colstonsgirls.bristol.sch.uk/",
+        "name":"Colston's Girls' School"
+    },
+    "CLF":{
+        "URL":"http://www.cliftonhigh.bristol.sch.uk/",
+        "name":"Clifton High School"
+    },
+    "CLY":{
+        "URL":"http://www.collyers.ac.uk/sixth-form",
+        "name":"Collyers Sixth Form College"
+    },
+    "CPR":{
+        "URL":"http://www.cooper.oxon.sch.uk/",
+        "name":"The Cooper School"
+    },
+    "CRB":{
+        "URL":"http://www.cranbrookschool.co.uk/",
+        "name":"Cranbrook School"
+    },
+    "DSF":{
+        "URL":"http://www.dsfc.org.uk/",
+        "name":"Dereham Sixth Form"
+    },
+    "EMM":{
+        "URL":"http://www.ac-grenoble.fr/mounier/",
+        "name":"Lyc\u00e9e Emmanuel Mounier"
+    },
+    "GRD":{
+        "URL":"http://www.gordano.n-somerset.sch.uk/",
+        "name":"Gordano School"
+    },
+    "GRS":{
+        "URL":"http://www.greshams.com/",
+        "name":"Greshams School"
+    },
+    "GYG":{
+        "URL":"http://www.grammar.sch.gg/",
+        "name":"Guernsey Grammar School"
+    },
+    "HRS":{
+        "URL":"http://www.hrsfc.ac.uk/",
+        "name":"Hills Road School"
+    },
+    "HSO":{
+        "URL":"http://www.headington.org/",
+        "name":"Headington School"
+    },
+    "HYP":{
+        "URL":"http://www.holtyouthproject.org.uk/",
+        "name":"Holt Youth Project"
+    },
+    "HZW":{
+        "URL":"http://www.hazelwick.w-sussex.sch.uk/",
+        "name":"Hazelwick Comprehensive School"
+    },
+    "ICE":{
+        "URL":"http://www.iceniacademy.org.uk/",
+        "name":"Iceni Academy"
+    },
+    "JMS":{
+        "URL":"http://www.johnmason.oxon.sch.uk/",
+        "name":"John Mason School"
+    },
+    "KDE":{
+        "URL":"http://www.kennetexplorers.org.uk/",
+        "name":"Kennet District Explorer Scouts"
+    },
+    "KEG":{
+        "URL":"http://www.kegs.org.uk/",
+        "name":"King Edward VI Grammar School"
+    },
+    "KES":{
+        "URL":"http://www.kes.hants.sch.uk/",
+        "name":"King Edward VI School"
+    },
+    "KHS":{
+        "URL":"http://khsnet.org/",
+        "name":"Kingsbury High School"
+    },
+    "LFG":{
+        "URL":"http://www.lfg.musin.de/",
+        "name":"Lion-Feuchtwanger-Gymnasium"
+    },
+    "LSS":{
+        "URL":"http://www.lawrencesheriffschool.net/",
+        "name":"Lawrence Sheriff School"
+    },
+    "MAI":{
+        "URL":"http://www.gym-indersdorf.de/",
+        "name":"Gymnasium Markt Indersdorf"
+    },
+    "MAI2":{
+        "URL":"http://www.gym-indersdorf.de/",
+        "name":"Gymnasium Markt Indersdorf"
+    },
+    "MEA":{
+        "URL":"http://merchantsacademy.org/",
+        "name":"Merchants' Academy"
+    },
+    "MFG":{
+        "URL":"http://www.themfg.co.uk/",
+        "name":"Mirfield Free Grammar"
+    },
+    "NHS":{
+        "URL":"http://www.norwichhigh.gdst.net/",
+        "name":"Norwich High School for Girls"
+    },
+    "PAG":{
+        "URL":"http://www.pates.gloucs.sch.uk/",
+        "name":"Pate's Grammar School"
+    },
+    "PAS":{
+        "URL":"http://www.parmiters.herts.sch.uk/",
+        "name":"Parmiters School"
+    },
+    "PSC":{
+        "URL":"http://www.psc.ac.uk/",
+        "name":"Peter Symonds College"
+    },
+    "QEH":{
+        "URL":"http://www.qehbristol.co.uk/",
+        "name":"Queen Elizabeth's Hospital School"
+    },
+    "QMC":{
+        "URL":"http://www.qmc.ac.uk/",
+        "name":"Queen Mary's College"
+    },
+    "QMS":{
+        "URL":"http://www.queensmeadschool.org.uk/",
+        "name":"Queensmead School"
+    },
+    "RED":{
+        "URL":"http://www.redlandgreen.bristol.sch.uk/",
+        "name":"Redland Green School"
+    },
+    "RGS":{
+        "URL":"http://www.rgs-guildford.co.uk/",
+        "name":"Royal Grammar School, Guildford"
+    },
+    "RUN":{
+        "URL":"http://www.runshaw.ac.uk/",
+        "name":"Runshaw College"
+    },
+    "RWD":{
+        "URL":"http://www.ringwood.hants.sch.uk/",
+        "name":"Ringwood School"
+    },
+    "SCC":{
+        "URL":"http://www.southampton-city.ac.uk/",
+        "name":"Southampton City College"
+    },
+    "SEN":{
+        "URL":"http://www.shsb.org.uk/",
+        "name":"Southend High School for Boys"
+    },
+    "SGS":{
+        "URL":"http://www.suttongrammar.sutton.sch.uk/",
+        "name":"Sutton Grammar School for Boys"
+    },
+    "SRZ":{
+        "URL":"http://www.bbc.co.uk/",
+        "name":"School of SR"
+    },
+    "STA":{
+        "URL":"http://www.st-annes.southampton.sch.uk/",
+        "name":"St Anne's Catholic School"
+    },
+    "SWI":{
+        "URL":"http://www.swgs.wilts.sch.uk/",
+        "name":"South Wilts Grammar School for Girls"
+    },
+    "TBG":{
+        "URL":"http://www.tbgs.co.uk/",
+        "name":"Torquay Boys Grammar School"
+    },
+    "TTN":{
+        "URL":"http://www.richardtaunton.ac.uk/",
+        "name":"Tauntons College"
+    },
+    "TWG":{
+        "URL":"http://www.twgsb.org.uk/",
+        "name":"Tunbridge Wells Grammar School for Boys"
+    },
+    "WYC":{
+        "URL":"http://www.wymondhamcollege.org/",
+        "name":"Wymondham College"
+    }
+}

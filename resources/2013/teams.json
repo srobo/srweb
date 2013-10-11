@@ -1,0 +1,167 @@
+{
+    "ALT":{
+        "URL":"http://www.altoncollege.ac.uk/",
+        "name":"Alton College"
+    },
+    "ARG":{
+        "URL":"http://www.ac-grenoble.fr/argouges/",
+        "name":"Lyc\u00e9e Argouges"
+    },
+    "BAM":{
+        "name":"Bamburg"
+    },
+    "BGR":{
+        "URL":"http://www.bristolgrammarschool.co.uk/",
+        "name":"Bristol Grammar School"
+    },
+    "BPV":{
+        "URL":"http://www.barton-peveril.ac.uk/",
+        "name":"Barton Peveril College"
+    },
+    "BRK":{
+        "URL":"http://www.brock.ac.uk/",
+        "name":"Brockenhurst College"
+    },
+    "BSG":{
+        "URL":"http://www.bsg.bournemouth.sch.uk/",
+        "name":"Bournemouth School for Girls"
+    },
+    "BWS":{
+        "URL":"http://www.bws.wilts.sch.uk/",
+        "name":"Bishop Wordsworth School"
+    },
+    "CLF":{
+        "URL":"http://www.cliftonhigh.bristol.sch.uk/",
+        "name":"Clifton High School"
+    },
+    "CLY":{
+        "URL":"http://www.collyers.ac.uk/",
+        "name":"Collyers Sixth Form College"
+    },
+    "CPR":{
+        "URL":"http://www.cooper.oxon.sch.uk/",
+        "name":"The Cooper School"
+    },
+    "CRB":{
+        "URL":"http://www.cranbrookschool.co.uk/",
+        "name":"Cranbrook School"
+    },
+    "EMM":{
+        "URL":"http://www.ac-grenoble.fr/mounier/",
+        "name":"Lyc\u00e9e Emmanuel Mounier"
+    },
+    "GMR":{
+        "URL":"http://www.farn-ct.ac.uk/",
+        "name":"Farnborough"
+    },
+    "GRD":{
+        "URL":"http://www.gordano.n-somerset.sch.uk/",
+        "name":"Gordano School"
+    },
+    "GRS":{
+        "URL":"http://www.greshams.com/",
+        "name":"Gresham's"
+    },
+    "HAM":{
+        "name":"Hampshire home schooled"
+    },
+    "HRS":{
+        "URL":"http://www.hrsfc.ac.uk/",
+        "name":"Hills Road Sixth Form College"
+    },
+    "HRS2":{
+        "URL":"http://www.hrsfc.ac.uk/",
+        "name":"Hills Road Sixth Form College"
+    },
+    "HSO":{
+        "URL":"http://www.headington.org/",
+        "name":"Headington School Oxford"
+    },
+    "HSO2":{
+        "URL":"http://www.headington.org/",
+        "name":"Headington School Oxford"
+    },
+    "HZW":{
+        "URL":"http://www.hazelwick.w-sussex.sch.uk/",
+        "name":"Hazelwick Comprehensive School"
+    },
+    "JMS":{
+        "URL":"http://www.johnmason.oxon.sch.uk/",
+        "name":"John Mason School"
+    },
+    "MAI":{
+        "URL":"http://www.gym-indersdorf.de/",
+        "name":"Gymnasium Markt Indersdorf"
+    },
+    "MFG":{
+        "URL":"http://www.themfg.co.uk/",
+        "name":"Mirfield Free Grammar"
+    },
+    "MUC":{
+        "name":"Munich"
+    },
+    "PAG":{
+        "URL":"http://www.pates.gloucs.sch.uk/",
+        "name":"Pate's Grammar School"
+    },
+    "PLE":{
+        "URL":"http://www.poolegrammar.com/",
+        "name":"Poole Grammar"
+    },
+    "PSC":{
+        "URL":"http://www.psc.ac.uk/",
+        "name":"Peter Symonds"
+    },
+    "PSC2":{
+        "URL":"http://www.psc.ac.uk/",
+        "name":"Peter Symonds"
+    },
+    "QEH":{
+        "URL":"http://www.qehbristol.co.uk/",
+        "name":"Queen Elizabeth's Hospital School Bristol"
+    },
+    "QMC":{
+        "URL":"http://www.qmc.ac.uk/",
+        "name":"Queen Mary's College"
+    },
+    "RES":{
+        "URL":"http://www.reeds.surrey.sch.uk/",
+        "name":"Reed's School"
+    },
+    "RMS":{
+        "URL":"http://www.redmaids.bristol.sch.uk/",
+        "name":"Red Maids Bristol"
+    },
+    "SEN":{
+        "URL":"http://www.shsb.org.uk/",
+        "name":"Southend School"
+    },
+    "SEN2":{
+        "URL":"http://www.shsb.org.uk/",
+        "name":"Southend School"
+    },
+    "SRZ":{
+        "URL":"http://www.bbc.co.uk/",
+        "name":"School of SR"
+    },
+    "STA":{
+        "URL":"http://www.st-annes.southampton.sch.uk/",
+        "name":"St. Anne's Catholic School"
+    },
+    "STM":{
+        "URL":"http://www.stanmore.ac.uk/",
+        "name":"Stanmore College"
+    },
+    "SWI":{
+        "URL":"http://www.swgs.wilts.sch.uk/",
+        "name":"South Wilts Grammar School for Girls"
+    },
+    "TTN":{
+        "URL":"http://www.tauntons.ac.uk/",
+        "name":"Tauntons College"
+    },
+    "TWG":{
+        "URL":"http://www.twgsb.org.uk/",
+        "name":"Tunbridge Wells Grammar School for Boys"
+    }
+}
