@@ -1,29 +1,8 @@
-//TITLE:	Batteries and Charging
-//DESCRIPTION:	
-//KEYWORDS:	
-//CONTENT_TYPE:	markdown
+//TITLE:        The iMAX B6 Charger
+//DESCRIPTION:
+//KEYWORDS:
+//CONTENT_TYPE: markdown
 
-Batteries and Charging
-======================
-
-The electronics kit contains two 11.1V 2.2Ah lithium-ion polymer batteries and a battery charger. Lithium-ion polymer (LiPo) batteries, similar to those used in laptops, are small and light for the amount of energy they contain. This is great for your robot but it is vital to treat such a high concentration of energy with respect. The battery charger controls the electrical current passed through the batteries to ensure they are charged safely.
-
-<div class="warning">
-<p>
-LiPo batteries can get hot or catch fire when charging and in use.
-</p>
-<ul>
-  <li>Never leave in use or charging batteries unattended</li>
-  <li>Always use the correct charger</li>
-  <li>Always follow the charging checklist precisely to make sure the charger is correctly configured</li>
-  <li>Leave the charging leads connected to the battery charger at all times</li>
-  <li>Do not charge a damaged battery</li>
-</ul>
-</div>
-
-[Using the Battery](/docs/kit/batteries#UsingTheBattery) {#UsingTheBattery}
--------------------
-Each battery should only ever be connected to either the supplied charger or the power board.  These batteries **must never** be discharged below 9V, or they will be irreparably damaged.  The power board will start beeping when the battery voltage nears this point.  So when it starts beeping, turn the power board off immediately and switch to using your other battery, which you should have already charged.
 
 iMAX B6 Chargers
 ================
@@ -113,25 +92,4 @@ Charger beeps and displays `CONNECTION BREAK` during charging
 	Ensure that both are fully inserted and press the following buttons to resume charging:
 
 	`Batt.Type/Stop` &rarr; `Start/Enter` for 3 seconds &rarr; `Start/Enter`
-
-HobbyKing HKE4 Chargers
-=======================
-
-Some kits will contain new black HobbyKing HKE4 chargers.
-
-[Charging Checklist](/docs/kit/batteries#ChargingChecklistHKE4) {#ChargingChecklistHKE4}
-------------------
-This list must be followed carefully each time a battery is connected to the charger.
-
-1.   Plug in the mains adapter and plug it into the battery charger.
-1.   Connect the charging lead from the charger to the battery. Ensure you plug the lead into the charger first and the battery second to avoid risk of shorting the battery.
-1.   Connect the monitoring lead from the battery to the charger.
-1.   Turn the current adjuster knob to the 12 o'clock position (2 amps).
-1.   Start charging with the Start/Stop button.
-
-Once the charging process has finished, three of the four LEDs will glow constantly green, and the charger will beep for fifteen seconds. You must then:
-
-1.   Unplug the charger from the mains.
-1.   Unplug the battery from the charging lead, do not unplug the charging lead from the charger.
-1.   Unplug the monitoring lead from the battery to the charger.
 

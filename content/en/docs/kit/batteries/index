@@ -1,0 +1,27 @@
+//TITLE:	Batteries and Charging
+//DESCRIPTION:	
+//KEYWORDS:	
+//CONTENT_TYPE:	markdown
+
+Batteries and Charging
+======================
+
+The electronics kit contains two 11.1V 2.2Ah lithium-ion polymer batteries and a battery charger. Lithium-ion polymer (LiPo) batteries, similar to those used in laptops, are small and light for the amount of energy they contain. This is great for your robot but it is vital to treat such a high concentration of energy with respect. The battery charger controls the electrical current passed through the batteries to ensure they are charged safely.
+
+<div class="warning">
+<p>
+LiPo batteries can get hot or catch fire when charging and in use.
+</p>
+<ul>
+  <li>Never leave in use or charging batteries unattended</li>
+  <li>Always use the correct charger</li>
+  <li>Always follow the charging checklist precisely to make sure the charger is correctly configured</li>
+  <li>Leave the charging leads connected to the battery charger at all times</li>
+  <li>Do not charge a damaged battery</li>
+</ul>
+</div>
+
+[Using the Battery](/docs/kit/batteries#UsingTheBattery) {#UsingTheBattery}
+-------------------
+Each battery should only ever be connected to either the supplied charger or the power board.  These batteries **must never** be discharged below 9V, or they will be irreparably damaged.  The power board will start beeping when the battery voltage nears this point.  So when it starts beeping, turn the power board off immediately and switch to using your other battery, which you should have already charged.
+
