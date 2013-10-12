@@ -6,57 +6,27 @@
 Motor Board
 ===========
 
-<img src="/images/content/kit/motor_board.png" alt="A photo of an un-cased motor board" title="An un-cased motor board" class="right" />
-The Motor Board can be used to control a single 12V DC motor. Your kit contains two of these boards to allow you control motors for moving your robot although don't feel you are limited to using them for this purpose.
+The Motor Board can be used to control two 12V DC motors. Your kit contains two of these boards to allow you to control up to four motors. These can be used for moving your robot, although don't feel you are limited to using them for this purpose.
 
 Board Diagram
 -------------
 
-![motor board diagram](/images/content/kit/motor_board_diagram.png "The Motor Board")
-
-Note that there are now two revisions of the motor board in the wild.
-The 'SR13.F' revision does not have the feedback connector and associated components.
-It also lacks the current limiting components (the current limiting has been disabled on SR11.F boards too).
+_Coming Soon_ 
 
 Indicators
 ----------
 
-|   LED           | Meaning                | Inital power-up state
-|-----------------|------------------------|----------------------
-| Power           | The board is powered   | On
-| SRIC Activity   | The board is transferring data | Off
-| Token           | The token-ring is functioning | On
-| Motor Power     | The motor has power and will turn when instructed to | Off
-| Current Limit   | Unused                 | Off
-| Feedback        | Undefined              | Off
-| Motor           | Brightness shows power, LED shows direction | Off
-
-After you have started your code the `Motor power LED` should come on.
-
-Note that the red Motor LED (which indicates a forward/positive drive) on the 'SR13.F' revision motor board does not function due to an assembly defect, this does not affect the primary function of the board.
+_Coming Soon_
 
 Case Dimensions
 ---------------
 
-![motor board case](/images/content/kit/motor_board_case.png "The Motor Board Case")
-
-All dimensions are in mm. Don't forget that the CAT5 cables stick out slightly.
+_Coming Soon_
 
 Specification
 -------------
 
-|  Parameter                           |   Value   |
-|--------------------------------------|-----------|
-| Absolute Maximum Input Voltage       | 16V       |
-| Output Voltage                       | 12V       |
-| Maximum Output Current               | 5A        |
-| PWM Frequency                        | 324Hz     |
-| PWM Duty Cycle Range                 | 0-99%     |
-| PWM Duty Cycle Steps (per direction) | 100       |
-
-It was found that the design of the current limiting circuit was not sufficiently robust so it was disabled, therefore the motor board does not have any current limiting.
-There should be fewer problems with motors not operating correctly, however care must be taken that the output is not over-loaded or shorted.
-If the output of a motor board is shorted then the main power fuse on the power board will blow and you may damage the motor board itself, so take great care.
+_Coming Soon_
 
 Designs
 -------
@@ -64,6 +34,5 @@ Designs
 You can access the schematics and source code of the firmware on the motor board in the following places.
 You do not need this information to use the board but it may be of interest to some people.
 
- * [Full Schematics](/resources/kit/motor-schematic.pdf)
- * [Firmware Source](https://www.studentrobotics.org/cgit/boards/motor-fw.git/)
- * [Hardware Designs](https://www.studentrobotics.org/cgit/boards/motor-hw.git/)
+ * [Firmware Source](https://www.studentrobotics.org/cgit/boards/motor-v4-fw.git/)
+ * [Hardware Designs](https://www.studentrobotics.org/cgit/boards/motor-v4-hw.git/)
