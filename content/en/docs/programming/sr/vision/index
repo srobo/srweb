@@ -28,7 +28,7 @@ while True:
     print "I can see", len(markers), "markers:"
 
     for m in markers:
-        if m.info.marker_type == MARKER_TOKEN:
+        if m.info.marker_type == MARKER_TOKEN_SIDE:
             print " - Token {0} is {1} metres away".format( m.info.offset, m.dist )
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -112,8 +112,10 @@ marker_type
 
     * `MARKER_ARENA`
     * `MARKER_ROBOT`
-    * `MARKER_PEDESTAL`
-    * `MARKER_TOKEN`
+    * `MARKER_SLOT`
+    * `MARKER_TOKEN_TOP`
+    * `MARKER_TOKEN_BOTTOM`
+    * `MARKER_TOKEN_SIDE`
 
 offset
 :   The offset of the numeric code of the marker from the lowest numbered marker of its type.  (e.g. Markers 28 and 29, which are the lowest numbered markers that represent robots, have offsets of 0 and 1 respectively.)
