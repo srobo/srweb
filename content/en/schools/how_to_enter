@@ -1,7 +1,7 @@
 //TITLE:	How to Enter
 //DESCRIPTION:
 //KEYWORDS:
-//CONTENT_TYPE:	php
+//CONTENT_TYPE:	html
 
 <h1>How to Enter</h1>
 
@@ -21,8 +21,11 @@
 	but note that the presence of a responsible adult team-leader is required.
 </p>
 
-<h2>Interested in SR2014?</h2>
-
+<h2>Interested in taking part?</h2>
+<div class="warning">
+	Unfortunately, the current Student Robotics competition is underway with all spaces filled.
+	The next opportunity to take part is therefore likely to be for SR2015 (October 2014 &mdash; April 2015).
+</div>
 <p>
 	Please fill out this form if you're intending on being the <a href="/schools/team-leaders/">team leader</a>
 	for your Student Robotics team. You should be a teacher or parent,
@@ -32,10 +35,11 @@
 	If you're a competitor, please find a suitable team leader and get them to fill this form out.
 </p>
 
-<?php
-if (ENABLE_SIGNUP) {
-	echo '<iframe src="https://docs.google.com/forms/d/1Ryg2cfAxfwMOBnT01aj-fzsp51F3B182S5e53ye8aMw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>';
-} else {
-	echo '<p>SR2014 is now fully subscribed and <a href="/news/2012-11-05_sr2013_underway">underway</a>. Watch this space for joining details for SR2014.</p>';
-}
-?>
+<iframe src="https://docs.google.com/forms/d/1Ryg2cfAxfwMOBnT01aj-fzsp51F3B182S5e53ye8aMw/viewform?embedded=true"
+	width="760"
+	height="500"
+	frameborder="0"
+	marginheight="0"
+	marginwidth="0">
+		Loading...
+</iframe>
