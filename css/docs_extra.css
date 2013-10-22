@@ -1,7 +1,7 @@
 /* General */
 
-div.docs div#content p {
-	overflow:hidden;
+div.docs h2 {
+	clear: both;
 }
 
 /* docs/kit/batteries */
