@@ -11,7 +11,7 @@ iMAX B6 Chargers
 
 Some kits will contain a blue iMAX B6 charger. This charger is more complex than the HobbyKing HKE4 charger and has a lot of unnecessary functionality, for this reason it is important that you follow the instructions detailed below. The charging cable is cable-tied to the charger and you must not remove this cable. The charging lead is terminated with 4mm bullet connectors, which present a very high risk of shorting the battery if removed from the charger.
 
-[Charging Checklist](/docs/kit/batteries#ChargingChecklist) {#ChargingChecklist}
+[Charging Checklist](#ChargingChecklist) {#ChargingChecklist}
 ------------------
 This list must be followed carefully each time a battery is connected to the charger.
 
@@ -84,7 +84,7 @@ The charger will beep when the battery is fully charged. You must then:
 1.   Unplug the battery from the charging lead, do not unplug the charging lead from the charger with the battery still connected.
 1.   Unplug the monitoring lead from the battery to the charger.
 
-[Troubleshooting](/docs/kit/batteries#Troubleshooting) {#Troubleshooting}
+[Troubleshooting](#Troubleshooting) {#Troubleshooting}
 -----------------
 
 Charger beeps and displays `CONNECTION BREAK` during charging
