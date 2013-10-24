@@ -9,21 +9,33 @@ HobbyKing HKE4 Chargers
 
 ![hobby king e4 charger](/images/content/kit/battery_charger_HKE4.png "A HobbyKing E4 battery charger")
 
-Some kits will contain a black HobbyKing HKE4 charger. This charger is simpler and easier to use than the iMAX B6 charger, while retaining all of the functionality required for charging the batteries supplied with the kit. The charging cable is cable-tied to the charger and you must not remove this cable. The charging lead is terminated with 4mm bullet connectors, which present a very high risk of shorting the battery if removed from the charger.
+Some kits will contain a black HobbyKing HKE4 charger.
+This charger is simpler and easier to use than the iMAX B6 charger, while retaining all of the functionality required for charging the batteries supplied with the kit.
+The charging lead is cable-tied to the charger and you must not remove this cable.
+The charging lead is terminated with 4mm bullet connectors, which present a very high risk of shorting the battery if removed from the charger.
 
-[Charging Checklist](#ChargingChecklistHKE4) {#ChargingChecklistHKE4}
+[Charger Diagram](#ChargerDiagram) {#ChargerDiagram}
 ------------------
-This list must be followed carefully each time a battery is connected to the charger.
 
-1.   Plug in the mains adapter and plug it into the battery charger.
-1.   Connect the charging lead from the charger to the battery. Ensure you plug the lead into the charger first and the battery second to avoid risk of shorting the battery.
-1.   Connect the monitoring lead from the battery to the charger.
-1.   Turn the current adjuster knob to the 12 o'clock position (2 amps).
-1.   Start charging with the Start/Stop button.
+![hobby king e4 charger diagram](/images/content/kit/battery_charger_hke4_diagram.png "HKE4 battery charger diagram")
 
-Once the charging process has finished, three of the four LEDs will glow constantly green, and the charger will beep for fifteen seconds. You must then:
+[Charging Instructions](#ChargingInstructions) {#ChargingInstructions}
+------------------
+These instructions must be followed every time a battery is charged.
 
-1.   Unplug the charger from the mains.
+1.   Plug in the mains adapter into the mains.
+1.   Plug the mains adaptor power lead into the battery charger.
+1.   Plug the charging lead and the main battery power lead together.
+     Never, under any circumstances, remove the charging lead from the charger.
+1.   Plug the balance lead from the battery into the charger.
+1.   Turn the charge current knob to 2.2A (12 o'clock position).
+1.   Press the Start/Stop button to begin charging.
+
+The charging process should take no longer than 1.5 hours.
+Once it has finished, three of the four LEDs will glow constantly green and the charger will beep for fifteen seconds.
+You must then:
+
+1.   Unplug the balance lead.
 1.   Unplug the battery from the charging lead, do not unplug the charging lead from the charger.
-1.   Unplug the monitoring lead from the battery to the charger.
+1.   Unplug the charger from the mains.
 
