@@ -6,10 +6,10 @@
 SR Module
 =========
 
-Student Robotics has written a module &mdash; _sr_  &mdash; which is used to interface with the hardware. It handles all the low-level interactions so you don't have to. To set motor 0's target power to -30%, for example, you would simply write:
+Student Robotics has written a module &mdash; _sr_  &mdash; which is used to interface with the hardware. It handles all the low-level interactions so you don't have to. To set the output power of output 0 of the first motor board to -30%, for example, you would simply write:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-R.motors[0].target = -30
+R.motors[0].m0.power = -30
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 _-30_ would be backwards (depending upon which way you wired up the motor) &mdash; 30% power in reverse.
@@ -35,17 +35,17 @@ Within your `Robot` (`R` in this case), you then have access to the following at
 * [motors](/docs/programming/sr/motors/)
 * [power](/docs/programming/sr/power/)
 * [servos](/docs/programming/sr/servos/)
-* [ruggeduino](/docs/programming/sr/ruggeduino/)
+* [ruggeduinos](/docs/programming/sr/ruggeduinos/)
 * [vision](/docs/programming/sr/vision/)
 
-They can be used in your code just like the example above. Note that `motors`, `ruggeduino`, and `servos` are Python lists, and so should be accessed as such. Here are some examples:
+They can be used in your code just like the example above. Note that `motors`, `ruggeduinos`, and `servos` are Python lists, and so should be accessed as such. Here are some examples:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-R.motors[0].target = 50   # WILL work, if motor 0 exists
-R.motors[1].target = -20  # WILL work, if motor 1 exists
-R.motors.target = 42      # WON'T WORK
+R.motors[0].m0.power = 50   # WILL work, if motor 0 exists
+R.motors[1].m0.power = -20  # WILL work, if motor 1 exists
+R.motors.m0.power = 42      # WON'T WORK
 
-# the above is similar to the situation for 'io' and 'servos'
+# the above is similar to the situation for 'ruggeduinos' and 'servos'
 
 
 R.power.led[0] = 1       # WILL work
