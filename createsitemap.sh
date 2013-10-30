@@ -13,7 +13,7 @@ ROOT_URI=${ROOT_URI%*/}/
 
 # Add -F xml for debugging to also outupt to a file
 linkchecker "$ROOT_URI" -o xml -v \
-	--ignore-url="$ROOT_URI(forum|docs/python/|ide|tickets|userman|search.php)" \
+	--ignore-url="$ROOT_URI(cgit|forum|docs/python/|ide|tickets|trac|userman|search.php)" \
 	--ignore-url="!$ROOT_URI" \
 	| python sitemapgen.py - "$ROOT_URI" > sitemap.xml
 
