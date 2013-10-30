@@ -36,6 +36,8 @@ urlset = sitemap.contents[1]
 
 parturls = set()
 
+print >> sys.stderr, 'Finding links'
+
 for urldata in soup.findAll('urldata'):
     # No dead links
     valid = urldata('valid')[0]
@@ -58,6 +60,8 @@ for urldata in soup.findAll('urldata'):
 
     parturls.add(parturl)
 
+print >> sys.stderr, 'Building sitemap'
+
 for parturl in sorted(parturls, reverse=True):
     url = Tag(sitemap, 'url')
     urlset.insert(1, url)
@@ -65,5 +69,7 @@ for parturl in sorted(parturls, reverse=True):
     url.insert(0, loc)
     text = NavigableString(SITE_ROOT + parturl)
     loc.insert(0, text)
+
+print >> sys.stderr, 'Outputting sitemap'
 
 print sitemap.prettify()
