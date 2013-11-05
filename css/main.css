@@ -226,26 +226,11 @@ div.content h2 {
 	margin-top:25px;
 }
 
-div.content h1 a {
-	color:inherit;
-}
-
-div.content h2 a {
-	color:inherit;
-}
-
-div.content h3 a {
-	color:inherit;
-}
-
-div.content h4 a {
-	color:inherit;
-}
-
-div.content h5 a {
-	color:inherit;
-}
-
+div.content h1 a,
+div.content h2 a,
+div.content h3 a,
+div.content h4 a,
+div.content h5 a,
 div.content h6 a {
 	color:inherit;
 }
