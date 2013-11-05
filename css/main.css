@@ -209,7 +209,12 @@ div.content{
 	padding:0 20px;
 }
 
-div.content h1, h2, h3, h4, h5, h6 {
+div.content h1,
+div.content h2,
+div.content h3,
+div.content h4,
+div.content h5,
+div.content h6 {
 	color:#0d1f61;
 	line-height:1.3em;
 }
