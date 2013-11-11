@@ -12,7 +12,7 @@ $teams = get_team_info();
 <h1>Meet the Teams</h1>
 
 <p>
-The SR2014 competiton is in full swing and here you can find a list of all the teams taking part.
+The SR2014 competiton is in full swing and here you can find a list of the teams taking part.
 Each team will be updating the photos below as they go so you can easily track their progress.
 </p>
 
@@ -41,3 +41,10 @@ if (count($teams) == 0) {
 	echo '</ul>';
 }
 ?>
+
+<p>Is your team listed yet?</p>
+<p>
+Competitors can modify their Team Status via the
+<abbr title="The shortcuts menu is the little 'v' next to the projects tab">shortcuts menu</abbr>
+in the <a href="/ide/">IDE</a>.
+</p>
