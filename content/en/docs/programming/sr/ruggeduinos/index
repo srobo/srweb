@@ -15,7 +15,8 @@ To use one of the pins on the Ruggeduino, you must first set whether you want it
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # R.ruggeduinos[RUGGEDUINO_BOARD_NUMBER].pin_mode(PIN_NO, MODE)
-# Where mode is INPUT for input, OUTPUT for output or INPUT_PULLUP for input with a pull-up resistor enabled (see below)
+# Where mode is INPUT for input, OUTPUT for output or
+# INPUT_PULLUP for input with a pull-up resistor enabled (see below)
 
 # to set Ruggeduino board 0's pin 2 to output
 R.ruggeduinos[0].pin_mode(2, OUTPUT)
