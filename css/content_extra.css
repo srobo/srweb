@@ -43,6 +43,16 @@ ul#teams_container li p.college_name {
 	line-height: 1em;
 }
 
+/* ensure a reasonable gap below the list */
+ul#teams_container li:last-child {
+	margin-bottom: 1em;
+}
+
+/* ensure the next text is clear below the list and not to one side */
+ul#teams_container + p {
+	clear: both;
+}
+
 /* /teams/* */
 
 div.team-page div#team-img {
