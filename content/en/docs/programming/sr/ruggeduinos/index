@@ -9,8 +9,37 @@ IO (Ruggeduino)
 The [Ruggeduino](http://ruggedcircuits.com/html/ruggeduino.html)
 provides a total of 18 pins for either digital input or output (labelled 2 to 13 and A0 to A5),
 including 6 for analogue input (labelled A0 to A5).
-As with `servos` and `motors`, `ruggeduinos` is a list.
-Each Ruggeduino connected to your kit appears as an element in this list.
+
+The `ruggeduinos` object is used to control a collection of Ruggeduinos.
+Similar to `motors` and `servos`, `ruggeduinos` can be used like a list.
+To do something with the **first Ruggeduino** board, you would use:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+R.ruggeduinos[0].something...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+...because indexes are 0-based (counting starts from 0, not 1).
+
+When you have more than one Ruggeduino board connected to your kit
+they will be ordered based upon their serial number.
+
+The serial number of each detected Ruggeduino is printed to the log when your robot starts.
+It will look something like this:
+
+<pre class="not-code">
+Found the following devices:
+ - Ruggeduinos:
+    0: Ruggeduino( serialnum = "752303138333517171B1" )
+</pre>
+
+In addition, like `motors`, `ruggeduinos` is actually a dictionary.
+As a result, in `ruggeduinos` you can also use the Ruggeduino serial number as a key.
+For example, if you had a board whose serial number was "752303138333517171B1",
+you could do this instead:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+R.ruggeduinos["752303138333517171B1"].something...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 [Setting pin modes](/docs/programming/sr/ruggeduinos/#pinmodes) {#pinmodes}
 --------------------------------------------------------------------------

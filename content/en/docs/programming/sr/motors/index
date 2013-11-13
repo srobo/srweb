@@ -6,8 +6,8 @@
 Motors
 ======
 
-The `motors` object is used to control a list of motors.
-As with `ruggeduinos` and `servos`, `motors` is a list.
+The `motors` object is used to control a collection of motors.
+Similar to `ruggeduinos` and `servos`, `motors` can be used like a list.
 To do something with the **first motor** board, you would use:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -18,6 +18,25 @@ R.motors[0].something...
 
 When you have more than one motor board connected to your kit they will be ordered based upon their SR Part Code, as written on the underside of the board.
 
+The SR Part Code of each detected motor board is also printed to the log when your robot starts.
+It will look something like this:
+
+<pre class="not-code">
+Found the following devices:
+ - Motors:
+    0: Motor( serialnum = "SR0XJ1F" )
+    1: Motor( serialnum = "SR0A123" )
+</pre>
+
+
+However, like `ruggeduinos`, `motors` is actually a dictionary.
+As a result, in `motors` you can also use the SR Part Code of the motor board as a key.
+For example, if you had a board that was labelled "SR0A123",
+you could do this instead:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+R.motors["SR0A123"].something...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Setting motor power
 -------------------
