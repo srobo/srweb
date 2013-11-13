@@ -90,8 +90,8 @@ The output from this example would be:
     False
     True
 
-Concept: Identifiers        {#concept-identifiers}
---------------------
+[Concept: Identifiers](#concept-identifiers)        {#concept-identifiers}
+----------------------
 
 Certain things in your program, for example variables and functions, will need names. These names are called identifiers, and must follow these rules:
 
@@ -136,8 +136,8 @@ Output:
 
     We might be able to afford the tall ship...
 
-Concept: Code blocks and indentation    {#concept-code-blocks-and-indentation}
-------------------------------------
+[Concept: Code blocks and indentation](#concept-code-blocks-and-indentation)    {#concept-code-blocks-and-indentation}
+--------------------------------------
 
 In the previous section, you probably noticed that the statements 'inside' the `if` statements were indented relative to the rest of the code. Python is reasonably unique in that it cares about indentation, and uses it to decide which statements are referred to by things like `if` statements.
 
@@ -257,8 +257,8 @@ Output:
 
     [4.8, 6.0, 2.4, 1.7999999999999998]
 
-Calling functions       {#calling-functions}
------------------
+[Calling functions](#calling-functions)       {#calling-functions}
+-------------------
 
 Functions are pre-written bits of code that can be run ('called') at any point. At their simplest, they take no parameters and return nothing. For example, the `exit` function ends your program prematurely:
 
@@ -397,8 +397,8 @@ There are more tutorials out there too, and <http://learnpython.org/> looks like
 Appendices
 ==========
 
-Operators	{#operators}
----------
+[Operators](#operators)   {#operators}
+-----------
 
 There are three types of operators in Python: arithmetic, comparison, and logical. I'll list the most important.
 
@@ -452,8 +452,8 @@ When more than one boolean operator is used in an expression, `not` is performed
     print (x == 2 and y == 3) or z == 2
 
 
-Built-in functions      {#built-in-functions}
-------------------
+[Built-in functions](#built-in-functions)      {#built-in-functions}
+--------------------
 
 A lot of functions are defined for you by Python. Those listed at <http://docs.python.org/library/functions.html> are always available, and are the most commonly used, including `len` and `range`.
 
