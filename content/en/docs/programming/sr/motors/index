@@ -6,7 +6,9 @@
 Motors
 ======
 
-The `motors` object is used to control a list of motors. As with `ruggeduinos` and `servos`, `motors` is a list. To do something with the **first motor** board, you would use:
+The `motors` object is used to control a list of motors.
+As with `ruggeduinos` and `servos`, `motors` is a list.
+To do something with the **first motor** board, you would use:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 R.motors[0].something...
