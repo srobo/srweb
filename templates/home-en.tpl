@@ -101,7 +101,8 @@
 						<div id="date_bristol">
 							<a href="{$root_uri}events/tech_days">Tech Days:</a>
                             <ul>
-                                <li><i>To be announced</i></li>
+
+                                <li><a href="{$root_uri}events/sr2014/2013-11-30-bristol_tech_day_1">30<sup>th</sup> November</a></li>
                             </ul>
 
                             <a href="{$root_uri}events/kickstart">Kickstart:</a>
