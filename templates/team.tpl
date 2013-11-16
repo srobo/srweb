@@ -91,9 +91,10 @@
 		<div class="clearboth"><a class="link-bottom-left" href="{$root_uri}teams">Back to all teams</a></div>
 
 	</div>
-	<div id="original"></div>
-
-	{include file=$footer_file}
+	<div id="original">
+		The content and links on this page belong to team {$team->team_id},
+		and may not reflect the views of Student Robotics.
+	</div>
 
 </div>
 </body>
