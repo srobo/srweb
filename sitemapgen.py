@@ -15,7 +15,7 @@ from BeautifulSoup import BeautifulStoneSoup, NavigableString, Tag
 SEARCHED_ROOT = sys.argv[2] # eg: 'http://localhost/srweb/'
 SITE_ROOT = 'https://www.studentrobotics.org/'
 
-IGNORE_PREFIXES = ["content/", "css/", "fonts/", "forum", "icon/", "ide", "images/"]
+IGNORE_PREFIXES = ["cgit/", "content/", "css/", "fonts/", "forum", "icon/", "ide", "images/", "trac/"]
 
 in_file = sys.argv[1]
 if in_file != '-':
