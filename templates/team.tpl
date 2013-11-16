@@ -36,13 +36,27 @@
 		</p>
 		{/if}
 
-		<p id="team-name">
+		<p id="team-links">
+		<span id="team-name">
 		{if !empty($team->url) }
 		<a href="{$team->url}">
 		{/if}
 		Team {$team->team_id}
 		{if !empty($team->url) }
 		</a>
+		{/if}
+		</span>
+		{if !empty($team->facebook) }
+		<a class="facebook" href="{$team->facebook}">
+			<img src="{$root_uri}images/template/facebook25x25.png" alt="Facebook" title="Team {$team->team_id} Facebook page" /></a>
+		{/if}
+		{if !empty($team->twitter) }
+		<a class="twitter" href="{$team->twitter}">
+			<img src="{$root_uri}images/template/twitter25x25.png" alt="Twitter" title="Team {$team->team_id} Twitter feed" /></a>
+		{/if}
+		{if !empty($team->youtube) }
+		<a class="youtube" href="{$team->youtube}">
+			<img src="{$root_uri}images/template/youtube25x59.png" alt="YouTube" title="Team {$team->team_id} YouTube account" /></a>
 		{/if}
 		</p>
 

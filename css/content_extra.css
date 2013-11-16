@@ -68,14 +68,29 @@ div.team-page div#team-img p {
 }
 
 
-div.team-page p#team-name {
+div.team-page p#team-links {
 	text-align:right;
-	font-style:italic;
 	margin:0;
 }
 
-div.team-page p#team-name a {
+div.team-page #team-name {
+	display:block;
+	font-style:italic;
 	font-weight:bold;
+	margin-right:30px;
+}
+
+div.team-page p#team-links {
+	text-align:right;
+	margin:0;
+}
+div.team-page p#team-links a img {
+	border:0;
+	margin:0;
+	padding:0;
+}
+/* If there's only one, indent it a bit */
+div.team-page p#team-links > a:only-of-type {
 	margin-right:30px;
 }
 
