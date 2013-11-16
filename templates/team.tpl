@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
 	<title>Team {$team->team_id} | Student Robotics</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -15,13 +13,10 @@
 
 	{include file=tracking.tpl}
 </head>
-
 <body>
 {include file=tracking-image.tpl}
 <div id="pageWrapper">
-
 	{include file=$header_file}
-
 
 	<div id="{$page_id}" class="content team-page">
 		<a class="link-top" href="{$root_uri}teams">Back to all teams</a>
@@ -87,8 +82,5 @@
 	{include file=$footer_file}
 
 </div>
-
 </body>
-
 </html>
-
