@@ -85,7 +85,7 @@
 							<li><a href="#date_munich">Munich</a></li>
 							<li><a href="#date_norfolk">Norfolk</a></li>
 							<li><a href="#date_oxford">Oxford</a></li>
-							<li><a href="#date_surrey">Surrey</a></li>
+							<li><a href="#date_surrey">Guildford</a></li>
 						</ul>
 						<div id="date_soton">
 							<a href="{$root_uri}events/tech_days">Tech Days</a>:
