@@ -7,7 +7,11 @@ On-board Manual Controller
 
 There will probably be times when you just want to do something simple with the robot without writing a program. For example, you might want to try out your new grabber by moving a servo or two, or find out what sort of values you can expect from a sensor. In these situations, the On-board Manual Controller might be useful. It allows you to do things like this using the buttons and knobs on the Power Board.
 
-Currently, the controller program comes as a robot.zip. You can [download version 1.0 here](/resources/kit/sr-control/robot.zip). Put it on the robot in [the usual way](/docs/IDE/getting_code_on_the_robot), and then run it by pressing "Start".
+Currently, the controller program comes as a robot.zip. You can [download version 2.0 here](/resources/kit/sr-control/robot.zip). Put it on the robot in [the usual way](/docs/IDE/getting_code_on_the_robot), and then run it by pressing "Start".
+
+<div class=info>
+There is currently no support for controlling the Ruggeduino from this interface. We may release a new version with this feature later in the year.
+</div>
 
 Changing panels
 ---------------
@@ -23,18 +27,11 @@ Motor Board Panel
 
 ![Motor Board Panel diagram](/images/content/kit/sr-control/motor-board.png)
 
-This is the most simple panel. The dial shows the current speed of the motor. To change the speed, turn the right knob.
+This is the most simple panel. The highlighted number on the right shows the currently selected motor. To choose the other motor, press the corresponding button to the right of the screen.
+
+The dial shows the current speed of the selected motor. To change the speed, turn the right knob.
 
 When one or more motors are running, the "Press to stop" button appears below the list of boards. While this button is visible, pressing the left knob will immediately stop all motors.
-
-IO Board Panel
---------------------
-
-![IO Board Panel diagram](/images/content/kit/sr-control/io-board.png)
-
-The panel for the IO board has three rows of controls. The first shows the analogue value of each input pin, while the second shows the digital value. As these are input values, you can't change them through the controller.
-
-The third row shows the state of the output pins, and allows you to change them. A pair of arrows appear next to one input; this is the currently selected one. You can turn it on or off by twisting the right knob. To select a different output, use the two buttons to the right of the screen.
 
 Servo Board Panel
 -----------------
