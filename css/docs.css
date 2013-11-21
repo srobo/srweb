@@ -61,13 +61,13 @@ div.docs div#content ol {
 
 pre code {
 	background:#FFF4B8;
+	border-radius:5px;
+	box-shadow:0px 2px 8px #333;
 	font-size:0.8em;
+	margin-bottom:15px;
 	margin-left:30px;
 	overflow:auto;
 	padding:5px;
-	margin-bottom:15px;
-	border-radius:5px;
-	box-shadow:0px 2px 8px #333;
 }
 
 div.docs div#content div.info p, div.docs div#content div.warning p {
