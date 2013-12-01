@@ -60,7 +60,7 @@ You'll find that the IDE has already created this file for you.
 So, click on line that says "robot.py" in the middle of the IDE's webpage.
 You'll now be presented with a code editor to write the code in, like this:
 
-![new file / editor](/images/content/tutorials/walkthrough/new_file_editor.png)
+![empty robot.py open in the editor](/images/content/tutorials/walkthrough/empty_file_editor.png)
 
 In the editor, write (or paste!) the following:
 
@@ -110,20 +110,21 @@ This is then repeated (it's in a while loop).
 To read more detailed information about the `power` object,
 see its [page in the documentation](/docs/programming/sr/power/).
 
-We're now ready to save the file.
+We're now ready to save the changes to the file.
 At the upper left-hand side of the screen, you'll see a button labelled _Save_.
 Click it, and you'll be presented with a dialogue box for saving the file.
-Choose our "walkthrough" project from the drop-down list, write a useful [commit message](/docs/IDE/good_commit_messages) &mdash; here's mine:
+The top part of this box contains an overview of the actual changes to the file,
+ which can be useful to check that you're only changing what you expected to change:
+
+![commit changes dialog](/images/content/tutorials/walkthrough/commit_changes.png)
+
+Write a useful [commit message](/docs/IDE/good_commit_messages) in the bottom of the box &mdash; here's mine:
 
 <pre class="not-code">
-Added "hello world" (LED flashing) robot.py
+Added "hello world" (LED flashing) to robot.py
 
 Flashes LED0 on for a second and then off for a second, then repeats.
 </pre>
-
-...and give the file the name "robot.py":
-
-![hello world save as](/images/content/tutorials/walkthrough/hello_world_save_as.png)
 
 Now click _Save_.
 
