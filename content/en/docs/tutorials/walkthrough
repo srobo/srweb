@@ -110,7 +110,7 @@ To read more detailed information about the `power` object,
 see its [page in the documentation](/docs/programming/sr/power/).
 
 We're now ready to save the file.
-At the upper left-hand side of the screen, you'll see a button labeled _Save_.
+At the upper left-hand side of the screen, you'll see a button labelled _Save_.
 Click it, and you'll be presented with a dialogue box for saving the file.
 Choose our "walkthrough" project from the drop-down list, write a useful [commit message](/docs/IDE/good_commit_messages) &mdash; here's mine:
 
