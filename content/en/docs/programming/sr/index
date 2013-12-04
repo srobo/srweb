@@ -86,3 +86,36 @@ usbkey
     f.close()
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+[Custom Robot Object Initialisation](/docs/programming/sr/#CustomRobotInit) {#CustomRobotInit}
+----------------------
+
+Normally the Robot object is initialised with the following:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+R = Robot()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+However if you want to:
+
+ * customise your Ruggeduino firmware
+ * initialise some hardware or software before the start button is pressed
+
+Then Robot initialisation can be broken up as follows (this example is equivalent to the previous code excerpt):
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+R = Robot.setup()
+
+# Setup phase.
+# Here you can configure hardware enumeration
+
+R.init()
+
+# Initialisation phase.
+# Here you can perform hardware/software initialisation before start
+
+R.wait_start()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+During the setup phase, the Robot hardware is inaccessible. For example,`R.motors` is unavailable since enumerations occurs in the `init` function. In this phase you can configure how the finds and Robot finds and configures hardware.
+
+After the `init` call, all hardware is accessible. If you have any hardware which must be initialised before the start button is pressed, the initialisation phase is the time to do so.
