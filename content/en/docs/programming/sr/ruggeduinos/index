@@ -47,14 +47,29 @@ R.ruggeduinos["752303138333517171B1"].something...
 To use one of the pins on the Ruggeduino, you must first set whether you want it to behave as an input or as an output. You can do this with the following code:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# R.ruggeduinos[RUGGEDUINO_BOARD_NUMBER].pin_mode(PIN_NO, MODE)
-# Where mode is INPUT for input, OUTPUT for output or
-# INPUT_PULLUP for input with a pull-up resistor enabled (see below)
+R.ruggeduinos[RUGGEDUINO_BOARD_NUMBER].pin_mode(PIN_NO, MODE)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-# to set Ruggeduino board 0's pin 2 to output
+The possible values for `MODE` are:
+
+`INPUT`
+:   set the pin to [input mode](#input)
+
+`OUTPUT`
+:   set the pin to [output mode](#output)
+
+`INPUT_PULLUP`
+:   set the pin to input mode with a [pull-up resistor](#pullup)
+
+An example of how to use this is below:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# set Ruggeduino board 0's pin 2 to output
 R.ruggeduinos[0].pin_mode(2, OUTPUT)
-# to set Ruggeduino board 0's pin 3 to input
+# set Ruggeduino board 0's pin 3 to input
 R.ruggeduinos[0].pin_mode(3, INPUT)
+# set Ruggeduino board 0's pin 4 to input and enable pull-up resistor
+R.ruggeduinos[0].pin_mode(4, INPUT_PULLUP)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 <div class="warning">You cannot use pins 0 and 1, as using these would disrupt communications between the Ruggeduino and the Power Board.</div>
