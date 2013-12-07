@@ -101,7 +101,7 @@ pin0 = R.ruggeduinos[0].analogue_read(0)
 [Output](/docs/programming/sr/ruggeduinos/#output) {#output}
 --------
 
-You can only set digital outputs (there's no analogue output, although you may feel free to modify the Ruggeduino's firmware to add the ability to output PWM if you desire). To set a digital output pin, you would use the following:
+You can only set digital outputs (there's no analogue output, although you may feel free to modify the Ruggeduino's firmware to add the ability to output [PWM](https://wikipedia.org/wiki/Pulse-width_modulation "Pulse-width modulation") if you desire). To set a digital output pin, you would use the following:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # R.ruggeduinos[RUGGEDUINO_BOARD_NUMBER].digital_write(PIN_NO, VALUE)
