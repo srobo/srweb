@@ -40,7 +40,8 @@ You should be presented with a screen like this:
 ![Login Screen](/images/content/tutorials/walkthrough/login.png)
 
 Enter your login details and click _Log In_.
-(You should already have login details, they were given to you at KickStart.)
+(Your team leader should have created a [user account](/docs/user_accounts) for you,
+ if not you'll need to ask them to do that before you can continue this walkthrough.)
 You will now be presented with a screen something like the following (it may not be exactly the same):
 
 ![project page](/images/content/tutorials/walkthrough/project_page.png)
