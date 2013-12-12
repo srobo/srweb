@@ -10,6 +10,10 @@ Servo Board
 The Servo Board can be used to control up to 8 RC servos.
 Many devices are available that can be controlled as servos such as RC motor speed controllers and these can also be used with the board.
 
+The servo board needs to be powered from the motor rail on the [power board](/docs/kit/power_board) in order to power the servos.
+Without this, the "5V Power LED" won't light, and the servos won't do anything,
+but the kit will not report any problems with the board.
+
 Board Diagram
 -------------
 
