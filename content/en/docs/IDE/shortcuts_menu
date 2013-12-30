@@ -13,7 +13,7 @@ These are kept in the *shortcuts menu*, which is always the left-most tab in the
 ![An image of the tab-bar, with the shortcuts menu closed](/images/content/ide/shortcuts-closed.png "The tab-bar with the shortcuts menu closed.")
 
 Once expanded, the menu offers buttons to create a new file,
-start a search,
+start a [search](/docs/IDE/finding_things),
 change IDE [settings](/docs/IDE/user_settings),
 edit your Team Status or view information about the IDE itself.
 
