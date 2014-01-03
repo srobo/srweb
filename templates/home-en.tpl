@@ -144,9 +144,9 @@
 					</div>
 					<div>
 						<a href="{$root_uri}events/competition">Competition:</a>
-                        <ul>
-                            <li><i>To be announced</i></li>
-                        </ul>
+						<ul>
+							<li><a href="{$root_uri}events/sr2014/2014-04-26-competition">26<sup>th</sup> and 27<sup>th</sup> April 2014</a></li>
+						</ul>
 					</div>
 
 				</div>
