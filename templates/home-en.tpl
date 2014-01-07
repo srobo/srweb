@@ -103,6 +103,8 @@
                             <ul>
 
                                 <li><a href="{$root_uri}events/sr2014/2013-11-30-bristol_tech_day_1">30<sup>th</sup> November</a></li>
+                                <li><a href="{$root_uri}events/sr2014/2014-02-08-bristol_tech_day_2">8<sup>th</sup> February</a></li>
+                                <li><a href="{$root_uri}events/sr2014/2014-03-08-bristol_tech_day_3">8<sup>th</sup> March</a></li>
                             </ul>
 
                             <a href="{$root_uri}events/kickstart">Kickstart:</a>
