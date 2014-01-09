@@ -72,7 +72,12 @@ function _build_team_info($path, $team_id) {
 		if (empty($team_raw->$item->live)) {
 			$team->$item = null;
 		} else {
-			$team->$item = strip_tags($team_raw->$item->live);
+			$live = strip_tags($team_raw->$item->live);
+			if ($item == 'description' && !empty($live)) {
+				require_once('markdown.php');
+				$live = Markdown($live);
+			}
+			$team->$item = $live;
 		}
 	}
 	$team->team_id = $team_id;

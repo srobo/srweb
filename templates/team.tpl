@@ -31,9 +31,7 @@
 		{/if}
 
 		{if !empty($team->description) }
-		<p>
 		{$team->description}
-		</p>
 		{/if}
 
 		<p id="team-links">
