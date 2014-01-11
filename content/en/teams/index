@@ -45,6 +45,6 @@ if (count($teams) == 0) {
 <p>Is your team listed yet?</p>
 <p>
 Competitors can modify their Team Status via the
-<abbr title="The shortcuts menu is the little 'v' next to the projects tab">shortcuts menu</abbr>
+<a href="/docs/IDE/shortcuts_menu" title="The shortcuts menu is the little 'v' next to the projects tab">shortcuts menu</a>
 in the <a href="/ide/">IDE</a>.
 </p>
