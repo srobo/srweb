@@ -92,6 +92,7 @@
                             <ul>
                                 <li><a href="{$root_uri}events/sr2014/2013-11-30-soton_tech_day_1">30<sup>th</sup> November</a></li>
                                 <li><a href="{$root_uri}events/sr2014/2014-02-15-soton_tech_day_2">15<sup>th</sup> February</a></li>
+                                <li><a href="{$root_uri}events/sr2014/2014-03-15-soton_tech_day_3">15<sup>th</sup> March</a></li>
                             </ul>
 
                             <a href="{$root_uri}events/kickstart">Kickstart:</a>
