@@ -1,10 +1,10 @@
 #include <Arduino.h>
 
+// We communicate with the power board at 115200 baud.
 #define SERIAL_BAUD 115200
 
 #define FW_VER 0
 
-// We communicate, by default, with the power board at 9200 baud.
 void setup() {
   Serial.begin(SERIAL_BAUD);
 }
