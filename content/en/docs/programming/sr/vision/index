@@ -78,7 +78,7 @@ They support the following resolutions:
 
 There are advantages and disadvantages to switching resolution.
 Smaller images will process faster, but markers will be less likely to be detected within them.
-Addtionally, the act of changing resolution takes a significant amount of time.
+Additionally, the act of changing resolution takes a significant amount of time.
 The optimum resolution to use in a given situation is best determined through experiment.
 
 [Objects of the Vision System](/docs/programming/sr/vision/#vision_objects) {#vision_objects}
