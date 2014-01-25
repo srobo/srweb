@@ -171,10 +171,10 @@ default_define('TEMPLATE_DIR', 		ROOT_DIR . '/templates');
 default_define('COMPILED_TEMPLATE_DIR', ROOT_DIR . '/templates_compiled');
 default_define('CACHE_DIR',		ROOT_DIR . '/cache');
 default_define('CONTENT_DIR', 		ROOT_DIR . '/content');
-default_define('TEAM_STATUS_DIR', 	ROOT_DIR . '/ide/settings/team-status');
+default_define('TEAM_STATUS_DIR', 	ROOT_DIR . '/dev-content/team-status');
 // The following is used in both a template and a parsed page so ROOT_DIR
 // is prepended automatically in the parsed page and manually in the template
-default_define('TEAM_STATUS_IMG',	'images/teams');
+default_define('TEAM_STATUS_IMG',	'images/dev-teams');
 
 // changes each SR year
 default_define('TEAMS_JSON', 'resources/2014/teams.json');

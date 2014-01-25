@@ -1,0 +1,58 @@
+{
+    "description": {
+        "date": "2014-01-25",
+        "draft": "A team for all and none.\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "live": "A team for all and none.\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "reviewed": true,
+        "uid": "p"
+    },
+    "facebook": {
+        "date": "2014-01-25",
+        "draft": "https://www.facebook.com/StudentRobotics",
+        "live": "https://www.facebook.com/StudentRobotics",
+        "reviewed": true,
+        "uid": "p"
+    },
+    "feed": {
+        "date": "2014-01-25",
+        "draft": "https://www.studentrobotics.org/feed.php",
+        "live": "https://www.studentrobotics.org/feed.php",
+        "reviewed": true,
+        "uid": "p"
+    },
+    "image": {
+        "date": "2014-01-25",
+        "draft": "c5eb82e54a19aad3732edaef654bc97f",
+        "live": "c5eb82e54a19aad3732edaef654bc97f",
+        "reviewed": true,
+        "uid": "p"
+    },
+    "name": {
+        "date": "2014-01-25",
+        "draft": "Zarathustra",
+        "live": "Zarathustra",
+        "reviewed": true,
+        "uid": "p"
+    },
+    "twitter": {
+        "date": "2014-01-25",
+        "draft": "https://www.twitter.com/StudentRobotics",
+        "live": "https://www.twitter.com/StudentRobotics",
+        "reviewed": true,
+        "uid": "p"
+    },
+    "url": {
+        "date": "2014-01-25",
+        "draft": "https://www.studentrobotics.org/",
+        "live": "https://www.studentrobotics.org/",
+        "reviewed": true,
+        "uid": "p"
+    },
+    "youtube": {
+        "date": "2014-01-25",
+        "draft": "https://www.youtube.com/StudentRobotics",
+        "live": "https://www.youtube.com/StudentRobotics",
+        "reviewed": true,
+        "uid": "p"
+    }
+}
