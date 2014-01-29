@@ -1,14 +1,20 @@
 //TITLE:	Vision
-//DESCRIPTION:	
-//KEYWORDS:	
+//DESCRIPTION:	Explains how to use the vision parts of the Student Robotics' robot API.
+//KEYWORDS:	vision, see, markers, marker, token, libkoki
 //CONTENT_TYPE:	markdown
 
 Vision
 ======
 
-The `sr` library contains support for detecting libkoki markers with the provided webcam.  Markers are attached to various items in the Student Robotics arena.  Each marker encodes a number in a machine-readable way, which means that robots can identify these objects.  For information on which markers codes are which, see the [markers page](/docs/programming/sr/vision/markers).  
+The `sr` library contains support for detecting libkoki markers with the provided webcam.
+Markers are attached to various items in the Student Robotics arena.
+Each marker encodes a number in a machine-readable way, which means that robots can identify these objects.
+For information on which markers codes are which, see the [markers page](/docs/programming/sr/vision/markers).
 
-Using knowledge of the physical size of the different markers and the characteristics of the webcam, libkoki can calculate the position of markers in 3D space relative to the camera.  Therefore, if the robot can see a marker that is at a fixed location in the arena, a robot can calculate its exact position in the arena.
+Using knowledge of the physical size of the different markers and the characteristics of the webcam,
+ libkoki can calculate the position of markers in 3D space relative to the camera.
+Therefore, if the robot can see a marker that is at a fixed location in the arena,
+ a robot can calculate its exact position in the arena.
 
 The `sr` library provides all of this power through a single function, `R.see`:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -16,7 +22,9 @@ from sr import *
 R = Robot()
 markers = R.see()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-When called, this function takes a photo through the webcam and searches for markers within it.  It returns a list of `Marker` objects, each of which describes one of the markers that were found in the image.  A detailed description of the attributes of Marker objects is provided [later in this page](#Marker).
+When called, this function takes a photo through the webcam and searches for markers within it.
+It returns a list of `Marker` objects, each of which describes one of the markers that were found in the image.
+A detailed description of the attributes of Marker objects is provided [later in this page](#Marker).
 
 Here's an example that will repeatedly print out the distance to each token marker that the robot can see:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -34,12 +42,14 @@ while True:
 
 [Choosing Resolution](/docs/programming/sr/vision/#ChoosingResolution) {#ChoosingResolution}
 -------------------
-By default, the `R.see` function will take a photo at a resolution of 800x600.  The resolution that this image is taken at can be changed using the optional `res` argument:
+By default, the `R.see` function will take a photo at a resolution of 800x600.
+The resolution that this image is taken at can be changed using the optional `res` argument:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Take a photo at 1280 x 1024
 markers = R.see( res=(1280,1024) )
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-There are currently two kinds of webcam issued with SR kit: the Logitech C500 and C270. They support the following resolutions:
+There are currently two kinds of webcam issued with SR kit: the Logitech C500 and C270.
+They support the following resolutions:
 
 
 |   Resolution			| C500	|  C270
@@ -66,14 +76,18 @@ There are currently two kinds of webcam issued with SR kit: the Logitech C500 an
 |  1280 x 960			| 	| yes
 |  1280 x 1024			| yes	|
 
-There are advantages and disadvantages to switching resolution.  Smaller images will process faster, but markers will be less likely to be detected within them.  Addtionally, the act of changing resolution takes a significant amount of time.  The optimum resolution to use in a given situation is best determined through experiment.
+There are advantages and disadvantages to switching resolution.
+Smaller images will process faster, but markers will be less likely to be detected within them.
+Additionally, the act of changing resolution takes a significant amount of time.
+The optimum resolution to use in a given situation is best determined through experiment.
 
 [Objects of the Vision System](/docs/programming/sr/vision/#vision_objects) {#vision_objects}
 ==============================
 
 [`Marker`](/docs/programming/sr/vision/#Marker) {#Marker}
 ----------
-A `Marker` object contains information about a *detected* marker.  It has the following attributes:
+A `Marker` object contains information about a *detected* marker.
+It has the following attributes:
 
 info
 :   A [`MarkerInfo`](#MarkerInfo) object containing information about the type of marker that was detected.
@@ -94,14 +108,16 @@ orientation
 :   An [`Orientation`](#Orientation) instance describing the orientation of the marker.
 
 res
-:   The resolution of the image that was taken from the webcam.  A 2-item tuple: (width, height).
+:   The resolution of the image that was taken from the webcam.
+    A 2-item tuple: (width, height).
 
 timestamp
 :   The timestamp at which the image was taken (a float).
 
 [`MarkerInfo`](/docs/programming/sr/vision/#MarkerInfo) {#MarkerInfo}
 --------------
-The `MarkerInfo` object contains information about a marker.   It has the following attributes:
+The `MarkerInfo` object contains information about a marker.
+It has the following attributes:
 
 code
 :   The numeric code of the marker.
@@ -118,17 +134,21 @@ marker_type
     * `MARKER_TOKEN_SIDE`
 
 offset
-:   The offset of the numeric code of the marker from the lowest numbered marker of its type.  (e.g. Markers 28 and 29, which are the lowest numbered markers that represent robots, have offsets of 0 and 1 respectively.)
+:   The offset of the numeric code of the marker from the lowest numbered marker of its type.
+    (e.g. Markers 28 and 29, which are the lowest numbered markers that represent robots, have offsets of 0 and 1 respectively.)
 
 size
-:   The size of the marker in metres.  This is the length of the side of the main black body of the marker.
+:   The size of the marker in metres.
+    This is the length of the side of the main black body of the marker.
 
 [`Point`](/docs/programming/sr/vision/#Point) {#Point}
 ---------
-A `Point` object describes a position in three different ways.  These are accessed through the following attributes:
+A `Point` object describes a position in three different ways.
+These are accessed through the following attributes:
 
 image
-:   The pixel coordinates of the point in the image, with the origin (0,0) in the top-left of the image.  This has two attributes: `x` and `y`.
+:   The pixel coordinates of the point in the image, with the origin (0,0) in the top-left of the image.
+    This has two attributes: `x` and `y`.
 
 world
 :   The Cartesian coordinates of the point in 3D space in metres, with three attributes: `x`, `y`, and `z`.
@@ -138,15 +158,15 @@ polar
 :   This has three attributes:
 
     length
-	:   The distance to the point.
+    :   The distance to the point.
 
     rot_x
-	:   Rotation about the x-axis in degrees.
+    :   Rotation about the x-axis in degrees.
 
     rot_y
-	:   Rotation about the y-axis in degrees.
+    :   Rotation about the y-axis in degrees.
 
-:   For example, the following code displays the polar coordinate of a point object `p`:
+:   For example, the following code displays the polar coordinate of a `Point` object `p`:
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     print "length", p.polar.length
     print "rot_x", p.polar.rot_x
