@@ -24,7 +24,7 @@
 	<!-- Use jQuery to add a class 'python' to all <code> blocks -->
 	<script type="text/javascript">
 	  add_python_attr = function(){
-	    $("pre code").addClass("python");
+	    $("pre code").not(".override-lang").addClass("python");
 	  }
 	  $(document).ready(add_python_attr);
 
