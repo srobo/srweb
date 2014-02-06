@@ -14,10 +14,10 @@ The `sr` library provides support for three Ruggeduino firmware scenarios:
  2. Extended SR firmware: Firmwares that add commands to the default SR firmware.
  3. Completely custom: Any firmware not derived from the SR firmware.
 
-By default, the `sr` library assumes that all connected Ruggeduinos are running the SR firmware.
+By default, the [`sr`](/docs/programming/sr/) library assumes that all connected Ruggeduinos are running the SR firmware.
 If you wish to use an extended SR firmware, or completely custom firmware,
- then you need to tell the Robot object what to do with your Ruggeduino(s).
-To do this, you will need to expand the initialisation of your Robot object as detailed [here](/docs/programming/sr/#CustomRobotInit).
+ then you need to tell the `Robot` object what to do with your Ruggeduino(s).
+To do this, you will need to expand the initialisation of your `Robot` object as detailed [here](/docs/programming/sr/#CustomRobotInit).
 Your code will then look something like this:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
