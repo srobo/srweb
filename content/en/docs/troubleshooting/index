@@ -13,3 +13,4 @@ If you don't find the information you need in this section you can use the
 
 1. [Hardware issues](/docs/troubleshooting/hardware) &mdash; Common problems with the SR hardware and possible solutions.
 2. [`sr` python library issues](/docs/troubleshooting/python) &mdash; Common problems with the `sr` python library and possible solutions.
+3. [Interactive Troubleshooter](/docs/troubleshooting/interactive_troubleshooter) &mdash; Consider using the Interactive Troubleshooter to narrow down your problem and find a solution.
