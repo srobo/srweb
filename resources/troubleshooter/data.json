@@ -204,7 +204,7 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "message": "There is an issue with your IO Board, you should post a message on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                    "message": "There is an issue with your Ruggeduino, you should post a message on the <a href=\"/forums\" target=\"_blank\">forums</a>."
                 },
                 {
                     "answer": "No",
@@ -300,7 +300,7 @@
                 },
                 {
                     "answer": "Some of the Motors spin in the wrong direction",
-                    "message": "Check the Motors are orientated correctly, and negate the values you pass to Motors if you notice it is spinning in the wrong direction.",
+                    "message": "Check the Motors are orientated correctly, and <abbr title=\"turn negative, ie: multiply by -1\">negate</abbr> the values you pass to Motors if you notice it is spinning in the wrong direction.",
                     "askiffixed": true,
                     "nextquestion": "motor-programming"
                 },
