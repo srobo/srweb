@@ -65,11 +65,13 @@
     }
 
     function appendQuestionById(parent, id) {
-        if (id != '') {
-            window.location.hash = "#" + id;
-        }
         var question = data.questions[id];
         appendQuestion(parent, question);
+
+        if (id != '') {
+            parent.id = id;
+            window.location.hash = "#" + id;
+        }
     }
 
     function appendQuestion(parent, question) {
