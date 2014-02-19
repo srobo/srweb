@@ -67,6 +67,10 @@
         appendQuestion(parent, question);
     }
 
+    function fixLinks(text) {
+        return text.replace(/ROOT_URL/g, ROOT_URL);
+    }
+
     function appendQuestion(parent, question) {
         var newQuestionCont = document.createElement("div");
 
@@ -74,7 +78,7 @@
         newQuestionDiv.className = "question";
 
         var questionParagraph = document.createElement("p");
-        questionParagraph.innerHTML = question.question;
+        questionParagraph.innerHTML = fixLinks(question.question);
         newQuestionDiv.appendChild(questionParagraph);
 
         var questionForm = document.createElement("form");
@@ -94,7 +98,7 @@
                 };
 
                 var answerSpan = document.createElement("span");
-                answerSpan.textContent = answer.answer;
+                answerSpan.textContent = fixLinks(answer.answer);
 
                 answerLabel.appendChild(answerRadioBtn);
                 answerLabel.appendChild(answerSpan);

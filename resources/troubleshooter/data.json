@@ -45,7 +45,7 @@
             ]
         },
         "power-board-function-checks": {
-            "question": "Choose the option that best describes your situation.<br/><img src=\"/images/content/kit/power_board_diagram.png\" />",
+            "question": "Choose the option that best describes your situation.<br/><img src=\"ROOT_URL/images/content/kit/power_board_diagram.png\" />",
             "answers": [
                 {
                     "answer": "My Power Board isn't doing anything",
@@ -66,14 +66,14 @@
                 },
                 {
                     "answer": "No",
-                    "message": "Check the &lsquo;Charging Batteries&rsquo; section of the <a href=\"/docs/kit/batteries/\" target=\"_blank\">battery</a> documentation and try again. Make sure to follow the instructions appropriate for the charger you have been supplied with.",
+                    "message": "Check the &lsquo;Charging Batteries&rsquo; section of the <a href=\"ROOT_URL/docs/kit/batteries/\" target=\"_blank\">battery</a> documentation and try again. Make sure to follow the instructions appropriate for the charger you have been supplied with.",
                     "askiffixed": true,
                     "nextquestion": "battery-damage-check"
                 }
             ]
         },
         "check-fuse": {
-            "question": "Check the blown fuse light on the Power Board next to the Main Fuse as described <a href=\"/docs/kit/power_board\" target=\"_blank\">in the the docs</a> &mdash; is the fuse blown?",
+            "question": "Check the blown fuse light on the Power Board next to the Main Fuse as described <a href=\"ROOT_URL/docs/kit/power_board\" target=\"_blank\">in the the docs</a> &mdash; is the fuse blown?",
             "answers": [
                 {
                     "answer": "Yes",
@@ -118,7 +118,7 @@
             ]
         },
         "battery-damage-check": {
-            "question": "Does the battery have any bulges in it? <img title=\"Three cell, 2200mAh, lithium-ion polymer battery\" alt=\"Three cell, 2200mAh, lithium-ion polymer battery\" src=\"/images/content/kit/battery.png\" />",
+            "question": "Does the battery have any bulges in it? <img title=\"Three cell, 2200mAh, lithium-ion polymer battery\" alt=\"Three cell, 2200mAh, lithium-ion polymer battery\" src=\"ROOT_URL/images/content/kit/battery.png\" />",
             "answers": [
                 {
                     "answer": "Yes",
@@ -139,7 +139,7 @@
                 },
                 {
                     "answer": "No",
-                    "message": "It is important that you keep your batteries charged so that they don't run down too low. Consult the <a href=\"/docs/kit/batteries/\" target=\"_blank\">documentation</a> and make sure to follow the instructions appropriate for the charger you have been supplied with.",
+                    "message": "It is important that you keep your batteries charged so that they don't run down too low. Consult the <a href=\"ROOT_URL/docs/kit/batteries/\" target=\"_blank\">documentation</a> and make sure to follow the instructions appropriate for the charger you have been supplied with.",
                     "askiffixed": true,
                     "nextquestion": "both-batteries"
                 }
@@ -159,7 +159,7 @@
             ]
         },
         "io-board-function-check": {
-            "question": "Choose the option that best describes your situation.<br/><img src=\"/images/content/kit/ruggeduino_diagram.png\" />",
+            "question": "Choose the option that best describes your situation.<br/><img src=\"ROOT_URL/images/content/kit/ruggeduino_diagram.png\" />",
             "answers": [
                 {
                     "answer": "My Ruggeduino isn't doing anything",
@@ -193,7 +193,7 @@
                 },
                 {
                     "answer": "No",
-                    "message": "Connect the Ruggeduino to the Power Board as described <a href=\"/docs/kit/ruggeduino\" target=\"_blank\">in the Docs</a>.",
+                    "message": "Connect the Ruggeduino to the Power Board as described <a href=\"ROOT_URL/docs/kit/ruggeduino\" target=\"_blank\">in the Docs</a>.",
                     "askiffixed": true,
                     "nextquestion": "io-board-dead"
                 }
@@ -232,7 +232,7 @@
             "answers": [
                 {
                     "answer": "My peripherals are fine",
-                    "message": "You may well have mixed up an IO pin index in your code, remember they are <a href=\"//en.wikipedia.org/wiki/Zero-based_numbering\">zero-indexed</a> &mdash; double check your pin indexing.<br />Make sure you are using the right pins for your type of output (digital or analouge) as per <a href=\"/docs/programming/sr/ruggeduinos/\" target=\"_blank\">the docs</a>.<br /><br />If you continue to have difficulties then consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                    "message": "You may well have mixed up an IO pin index in your code, remember they are <a href=\"//en.wikipedia.org/wiki/Zero-based_numbering\">zero-indexed</a> &mdash; double check your pin indexing.<br />Make sure you are using the right pins for your type of output (digital or analouge) as per <a href=\"ROOT_URL/docs/programming/sr/ruggeduinos/\" target=\"_blank\">the docs</a>.<br /><br />If you continue to have difficulties then consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
                 },
                 {
                     "answer": "I need help with my peripherals",
@@ -241,7 +241,7 @@
             ]
         },
         "motor-board-function-check": {
-            "question": "Choose the option that best describes your situation.<br /><img src=\"/images/content/kit/motor_and_camcon.png\" />",
+            "question": "Choose the option that best describes your situation.<br /><img src=\"ROOT_URL/images/content/kit/motor_and_camcon.png\" />",
             "answers": [
                 {
                     "answer": "Nothing is happening",
@@ -262,7 +262,7 @@
             ]
         },
         "motor-force": {
-            "question": "No two Motors are exactly the same, and the <a href=\"//en.wikipedia.org/wiki/Pulse-width_modulation\">Pulse-Width Modulated</a> nature of the power supply can lead to different behaviours from different motors, but there are some things we can check.<br />Is your battery charged? Less charge means lower voltage means less torque.<br /><img src=\"/images/content/kit/battery.png\" />",
+            "question": "No two Motors are exactly the same, and the <a href=\"//en.wikipedia.org/wiki/Pulse-width_modulation\">Pulse-Width Modulated</a> nature of the power supply can lead to different behaviours from different motors, but there are some things we can check.<br />Is your battery charged? Less charge means lower voltage means less torque.<br /><img src=\"ROOT_URL/images/content/kit/battery.png\" />",
             "answers": [
                 {
                     "answer": "The Battery is definitely charged",
@@ -270,7 +270,7 @@
                 },
                 {
                     "answer": "The Battery isn't charged",
-                    "message": "<a href=\"/docs/kit/batteries/\" target=\"_blank\">Charge your batteries</a> and try again. Make sure to follow the instructions appropriate for the charger you have been supplied with.",
+                    "message": "<a href=\"ROOT_URL/docs/kit/batteries/\" target=\"_blank\">Charge your batteries</a> and try again. Make sure to follow the instructions appropriate for the charger you have been supplied with.",
                     "askiffixed": true,
                     "nextquestion": "motor-count"
                 }
@@ -313,7 +313,7 @@
             ]
         },
         "motor-board-led": {
-            "question": "Is the Power light on your Motor Board on?<br /><img src=\"/images/content/kit/mcv4b_board_diagram.png\" />",
+            "question": "Is the Power light on your Motor Board on?<br /><img src=\"ROOT_URL/images/content/kit/mcv4b_board_diagram.png\" />",
             "answers": [
                 {
                     "answer": "Yes",
@@ -334,7 +334,7 @@
                 },
                 {
                     "answer": "No",
-                    "message": "Connect the Motor to the Power Board as described <a href=\"/docs/kit/motor_board\" target=\"_blank\">in the docs</a>.",
+                    "message": "Connect the Motor to the Power Board as described <a href=\"ROOT_URL/docs/kit/motor_board\" target=\"_blank\">in the docs</a>.",
                     "askiffixed": true,
                     "nextquestion": "motor-board-usb"
                 }
@@ -371,7 +371,7 @@
             ]
         },
         "motor-programming": {
-            "question": "Please test the Motor with the <a href=\"/docs/kit/manual_control_interface\" target=\"_blank\">manual control interface</a>. Does the Motor respond to the manual control interface?",
+            "question": "Please test the Motor with the <a href=\"ROOT_URL/docs/kit/manual_control_interface\" target=\"_blank\">manual control interface</a>. Does the Motor respond to the manual control interface?",
             "answers": [
                 {
                     "answer": "Yes",
@@ -397,7 +397,7 @@
             ]
         },
         "servo-board-function-check": {
-            "question": "Choose the option that best describes your situation.<br /><img src=\"/images/content/kit/servo_board.png\" alt=\"A photo of the Servo Board\" />",
+            "question": "Choose the option that best describes your situation.<br /><img src=\"ROOT_URL/images/content/kit/servo_board.png\" alt=\"A photo of the Servo Board\" />",
             "answers": [
                 {
                     "answer": "Nothing is happening",
@@ -405,14 +405,14 @@
                 },
                 {
                     "answer": "The Servos aren't doing what I expected",
-                    "message": "Check that the servo is orientated correctly as described in <a href=\"/docs/kit/servo_board\" target=\"_blank\">the docs</a>, and check whether it is a continuous Servo.",
+                    "message": "Check that the servo is orientated correctly as described in <a href=\"ROOT_URL/docs/kit/servo_board\" target=\"_blank\">the docs</a>, and check whether it is a continuous Servo.",
                     "askiffixed": true,
                     "nextquestion": "servo-programming"
                 }
             ]
         },
         "servo-board-led": {
-            "question": "Is the Power light on your Servo Board on?<br /><img src=\"/images/content/kit/servo_board_diagram.png\" />",
+            "question": "Is the Power light on your Servo Board on?<br /><img src=\"ROOT_URL/images/content/kit/servo_board_diagram.png\" />",
             "answers": [
                 {
                     "answer": "Yes",
@@ -433,14 +433,14 @@
                 },
                 {
                     "answer": "No",
-                    "message": "Connect the Servo to power as described <a href=\"/docs/kit/servo_board\" target=\"_blank\">in the Docs</a>.",
+                    "message": "Connect the Servo to power as described <a href=\"ROOT_URL/docs/kit/servo_board\" target=\"_blank\">in the Docs</a>.",
                     "askiffixed": true,
                     "nextquestion": "servo-board-sric"
                 }
             ]
         },
         "servo-board-sric": {
-            "question": "Is the Servo Board connected with SRIC cables?<br /><img src=\"/images/content/token_ring_diagram.png\" />",
+            "question": "Is the Servo Board connected with SRIC cables?<br /><img src=\"ROOT_URL/images/content/token_ring_diagram.png\" />",
             "answers": [
                 {
                     "answer": "Yes",
@@ -448,14 +448,14 @@
                 },
                 {
                     "answer": "No",
-                    "message": "Connect the Servo up to the <a href=\"/docs/kit/token_ring\">Token Ring</a> with SRIC cables, make sure they are the right way round.",
+                    "message": "Connect the Servo up to the <a href=\"ROOT_URL/docs/kit/token_ring\">Token Ring</a> with SRIC cables, make sure they are the right way round.",
                     "askiffixed": true,
                     "nextquestion": "servo-programming"
                 }
             ]
         },
         "servo-programming": {
-            "question": "Please test the Servo with the <a href=\"/docs/kit/manual_control_interface\" target=\"_blank\">manual control interface</a>. Does the Servo respond to the manual control interface?",
+            "question": "Please test the Servo with the <a href=\"ROOT_URL/docs/kit/manual_control_interface\" target=\"_blank\">manual control interface</a>. Does the Servo respond to the manual control interface?",
             "answers": [
                 {
                     "answer": "Yes",
