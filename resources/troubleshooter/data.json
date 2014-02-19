@@ -118,7 +118,7 @@
             ]
         },
         "battery-damage-check": {
-            "question": "Does the battery have any bulges in it? <img title=\"Three cell, 2200mAh, lithium-ion polymer battery\" alt=\"Three cell, 2200mAh, lithium-ion polymer battery\" src=\"ROOT_URL/images/content/kit/battery.png\" />",
+            "question": "Does the battery have any bulges in it? <img title=\"Three cell, 2200mAh, lithium-ion polymer battery\" alt=\"An image of a three cell, 2200mAh, lithium-ion polymer battery, similar to those in the kits\" src=\"ROOT_URL/images/content/kit/battery.png\" />",
             "answers": [
                 {
                     "answer": "Yes",
