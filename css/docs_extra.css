@@ -36,35 +36,35 @@ table.charger_lcd td {
 
 /* docs/troubleshooting/interactive_troubleshooter */
 #docs_troubleshooting_interactive_troubleshooter #resetbtnattop {
-    margin-top: 20px;
-    font-weight: bold;
+	margin-top: 20px;
+	font-weight: bold;
 }
 
 #docs_troubleshooting_interactive_troubleshooter p.message {
-    font-style: italic !important;
-    margin-left: 40px !important;
+	font-style: italic !important;
+	margin-left: 40px !important;
 }
 
 #docs_troubleshooting_interactive_troubleshooter img {
-    margin-top: 10px;
+	margin-top: 10px;
 }
 
 #docs_troubleshooting_interactive_troubleshooter .question {
-    padding: 10px;
-    margin-bottom: 2px;
+	padding: 10px;
+	margin-bottom: 2px;
 }
 
 #docs_troubleshooting_interactive_troubleshooter .question label {
-    padding: 4px 8px;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 0.9em;
+	padding: 4px 8px;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 0.9em;
 }
 
 #docs_troubleshooting_interactive_troubleshooter .question label > * {
-    vertical-align: middle !important;
+	vertical-align: middle !important;
 }
 
 #docs_troubleshooting_interactive_troubleshooter .question label > input[type=radio] {
-    margin-right: 10px;
+	margin-right: 10px;
 }
