@@ -3,16 +3,6 @@
     var globalRadioName = 0;
 
     function init() {
-        var resetBtnAtTop = document.getElementById("resetbtnattop");
-        resetBtnAtTop.onclick = function() {
-            window.location.hash = "";
-            reset();
-        };
-
-        reset();
-    }
-
-    function reset() {
         globalRadioName = 0;
 
         var resetBtnAtTop = document.getElementById("resetbtnattop");
@@ -62,7 +52,9 @@
     }
 
     function appendQuestionById(parent, id) {
-        window.location.hash = "#" + id;
+        if (id != '') {
+            window.location.hash = "#" + id;
+        }
         var question = data.questions[id];
         appendQuestion(parent, question);
     }
