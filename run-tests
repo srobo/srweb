@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec nosetests -d tests
