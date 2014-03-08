@@ -71,6 +71,10 @@
         "URL":"http://www.grammar.sch.gg/",
         "name":"Guernsey Grammar School"
     },
+    "HAM":{
+        "URL":"http://www.hamptonschool.org.uk/",
+        "name":"Hampton School"
+    },
     "HRS":{
         "URL":"http://www.hrsfc.ac.uk/",
         "name":"Hills Road Sixth Form College"
