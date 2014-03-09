@@ -43,7 +43,7 @@ function get_team_info($team_id = False) {
 		$teams = array();
 		$team_files = get_team_list(true);
 		foreach ($team_files as $team_id => $fn) {
-			$teams[] = _build_team_info($fn, $team_id);
+			$teams[$team_id] = _build_team_info($fn, $team_id);
 		}
 		return $teams;
 	} else {
