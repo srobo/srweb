@@ -92,7 +92,7 @@
             "answers": [
                 {
                     "answer": "Yes",
-                    "message": "Check your code and ensure the filename is 'robot.zip'.",
+                    "message": "Check your code and ensure the filename is &lsquo;robot.zip&rsquo;.",
                     "askiffixed": true,
                     "nextquestion": "USB-Stick-dead"
                 },
@@ -105,15 +105,27 @@
             ]
         },
         "USB-Stick-dead": {
-            "question": "Does the USB Stick work and is it formatted correctly? Consider trying a different USB Stick.",
+            "question": "Does the USB Stick work in a different computer and is it formatted correctly?",
             "answers": [
                 {
                     "answer": "Yes",
-                    "message": "There could be an issue with your Power Board, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                    "nextquestion": "USB-Stick-dead-working"
                 },
                 {
                     "answer": "No",
                     "message": "Try using a different USB Stick. If this does not resolve the issue, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
+                }
+            ]
+        },
+        "USB-Stick-dead-working": {
+            "question": "Try using a different USB stick in the Power Board. Does this fix the problem?",
+            "answers": [
+                {
+                    "answer": "Yes"
+                },
+                {
+                    "answer": "No",
+                    "message": "There could be an issue with your Power Board, consider posting on the <a href=\"/forums\" target=\"_blank\">forums</a>."
                 }
             ]
         },
