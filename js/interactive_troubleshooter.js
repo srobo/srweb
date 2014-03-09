@@ -102,14 +102,13 @@
         parent.appendChild(newQuestionCont);
     }
 
-    jQuery.getJSON(TroubleshooterDataURL, function(json, textStatus, xhr) {
+    jQuery.getJSON(TroubleshooterDataURL)
+    .done(function(json) {
         data = json;
-
-        if (data) {
-            init();
-        } else {
-            var noQuestions = document.getElementById("troubleshooter_no_questions");
-            noQuestions.style.display = "block";
-        }
+        init();
+    })
+    .fail(function(xhr, textStatus, error) {
+        var networkError = document.getElementById("troubleshooter_network_error");
+        networkError.style.display = "block";
     });
 }());
