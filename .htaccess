@@ -10,6 +10,7 @@ RewriteCond %{REQUEST_URI} 	!^(/userman(.*))$
 RewriteCond %{REQUEST_URI} 	!^(/password(.*))$
 RewriteCond %{REQUEST_URI} 	!^(/robogit(.*))$
 RewriteCond %{REQUEST_URI} 	!^(/tickets(.*))$
+RewriteCond %{REQUEST_URI} 	!^(/mediaconsent(.*))$
 RewriteCond %{REQUEST_URI} 	!^(/comp(.*))$
 RewriteCond %{REQUEST_URI}  !^(/forgotpassword(.*))$
 RewriteCond %{REQUEST_URI}  !^(/external-auth(.*))$

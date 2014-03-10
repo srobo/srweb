@@ -10,3 +10,6 @@
 [submodule "tickets"]
 	path = tickets
 	url = ../ticket-access.git
+[submodule "mediaconsent"]
+	path = mediaconsent
+	url = ../media-consent-access.git
