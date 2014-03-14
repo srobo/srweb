@@ -163,14 +163,14 @@ class CustomisedRuggeduino(Ruggeduino):
 
 ### Step 3: Tell the `Robot` to use your extended class
 
-Now that you've extended the `Ruggeduino` class to create your `CustomRuggeduino` class,
+Now that you've extended the `Ruggeduino` class to create your `CustomisedRuggeduino` class,
  it's time to tell the `Robot` object about it using the `ruggeduino_set_handler_by_fwver` function:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from sr import *
 
 # The class that you wrote in step 2
-class CustomRuggeduino(Ruggeduino):
+class CustomisedRuggeduino(Ruggeduino):
     def bake_cake(self):
         with self.lock:
             self.command("c")
