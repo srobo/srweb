@@ -24,6 +24,22 @@ ini_set('display_errors', 1);
 /* This should always be set to false except on the live site */
 default_define('LIVE_SITE',	false);
 
+/* Dates of this year's competition */
+default_define('COMPETITION_START',	"2014-04-26 00:00:00");
+default_define('COMPETITION_END',	"2014-04-27 23:00:00");
+
+/* Work out if we're in competition mode */
+function is_competition_mode() {
+    $now   = time();
+    $start = strtotime(COMPETITION_START);
+    $end   = strtotime(COMPETITION_END);
+    return $now >= $start && $now < $end;
+}
+
+/* Whether or not we're in competition mode
+ * Everything should use this constant rather than the above helper */
+default_define('COMPETITION_MODE',	is_competition_mode());
+
 /* Whether the signups page (currently /schools/how_to_enter) shows a signup form,
  * or a message that the SR year is underway & to check back later */
 default_define('ENABLE_SIGNUP', true);
