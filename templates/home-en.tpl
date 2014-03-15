@@ -10,11 +10,18 @@
 	<meta name="google-site-verification" content="GizX0DcCqEeGihd9CyYaqM1bVXUB-lhB9rhm53UdRC8" />
 	<link rel="stylesheet" type="text/css" href="{$root_uri}css/main.css" />
 	<link rel="stylesheet" type="text/css" href="{$root_uri}css/home.css" />
+{if $smarty.const.COMPETITION_MODE}
+	<link rel="stylesheet" type="text/css" href="{$root_uri}css/home_competition.css" />
+{/if}
 	<link rel="alternate" type="application/rss+xml" title="SR RSS" href="{$root_uri}feed.php" />
 	<link rel="shortcut icon" href="{$root_uri}images/template/favicon.ico" />
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+{if $smarty.const.COMPETITION_MODE}
+	<script type="text/javascript" src="{$root_uri}js/competition-utils.js"></script>
+	<script type="text/javascript" src="{$root_uri}js/home-competition.js"></script>
+{/if}
 
 	{literal}
 	<script type="text/javascript">
@@ -31,6 +38,76 @@
 {include file=tracking-image.tpl}
 <div id="pageWrapper">
 
+{if $smarty.const.COMPETITION_MODE}
+	<div id="header">
+		<a href="{$root_uri}"><img src="{$root_uri}images/template/website_logo.png" alt="Student Robotics Logo" /></a>
+		<div id="navwrapper">
+		<ul>
+			<li><a href="{$root_uri}about">About Us</a></li>
+			<li><a href="{$root_uri}ide">IDE</a></li>
+			<li><a href="{$root_uri}docs/">Docs</a></li>
+		</ul>
+		</div>
+	</div>
+
+	<div class="content">
+		<div id="competition">
+			<a style="position: absolute; right:0; margin-top: 20px; margin-right: 100px;"
+			   href="{$root_uri}events/sr2014/2014-04-26-competition">Tell me more...</a>
+			<h1 style="text-align: center;">SR2014 Live!</h1>
+			<!-- TODO: work out if ths is the right Justin.tv feed? -->
+			<p style="float: left;"><object
+			    class="video"
+			    type="application/x-shockwave-flash"
+			    data="http://www.justin.tv/widgets/live_embed_player.swf?channel=studentrobotics"
+			    id="live_embed_player_flash"
+			    height="300"
+			    width="400"
+			    >
+				<param name="allowFullScreen" value="true"/>
+				<param name="allowScriptAccess" value="always" />
+				<param name="allowNetworking" value="all" />
+				<param name="movie" value="http://www.justin.tv/widgets/live_embed_player.swf" />
+				<param name="flashvars" value="hostname=www.justin.tv&amp;channel=studentrobotics&amp;auto_play=true&amp;start_volume=26" />
+			</object></p>
+
+			<p style="float: left;">
+				<a width="500" height="300"
+				   class="twitter-timeline"
+				   data-dnt="true"
+				   data-chrome="noheader nofooter"
+				   data-widget-id="321728443496660993"
+				   href="https://twitter.com/StudentRobotics"
+				   >
+					Tweets from @StudentRobotics
+				</a>
+				<script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
+			</p>
+
+			<br style="clear: both;" />
+
+			<div style="width: 300px; float: left;">
+				<h2>Event Schedule</h2>
+				<div id="event_sched">
+					<!-- TODO: Not sure what's going to go in here. -->
+				</div>
+			</div>
+
+			<div style="width: 300px; float: left;">
+				<h2><a href="{$root_uri}schedule">Match Schedule</a></h2>
+				<div id="match_sched">
+					<!-- JS will put a table in here. -->
+				</div>
+			</div>
+
+			<div style="width: 300px; float: left;">
+				<h2><a href="{$root_uri}league">Leaderboard</a></h2>
+				<div id="leaderboard">
+					<!-- JS will put a table in here. -->
+				</div>
+			</div>
+		</div>
+{else}
 	{include file="header-en.tpl"}
 
 	<div class="content">
@@ -53,6 +130,7 @@
 			{latestRSS}
 
 		</div>
+{/if}
 
 		<div id="expMenuAndBoxWrapper">
 
@@ -67,15 +145,27 @@
 			<div id="boxWrapper">
 
 				<div class="box">
+{if $smarty.const.COMPETITION_MODE}
+					<h3><a href="{$root_uri}about">Who are we?</a></h3>
+					<p>
+						<!-- TODO: or something better -->
+						Student Robotics run an annual robotics <a href="/~peter/sr/srweb/schools/game">competition</a>
+						for sixth-form schools and colleges.
+						All of the <a href="{$root_uri}schools/kit">kit</a> the schools &amp; colleges use is designed, built, tested and distributed by us.
+						Student Robotics is run, in its entirety, by a <a href="{$root_uri}about/committee">team</a> of university students and recent graduates
+						&mdash; mainly from the Universities of <a href="http://www.soton.ac.uk">Southampton</a> and <a href="http://bristol.ac.uk">Bristol</a>.
+					</p>
+{else}
 					<h3><a href="{$root_uri}about/how_to_help">Want to Get Involved?</a></h3>
 					<p>
 						Student Robotics is always looking for more people to get involved, and not just schools.
 						Whether you're a University student or a company considering sponsoring the competition,
 						you are more than welcome to get involved.
 					</p>
-
+{/if}
 				</div>
 
+{if !$smarty.const.COMPETITION_MODE}
 				<div class="box">
 					<h3><a href="{$root_uri}key_dates">SR2014 Key Dates</a></h3>
 					<div id="date_tabs">
@@ -154,7 +244,7 @@
 					</div>
 
 				</div>
-
+{/if}
 				<div class="box clearboth">
 					<h3><a href="{$root_uir}ide">The IDE</a></h3>
 					<p>
