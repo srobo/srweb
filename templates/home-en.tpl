@@ -87,7 +87,7 @@
 			<br style="clear: both;" />
 
 			<div style="width: 300px; float: left;">
-				<h2>Event Schedule</h2>
+				<h2><a href="{$root_uri}events/sr2014/2014-04-26-competition#Schedule">Event Schedule</a></h2>
 				<div id="event_sched">
 					<!-- TODO: Not sure what's going to go in here. -->
 				</div>
