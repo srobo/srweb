@@ -94,14 +94,14 @@
 			</div>
 
 			<div style="width: 300px; float: left;">
-				<h2><a href="{$root_uri}schedule">Match Schedule</a></h2>
+				<h2><a href="{$root_uri}comp/schedule">Match Schedule</a></h2>
 				<div id="match_sched">
 					<!-- JS will put a table in here. -->
 				</div>
 			</div>
 
 			<div style="width: 300px; float: left;">
-				<h2><a href="{$root_uri}league">Leaderboard</a></h2>
+				<h2><a href="{$root_uri}comp/league">Leaderboard</a></h2>
 				<div id="leaderboard">
 					<!-- JS will put a table in here. -->
 				</div>
