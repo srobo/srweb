@@ -1,7 +1,8 @@
 <?php
 
 require_once('classes/simplepie/simplepie.inc');
-require_once('classes/team_info_college_lut.php');
+
+$team_info_college_lut = json_decode(file_get_contents(TEAMS_JSON), true);
 
 class LiveStatusItem extends stdClass
 {
