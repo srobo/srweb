@@ -1,10 +1,10 @@
 #!/bin/bash
-git log --format='%aN <%aE>' | 
-	awk '{arr[$0]++} END{for (i in arr){print arr[i], i;}}' | 
+
+git shortlog -sne | 
+# Ignore BRAIN LOG-FEEDS
 	grep -v BRIAN | 
-	sort -rn | 
 	grep -v "fail@studentrobotics.org" | 
-	cut -d\  -f2- > AUTHORS
+	cut -f 2 > AUTHORS
 
 if [ "$1" == "-e" ]
 then
