@@ -26,4 +26,3 @@ RewriteCond %{REQUEST_URI}	!(resources/2014/markers(.*))$
 
 
 RewriteRule ^(.+)$ 	index.php?page=$1	[L,QSA]
-Redirect /microgames https://www.studentrobotics.org/resources/2014/SRKickstartTasks.pdf
