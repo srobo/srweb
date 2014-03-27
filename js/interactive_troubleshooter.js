@@ -59,8 +59,17 @@
         appendQuestion(parent, question);
     }
 
+    function ensureNoTrailingSlash(text) {
+        var penultimate_index = text.length - 1;
+        if (text.substr(penultimate_index) == '/') {
+            text = text.substr(0, penultimate_index);
+        }
+        return text;
+    }
+
     function fixLinks(text) {
-        return text.replace(/ROOT_URL/g, ROOT_URL);
+        var root = ensureNoTrailingSlash(ROOT_URL);
+        return text.replace(/ROOT_URL/g, root);
     }
 
     function appendQuestion(parent, question) {
