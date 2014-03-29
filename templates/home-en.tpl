@@ -49,6 +49,11 @@
 <div id="pageWrapper">
 
 {if $smarty.const.COMPETITION_MODE}
+<!-- TODO:
+* Add a link to /comp/gamepoints somewhere
+* Add an outline of and link to the rules?
+-->
+
 	<div id="header">
 		<a href="{$root_uri}"><img src="{$root_uri}images/template/website_logo.png" alt="Student Robotics Logo" /></a>
 		<div id="navwrapper">
@@ -129,6 +134,8 @@
 			</div>
 
 			<div style="width: 300px; float: left;">
+				<!-- TODO: maybe move to left so that you read this first
+				  -- this tells you that the TLAs are teams -->
 				<h2><a href="{$root_uri}comp/league">Leaderboard</a></h2>
 				<div id="leaderboard">
 {literal}
