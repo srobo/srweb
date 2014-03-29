@@ -96,7 +96,7 @@
 
 			<br style="clear: both;" />
 
-			<div style="width: 620px; float: left;">
+			<div style="width: 600px; float: left;">
 				<h2><a href="{$root_uri}comp/schedule">Match Schedule</a></h2>
 				<div id="match_sched">
 {literal}
@@ -111,7 +111,7 @@
 	<tbody>
 		<tr data-ng-repeat="match in matches"
 			id="match-{{match.number}}">
-			<td>{{match.time}}</td>
+			<td title="Begins at {{match.time|date:'HH:mm:ss'}}.">{{match.time|date:'HH:mm'}}</td>
 			<td>{{match.number}}</td>
 			<td data-ng-repeat="team in match.teams track by $index"
 				data-ng-class="{match: team==chosenTeam}"
@@ -125,7 +125,7 @@
 				</div>
 			</div>
 
-			<div style="width: 280px; float: left;">
+			<div style="width: 300px; float: left;">
 				<h2><a href="{$root_uri}comp/league">Leaderboard</a></h2>
 				<div id="leaderboard">
 					<!-- JS will put a table in here. -->
