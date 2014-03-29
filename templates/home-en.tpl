@@ -100,7 +100,7 @@
 				<h2><a href="{$root_uri}comp/schedule">Match Schedule</a></h2>
 				<div id="match_sched">
 {literal}
-<table>
+<table class="schedule">
 	<thead>
 		<tr>
 			<th>Time</th>
