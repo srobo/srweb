@@ -128,7 +128,24 @@
 			<div style="width: 300px; float: left;">
 				<h2><a href="{$root_uri}comp/league">Leaderboard</a></h2>
 				<div id="leaderboard">
-					<!-- JS will put a table in here. -->
+{literal}
+<table>
+	<thead>
+		<tr>
+			<th>Position</th>
+			<th>Points</th>
+			<th>Team</th>
+		</tr>
+	</thead>
+	<tr data-ng-repeat="item in league_points|limitTo:10" id="{{item.tla}}">
+		<td>{{item.pos}}</td>
+		<td>{{item.points}}</td>
+		<td title="{{item.tla|teamName:teams}}">
+			{{item.tla}}
+		</td>
+	</tr>
+</table>
+{/literal}
 				</div>
 			</div>
 		</div>
