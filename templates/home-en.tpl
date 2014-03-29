@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="app">
 
 <head>
 	<title>Welcome to Student Robotics | Student Robotics</title>
@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="{$root_uri}css/main.css" />
 	<link rel="stylesheet" type="text/css" href="{$root_uri}css/home.css" />
 {if $smarty.const.COMPETITION_MODE}
+	<link rel="stylesheet" type="text/css" href="{$root_uri}css/comp.css" />
 	<link rel="stylesheet" type="text/css" href="{$root_uri}css/home_competition.css" />
 {/if}
 	<link rel="alternate" type="application/rss+xml" title="SR RSS" href="{$root_uri}feed.php" />
@@ -18,8 +19,16 @@
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 {if $smarty.const.COMPETITION_MODE}
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular-resource.min.js"></script>
+	<script type="text/javascript">
+		var SRWEB_ROOT = "{$root_uri}";
+		var API_ROOT = "/comp-api";
+	</script>
+
 	<script type="text/javascript" src="{$root_uri}js/competition-utils.js"></script>
-	<script type="text/javascript" src="{$root_uri}js/home-competition.js"></script>
+	<script type="text/javascript" src="{$root_uri}js/competition-filters.js"></script>
+	<script type="text/javascript" src="{$root_uri}js/controllers/CompMode.js"></script>
 {else}
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
@@ -35,7 +44,7 @@
 	{include file=tracking.tpl}
 </head>
 
-<body>
+<body data-ng-controller="CompMode">
 {include file=tracking-image.tpl}
 <div id="pageWrapper">
 
@@ -87,21 +96,36 @@
 
 			<br style="clear: both;" />
 
-			<div style="width: 300px; float: left;">
-				<h2><a href="{$root_uri}events/sr2014/2014-04-26-competition#Schedule">Event Schedule</a></h2>
-				<div id="event_sched">
-					<!-- TODO: Not sure what's going to go in here. -->
-				</div>
-			</div>
-
-			<div style="width: 300px; float: left;">
+			<div style="width: 620px; float: left;">
 				<h2><a href="{$root_uri}comp/schedule">Match Schedule</a></h2>
 				<div id="match_sched">
-					<!-- JS will put a table in here. -->
+{literal}
+<table>
+	<thead>
+		<tr>
+			<th>Time</th>
+			<th>Match</th>
+			<th data-ng-repeat="arena in arenas" colspan="4">Arena {{arena}}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr data-ng-repeat="match in matches"
+			id="match-{{match.number}}">
+			<td>{{match.time}}</td>
+			<td>{{match.number}}</td>
+			<td data-ng-repeat="team in match.teams track by $index"
+				data-ng-class="{match: team==chosenTeam}"
+				title="{{team|teamName:teams}}">
+				{{team}}
+			</td>
+		</tr>
+	</tbody>
+</table>
+{/literal}
 				</div>
 			</div>
 
-			<div style="width: 300px; float: left;">
+			<div style="width: 280px; float: left;">
 				<h2><a href="{$root_uri}comp/league">Leaderboard</a></h2>
 				<div id="leaderboard">
 					<!-- JS will put a table in here. -->
