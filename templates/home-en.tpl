@@ -16,12 +16,12 @@
 	<link rel="alternate" type="application/rss+xml" title="SR RSS" href="{$root_uri}feed.php" />
 	<link rel="shortcut icon" href="{$root_uri}images/template/favicon.ico" />
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 {if $smarty.const.COMPETITION_MODE}
 	<script type="text/javascript" src="{$root_uri}js/competition-utils.js"></script>
 	<script type="text/javascript" src="{$root_uri}js/home-competition.js"></script>
-{/if}
+{else}
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
 	{literal}
 	<script type="text/javascript">
@@ -30,6 +30,7 @@
 	  });
 	</script>
 	{/literal}
+{/if}
 
 	{include file=tracking.tpl}
 </head>
