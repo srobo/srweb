@@ -116,7 +116,10 @@
 			<td data-ng-repeat="team in match.teams track by $index"
 				data-ng-class="{match: team==chosenTeam}"
 				title="{{team|teamName:teams}}">
-				{{team}}
+{/literal}
+				<a href="{$root_uri}
+{literal}
+				teams/{{team}}">{{team}}</a>
 			</td>
 		</tr>
 	</tbody>
@@ -141,7 +144,10 @@
 		<td>{{item.pos}}</td>
 		<td>{{item.points}}</td>
 		<td title="{{item.tla|teamName:teams}}">
-			{{item.tla}}
+{/literal}
+			<a href="{$root_uri}
+{literal}
+			teams/{{item.tla}}">{{item.tla}}</a>
 		</td>
 	</tr>
 </table>
