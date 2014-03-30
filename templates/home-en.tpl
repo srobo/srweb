@@ -70,11 +70,11 @@
 			<a style="position: absolute; right:0; margin-top: 20px; margin-right: 100px;"
 			   href="{$root_uri}events/sr2014/2014-04-26-competition">Tell me more...</a>
 			<h1 style="text-align: center;">SR2014 Live!</h1>
-			<!-- TODO: work out if ths is the right Justin.tv feed? -->
+			<!-- TODO: update this feed to the right one -->
 			<p style="float: left;">
 				<iframe width="400"
 				        height="300"
-				        src="//www.youtube.com/embed/j3LsUEmKPxE?rel=0&modestbranding=1"
+				        src="https://www.youtube.com/embed/j3LsUEmKPxE?rel=0&modestbranding=1"
 				        frameborder="0">
 				</iframe>
 			</p>
