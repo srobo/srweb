@@ -121,11 +121,9 @@
 			<td data-ng-repeat="team in match.teams track by $index"
 				data-ng-class="{match: team==chosenTeam}"
 				title="{{team|teamName:teams}}">
-{/literal}
 				<!--- TODO: non-literal filtering, possibly based on the existence of the page -->
-				<a data-ng-if="team != '-'" href="{$root_uri}
-{literal}
-				teams/{{team}}">{{team}}</a>
+				<a data-ng-if="team != '-'"
+				   href="{/literal}{$root_uri}{literal}teams/{{team}}">{{team}}</a>
 				<span data-ng-if="team == '-'">{{team}}</span>
 			</td>
 		</tr>
@@ -153,10 +151,7 @@
 		<td>{{item.pos}}</td>
 		<td>{{item.points}}</td>
 		<td title="{{item.tla|teamName:teams}}">
-{/literal}
-			<a href="{$root_uri}
-{literal}
-			teams/{{item.tla}}">{{item.tla}}</a>
+		<a href="{/literal}{$root_uri}{literal}teams/{{item.tla}}">{{item.tla}}</a>
 		</td>
 	</tr>
 </table>
