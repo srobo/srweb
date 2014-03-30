@@ -122,9 +122,11 @@
 				data-ng-class="{match: team==chosenTeam}"
 				title="{{team|teamName:teams}}">
 {/literal}
-				<a href="{$root_uri}
+				<!--- TODO: non-literal filtering, possibly based on the existence of the page -->
+				<a data-ng-if="team != '-'" href="{$root_uri}
 {literal}
 				teams/{{team}}">{{team}}</a>
+				<span data-ng-if="team == '-'">{{team}}</span>
 			</td>
 		</tr>
 	</tbody>
