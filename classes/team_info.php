@@ -67,9 +67,9 @@ function _build_team_info($path, $team_id) {
 	$team_raw = json_decode($json_text);
 	$team = new stdClass();
 	_set_team_image($team_raw, $team, $team_id);
-	$team->team_name = empty($team_raw->name->live) ? "Team $team_id" : new LiveStatusItem(strip_tags($team_raw->name->live));
+	$team->team_name = empty($team_raw->name->live) ? "Team $team_id" : strip_tags($team_raw->name->live);
 	foreach (array('url', 'feed', 'description', 'facebook', 'youtube', 'twitter') as $item) {
-		$team->$item = empty($team_raw->$item->live) ? null : new LiveStatusItem(strip_tags($team_raw->$item->live));
+		$team->$item = empty($team_raw->$item->live) ? null : strip_tags($team_raw->$item->live);
 	}
 	$team->team_id = $team_id;
 
@@ -88,7 +88,7 @@ function _set_team_image($status, $team, $team_id) {
 		$team->image = null;
 		return;
 	}
-	$team->thumb = new LiveStatusItem(_get_team_thumb($team_id));
+	$team->thumb = _get_team_thumb($team_id);
 	$team->image = new LiveStatusItem(_get_team_image($team_id));
 	if (!file_exists(ROOT_DIR.'/'.$team->thumb)) {
 		$team->thumb = null;
