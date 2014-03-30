@@ -71,20 +71,13 @@
 			   href="{$root_uri}events/sr2014/2014-04-26-competition">Tell me more...</a>
 			<h1 style="text-align: center;">SR2014 Live!</h1>
 			<!-- TODO: work out if ths is the right Justin.tv feed? -->
-			<p style="float: left;"><object
-			    class="video"
-			    type="application/x-shockwave-flash"
-			    data="http://www.justin.tv/widgets/live_embed_player.swf?channel=studentrobotics"
-			    id="live_embed_player_flash"
-			    height="300"
-			    width="400"
-			    >
-				<param name="allowFullScreen" value="true"/>
-				<param name="allowScriptAccess" value="always" />
-				<param name="allowNetworking" value="all" />
-				<param name="movie" value="http://www.justin.tv/widgets/live_embed_player.swf" />
-				<param name="flashvars" value="hostname=www.justin.tv&amp;channel=studentrobotics&amp;auto_play=true&amp;start_volume=26" />
-			</object></p>
+			<p style="float: left;">
+				<iframe width="400"
+				        height="300"
+				        src="//www.youtube.com/embed/j3LsUEmKPxE?rel=0&modestbranding=1"
+				        frameborder="0">
+				</iframe>
+			</p>
 
 			<p style="float: left;">
 				<a width="500" height="300"
