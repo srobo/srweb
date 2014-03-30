@@ -12,20 +12,20 @@ div.docs h2 {
 }
 
 table.charger_lcd {
-    font-family: "Register";
-    font-size: 24pt;
-    line-height: 0.8em;
-    background-color: #007dc2;
-    color: white;
-    width: 298pt;
-    text-align: center;
-    border-style: solid;
-    border-width: 16pt 10pt;
-    border-color: #007dc2;
-    text-align: left;
+	font-family: "Register";
+	font-size: 24pt;
+	line-height: 0.8em;
+	background-color: #007dc2;
+	color: white;
+	width: 298pt;
+	text-align: center;
+	border-style: solid;
+	border-width: 16pt 10pt;
+	border-color: #007dc2;
+	text-align: left;
 }
 table.charger_lcd td {
-    border-color: #007dc2;
+	border-color: #007dc2;
 }
 
 @media print {
