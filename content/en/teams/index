@@ -6,7 +6,7 @@
 <?php
 // Relative to 'classes'
 require_once("team_info.php");
-$teams = get_team_info();
+$teams = array_values(get_team_info());
 ?>
 
 <h1>Meet the Teams</h1>
