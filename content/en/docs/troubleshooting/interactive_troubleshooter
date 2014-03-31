@@ -1,0 +1,13 @@
+//TITLE: Interactive Troubleshooter
+//DESCRIPTION: Helps you resolve issues with your robot, code or kit.
+//KEYWORDS:	troubleshooting, faq, problems, help, hardware, kit
+//CONTENT_TYPE: markdown
+
+# Interactive Troubleshooter
+
+<div id="troubleshooter"></div>
+<a id="resetbtnattop" style="display: none;" href="">Troubleshoot another issue</a>
+
+## Unable to retrieve questions &mdash; please try refreshing your browser in a few moments. {#troubleshooter_network_error}
+
+<script src="/js/interactive_troubleshooter.js"></script>

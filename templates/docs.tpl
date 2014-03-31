@@ -34,6 +34,12 @@
 
 	{/literal}
 
+	<!-- Troubleshooter URL goes here to get access to the root_uri variable -->
+	<script>
+		var ROOT_URL = "{$root_uri}";
+		var TroubleshooterDataURL = "{$root_uri}resources/troubleshooter/data.json";
+	</script>
+
 	{include file=tracking.tpl}
 </head>
 
