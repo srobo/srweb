@@ -66,7 +66,7 @@ They support the following resolutions:
 |  640 x 480			| yes	| yes
 |  752 x 416			|	| yes
 |  800 x 448			|	| yes
-| **800 x 600* (Default)	| yes	| yes
+| **800 x 600** (Default)	| yes	| yes
 |  864 x 480			|	| yes
 |  960 x 544			|	| yes
 |  960 x 720			| yes	| yes
