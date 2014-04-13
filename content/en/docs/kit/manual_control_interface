@@ -7,7 +7,7 @@ On-board Manual Controller
 
 There will probably be times when you just want to do something simple with the robot without writing a program. For example, you might want to try out your new grabber by moving a servo or two, or find out what sort of values you can expect from a sensor. In these situations, the On-board Manual Controller might be useful. It allows you to do things like this using the buttons and knobs on the Power Board.
 
-Currently, the controller program comes as a robot.zip. You can [download version 2.0 here](/resources/kit/sr-control/robot.zip). Put it on the robot in [the usual way](/docs/IDE/getting_code_on_the_robot), and then run it by pressing "Start".
+Currently, the controller program comes as a robot.zip. You can [download version 2.1 here](/resources/kit/sr-control/robot.zip). Put it on the robot in [the usual way](/docs/IDE/getting_code_on_the_robot), and then run it by pressing "Start".
 
 <div class=info>
 There is currently no support for controlling the Ruggeduino from this interface. We may release a new version with this feature later in the year.
