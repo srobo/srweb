@@ -67,8 +67,9 @@
 
 	<div class="content">
 		<div id="competition">
-			<a style="position: absolute; right:0; margin-top: 20px; margin-right: 100px;"
-			   href="{$root_uri}events/sr2014/2014-04-26-competition">Tell me more...</a>
+			<span class="more-link">
+				<a href="{$root_uri}events/sr2014/2014-04-26-competition">Tell me more...</a>
+			</span>
 			<h1 style="text-align: center;">SR2014 Live!</h1>
 			<!-- TODO: update this feed to the right one -->
 			<p style="float: left;">
@@ -94,7 +95,10 @@
 
 			<br style="clear: both;" />
 
-			<div style="width: 600px; float: left;">
+			<div style="width: 600px" class="info-box">
+				<span class="more-link">
+					<a href="{$root_uri}comp/schedule">more...</a>
+				</span>
 				<h2><a href="{$root_uri}comp/schedule">Match Schedule</a></h2>
 				<div id="match_sched">
 {literal}
@@ -126,9 +130,12 @@
 				</div>
 			</div>
 
-			<div style="width: 300px; float: left;">
+			<div style="width: 300px" class="info-box">
 				<!-- TODO: maybe move to left so that you read this first
 				  -- this tells you that the TLAs are teams -->
+				<span class="more-link">
+					<a href="{$root_uri}comp/league">more...</a>
+				</span>
 				<h2><a href="{$root_uri}comp/league">Leaderboard</a></h2>
 				<div id="leaderboard">
 {literal}
