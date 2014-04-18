@@ -14,6 +14,8 @@ RewriteCond %{REQUEST_URI} 	!^(/mediaconsent(.*))$
 RewriteCond %{REQUEST_URI}  !^(/forgotpassword(.*))$
 RewriteCond %{REQUEST_URI}  !^(/external-auth(.*))$
 RewriteCond %{REQUEST_URI}  !^(/docs/python(.*))$
+RewriteCond %{REQUEST_URI}  !^(/screens(.*))$
+RewriteCond %{REQUEST_URI}  !^(/shepherding(.*))$
 
 # These rules are useful outside of the live site so must work when
 # the actual URI might have other stuff in front of it, i.e.
