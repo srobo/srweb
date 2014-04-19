@@ -113,7 +113,7 @@
 	<tbody>
 		<tr data-ng-repeat="match in matches"
 			id="match-{{match.number}}">
-			<td title="Begins at {{match.time|date:'HH:mm:ss'}}.">{{match.time|date:'HH:mm'}}</td>
+			<td title="Begins at {{match.time|date:'HH:mm:ss on EEEE, d MMMM'}}.">{{match.time|date:'HH:mm'}}</td>
 			<td>{{match.number}}</td>
 			<td data-ng-repeat="team in match.teams track by $index"
 				title="{{team|teamName:teams}}">
