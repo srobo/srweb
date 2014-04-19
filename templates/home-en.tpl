@@ -116,7 +116,6 @@
 			<td title="Begins at {{match.time|date:'HH:mm:ss'}}.">{{match.time|date:'HH:mm'}}</td>
 			<td>{{match.number}}</td>
 			<td data-ng-repeat="team in match.teams track by $index"
-				data-ng-class="{match: team==chosenTeam}"
 				title="{{team|teamName:teams}}">
 				<!--- TODO: non-literal filtering, possibly based on the existence of the page -->
 				<a data-ng-if="team != '-'"
