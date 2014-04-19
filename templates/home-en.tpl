@@ -112,6 +112,7 @@
 	</thead>
 	<tbody>
 		<tr data-ng-repeat="match in matches"
+			data-ng-class="{current: match.number==current_match}"
 			id="match-{{match.number}}">
 			<td title="Begins at {{match.time|date:'HH:mm:ss on EEEE, d MMMM'}}.">{{match.time|date:'HH:mm'}}</td>
 			<td>{{match.number}}</td>
