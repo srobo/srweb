@@ -28,6 +28,7 @@
 
 	<script type="text/javascript" src="{$root_uri}js/competition-utils.js"></script>
 	<script type="text/javascript" src="{$root_uri}js/competition-filters.js"></script>
+	<script type="text/javascript" src="{$root_uri}js/competition-resources.js"></script>
 	<script type="text/javascript" src="{$root_uri}js/controllers/CompMode.js"></script>
 {else}
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
