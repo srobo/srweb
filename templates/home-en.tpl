@@ -125,18 +125,100 @@
 				</a>
 			</div>
 
-			<p style="float: left;">
-				<a width="500" height="300"
-				   class="twitter-timeline"
-				   data-dnt="true"
-				   data-chrome="noheader nofooter"
-				   data-widget-id="321728443496660993"
-				   href="https://twitter.com/StudentRobotics"
-				   >
-					Tweets from @StudentRobotics
-				</a>
-				<script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
-			</p>
+			<div id="match-info">
+{literal}
+<div class="scored match">
+	<h4>
+		Latest Scores
+		<span data-ng-if="previous_match">- Match #{{previous_match_number}}</span>
+	</h4>
+	<span data-ng-if="!previous_match">No scores yet recorded.</span>
+	<div class="game"
+	     data-ng-repeat-start="(arena, game) in previous_match">
+		<h4>Arena {{arena}}</h4>
+		<table class="scores"
+		       data-ng-if="game.scores">
+			<thead>
+				<tr>
+					<th data-ng-repeat="tla in game.teams"
+					    title="{{tla|teamName:teams}}">
+						{{tla}}
+					</th>
+				</tr>
+			</thead>
+			<tr data-ng-repeat="(type, scores) in game.scores">
+				<td data-ng-repeat="tla in game.teams">
+					{{scores[tla]}}
+				</td>
+			</tr>
+		</table>
+		<p data-ng-if="!game.scores">No scores yet recorded for this game.</p>
+	</div>
+	<div class="game headings" data-ng-repeat-end data-ng-if="!$last">
+		<h4>&nbsp;</h4>
+		<table class="scores"
+		       data-ng-if="game.scores">
+			<thead>
+				<tr>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
+			<tr data-ng-repeat="(type, scores) in game.scores">
+				<th>{{type|titleCase}}</th>
+			</tr>
+		</table>
+	</div>
+</div>
+<script type="text/ng-template" id="match-info">
+	<h4>{{data.description}}</h4>
+	<div class="game" data-ng-repeat-start="(arena, game) in data.match">
+		<table>
+			<thead>
+				<tr>
+					<th data-ng-repeat="tla in game.teams">
+						{{$index}}
+					</th>
+				</tr>
+			</thead>
+			<tr>
+				<td data-ng-repeat="tla in game.teams" title="{{tla|teamName:teams}}">
+					{{tla}}
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="game headings" data-ng-repeat-end data-ng-if="!$last">
+		<table>
+			<thead>
+				<tr>
+					<th>Corner</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Team</th>
+			</tr>
+		</table>
+	</div>
+</script>
+
+<div class="current match"
+     data-ng-if="current_match_number != null"
+     data-ng-init="data={description:'Current Match (#' + current_match_number + ')',match:current_match}"
+     data-ng-include="'match-info'">
+</div>
+<div class="match"
+     data-ng-if="next_match_number != null"
+     data-ng-init="data={description:'Next Match (#' + next_match_number + ')',match:next_match}"
+     data-ng-include="'match-info'">
+</div>
+<div class="match"
+     data-ng-if="upcoming_match_number != null"
+     data-ng-init="data={description:'Upcoming Match (#' + upcoming_match_number + ')',match:upcoming_match}"
+     data-ng-include="'match-info'">
+</div>
+
+{/literal}
+			</div>
 
 			<br style="clear: both;" />
 
@@ -157,7 +239,7 @@
 	</thead>
 	<tbody>
 		<tr data-ng-repeat="match in matches"
-			data-ng-class="{current: match.number==current_match}"
+			data-ng-class="{current: match.number==current_match_number}"
 			id="match-{{match.number}}">
 			<td title="Begins at {{match.time|date:'HH:mm:ss on EEEE, d MMMM'}}.">{{match.time|date:'HH:mm'}}</td>
 			<td>{{match.number}}</td>
@@ -175,7 +257,7 @@
 				</div>
 			</div>
 
-			<div style="width: 300px" class="info-box">
+			<div style="width: 300px; padding-left: 20px;" class="info-box">
 				<!-- TODO: maybe move to left so that you read this first
 				  -- this tells you that the TLAs are teams -->
 				<span class="more-link">
@@ -252,6 +334,21 @@
 						Student Robotics is run, in its entirety, by a <a href="{$root_uri}about/committee">team</a> of university students and recent graduates
 						&mdash; mainly from the Universities of <a href="http://www.soton.ac.uk">Southampton</a> and <a href="http://bristol.ac.uk">Bristol</a>.
 					</p>
+
+					<h3><a href="https://twitter.com/StudentRobotics">Tweets from @StudentRobotics</a></h3>
+					<p style="text-align:center;">
+						<a width="640" height="300"
+						   class="twitter-timeline"
+						   data-dnt="true"
+						   data-chrome="noheader nofooter"
+						   data-widget-id="321728443496660993"
+						   href="https://twitter.com/StudentRobotics"
+						   >
+							Tweets from @StudentRobotics
+						</a>
+						<script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
+					</p>
+
 {else}
 					<h3><a href="{$root_uri}about/how_to_help">Want to Get Involved?</a></h3>
 					<p>
