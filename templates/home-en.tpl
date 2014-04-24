@@ -30,6 +30,34 @@
 	<script type="text/javascript" src="{$root_uri}js/competition-filters.js"></script>
 	<script type="text/javascript" src="{$root_uri}js/competition-resources.js"></script>
 	<script type="text/javascript" src="{$root_uri}js/controllers/CompMode.js"></script>
+
+	{literal}
+	<script type="text/javascript">
+		var setStream = function() {
+			var videos = { A: "sr20141", B:"sr20142" };
+			var current = null;
+			var setContent = function(video) {
+				var template = $("#embed-template").html();
+				template = template.replace('@VIDEO@', video);
+				$("#stream").html(template);
+			};
+			var styleLinks = function(which) {
+				$(".stream-link").css("color", "");
+				$("#stream-" + which + "-link").css("color", "black");
+			};
+			return function(which) {
+				if (which == current) {
+					// don't want to re-load the stream if nothing's changed
+					return;
+				}
+				setContent(videos[which]);
+				styleLinks(which);
+				current = which;
+			};
+		}();
+		$(document).ready(function() { setStream('A'); });
+	</script>
+	{/literal}
 {else}
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
@@ -73,13 +101,29 @@
 			</span>
 			<h1 style="text-align: center;">SR2014 Live!</h1>
 			<!-- TODO: update this feed to the right one -->
-			<p style="float: left;">
-				<iframe width="400"
-				        height="300"
-				        src="https://www.youtube.com/embed/j3LsUEmKPxE?rel=0&modestbranding=1"
-				        frameborder="0">
-				</iframe>
-			</p>
+			<div id="streams" style="float: left;" data-ng-init="stream = stream||1">
+				<p id="chooser">
+					Live stream:
+					<a id="stream-A-link" class="stream-link" href="#stream-A" onclick="setStream('A');">Arena A</a> |
+					<a id="stream-B-link" class="stream-link" href="#stream-B" onclick="setStream('B');">Arena B</a>
+				</p>
+				<div id="stream"></div>
+<script type="text/template" id="embed-template">
+<embed style="height: 310px; width: 320px;"
+       src="http://www.batc.tv/player/BATCPlayer.swf"
+       quality="high"
+       allowfullscreen="true"
+       flashvars="vol=1.0&amp;video=@VIDEO@&amp;islive=true&amp;auto=true"
+       name="main"
+       allowscriptaccess="sameDomain"
+       pluginspage="http://www.macromedia.com/go/getflashplayer"
+       type="application/x-shockwave-flash"
+   />
+</script>
+				<a href="http://www.batc.org.uk/" target="_blank">
+					<img height="81" width="320" src="{$root_uri}images/template/batc-streaming.png" />
+				</a>
+			</div>
 
 			<p style="float: left;">
 				<a width="500" height="300"
