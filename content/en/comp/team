@@ -1,0 +1,110 @@
+//TITLE: Team information | 2014 Competition
+//ANGULAR_CONTROLLER: TeamInformation
+
+<style type="text/css">
+td.match:nth-child(4n+3) { background-color: {{corners[0].colour|hexLighter:0.5}}; }
+td.match:nth-child(4n+4) { background-color: {{corners[1].colour|hexLighter:0.5}}; }
+td.match:nth-child(4n+5) { background-color: {{corners[2].colour|hexLighter:0.5}}; }
+td.match:nth-child(4n+6) { background-color: {{corners[3].colour|hexLighter:0.5}}; }
+</style>
+
+# Team Information
+
+<div id="team-chooser">
+    <!--- NB: local width style as otherwise Select2 doesn't get it right -->
+    <select data-ng-model="$storage.chosenTeam"
+            data-placeholder="Choose a team"
+            data-ui-select2
+            style="width:350px;"
+            >
+        <option value=""></option>
+        <option data-ng-repeat="(tla, info) in teams"
+                value="{{tla}}">
+            {{tla|teamName:teams}}
+        </option>
+    </select>
+</div>
+
+This page shows the information for a specific team at the competition.
+
+<!-- container -->
+<div id="per-team-details" data-ng-if="$storage.chosenTeam" markdown="1">
+
+Find out what the team say about themselves on their [status page](/teams/{{$storage.chosenTeam}}).
+
+<div id="upcoming-matches" class="matches" markdown="1">
+
+#### Upcoming Matches
+
+<p data-ng-if="next_game" markdown="1">
+**Next match (#{{next_game.num}}) starts in:** {{time_to_next_game}}
+</p>
+
+<table class="upcoming">
+    <thead>
+        <tr>
+            <th>Time  </th>
+            <th>Match </th>
+            <th>Arena </th>
+            <th>Corner</th>
+            <th>Against</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr data-ng-repeat="game in scheduled_games|gamesAfterNow">
+            <td title="Begins at {{game.time|date:'HH:mm:ss on EEEE, d MMMM'}}.">
+                {{game.time|date:'HH:mm:ss'}}
+            </td>
+            <td>{{game.num}}</td>
+            <td>{{game.arena}}</td>
+            <td class="corner"
+                data-ng-init="corner = (game.teams|indexToCorner:$storage.chosenTeam)"
+                style="background-color: {{corners[corner].colour|hexLighter:0.5}};">
+                {{corner}}
+            </td>
+            <td>
+                <span data-ng-repeat="team in game.teams|otherTeams:$storage.chosenTeam"
+                      title="{{team|teamName:teams}}">
+                    {{team}}<span data-ng-if="!$last">,</span>
+                </span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
+
+<div id="past-matches" class="matches" markdown="1">
+
+#### Points Earned
+
+**League postion:** {{league_position}} ([full ranking](/comp/league))
+
+<table class="past">
+    <thead>
+        <tr>
+            <th>Match</th>
+            <th>Game</th>
+            <th>League</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Totals</th>
+            <th>{{points.game_points[$storage.chosenTeam]}}</th>
+            <th>{{points.league_points[$storage.chosenTeam]}}</th>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr data-ng-repeat="game in detailed_games|gamesBeforeNow">
+            <td>{{game.number}}</td>
+            <td>{{game.scores.game[$storage.chosenTeam]}}</td>
+            <td>{{game.scores.league[$storage.chosenTeam]}}</td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
+
+<!-- container -->
+</div>

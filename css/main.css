@@ -96,6 +96,9 @@ th {
 	border-style: none none solid none;
 	border-width: 2px;
 }
+tfoot th {
+	border-style: solid none none none;
+}
 
 td {
 	border-right: 1px solid silver;

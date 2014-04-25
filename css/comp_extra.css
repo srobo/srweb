@@ -1,0 +1,140 @@
+
+/* Schedule page */
+#comp_schedule #schedule-filter {
+	float:right;
+}
+#full_schedule #schedule-filter input[type=checkbox] {
+	margin-bottom:2px;
+	vertical-align:bottom;
+}
+#full_schedule div.match-session {
+	clear:both;
+}
+#full_schedule th[rowspan] {
+	vertical-align:middle;
+}
+#full_schedule colgroup.arena {
+	width:150px;
+}
+
+/* Team page */
+#comp_team #team-chooser {
+	float:right;
+}
+#comp_team #per-team-details {
+	text-align:center;
+}
+#comp_team div.matches {
+	display:inline-block;
+	margin:0 50px;
+	vertical-align:top;
+}
+#comp_team div.matches p {
+	margin-left:0;
+	text-align:center;
+}
+#comp_team div.matches table th {
+	padding:0 5px;
+}
+#comp_team #upcoming-matches td:last-child {
+	text-align:left;
+}
+
+/* Points page */
+#comp_points #match-chooser {
+	float:right;
+	margin-left:50px;
+}
+#comp_points #match-chooser input {
+	width:250px;
+}
+#comp_points div.points {
+	text-align:center;
+}
+#comp_points div.game {
+	display:inline-block;
+	padding:0 10px;
+}
+#comp_points div.game th {
+	padding:0 5px;
+}
+#comp_points div.game tbody th {
+	border-bottom-width:1px;
+	text-align:right;
+}
+#comp_points div.game tbody tr:last-child th {
+	border-bottom-width:0px;
+}
+
+/* Knockouts page */
+#knockouts div.round {
+	padding-bottom:15px;
+	padding-top:15px;
+	text-align:center;
+}
+#knockouts div.round:nth-child(odd) {
+	/* TODO: make darker */
+	background-color: #E8E8E8;
+}
+#knockouts div.round:nth-last-child(3) div.match {
+	/* Quarters */
+	font-size:1.2em;
+	line-height:1em;
+}
+#knockouts div.round:nth-last-child(3) div.match li {
+	width:80px;
+}
+#knockouts div.round:nth-last-child(2) div.match {
+	/* Semis */
+	font-size:1.5em;
+	line-height:1em;
+}
+#knockouts div.round:nth-last-child(2) div.match li {
+	width:90px;
+}
+#knockouts div.round:nth-last-child(1) div.match {
+	/* Finals */
+	font-size:2em;
+	line-height:1em;
+}
+#knockouts div.round:nth-last-child(1) div.match li {
+	width:120px;
+}
+
+#knockouts div.match,
+/* Special case -- 4 items on the Quarters line since they're all in the same arena
+ * Needed to overrrle the border:none in the 3n+1 below, not because it's actually
+ * any different
+ */
+#knockouts div.round:nth-last-child(3) div.match:nth-child(4) {
+	border-left:1px solid lightGrey;
+	display:inline-block;
+	padding:5px 0;
+}
+#knockouts div.match:nth-child(3n+1) {
+	border:none;
+}
+#knockouts div.match span {
+	display:block;
+}
+
+#knockouts div.game {
+	display:inline-block;
+	padding:0 10px;
+}
+#knockouts div.game ul {
+	list-style-type:none;
+	margin:0 10px;
+}
+#knockouts div.game li {
+	float:left;
+	text-align: center;
+	width:50px;
+}
+#knockouts div.game li:nth-child(2) {
+	float:right;
+}
+#knockouts div.game li:nth-child(3) {
+	clear:both;
+	float:right;
+}

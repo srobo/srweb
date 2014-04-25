@@ -7,6 +7,7 @@ class Content {
 		'DESCRIPTION',
 		'KEYWORDS',
 		'CONTENT_TYPE',
+		'ANGULAR_CONTROLLER',
 		'REDIRECT',
 		'PUB_DATE'
 	);
