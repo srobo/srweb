@@ -181,8 +181,9 @@
 				</tr>
 			</thead>
 			<tr>
-				<td data-ng-repeat="tla in game.teams" title="{{tla|teamName:teams}}">
+				<td data-ng-repeat="tla in game.teams track by $index" title="{{tla|teamName:teams}}">
 					{{tla}}
+					<span data-ng-if="!tla">-</span>
 				</td>
 			</tr>
 		</table>
