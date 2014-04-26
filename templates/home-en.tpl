@@ -80,7 +80,10 @@
 			<h1 style="text-align: center;">SR2014 Live!</h1>
 			<div id="match-info">
 {literal}
-<div class="scored match">
+<div class="scored match" style="position:relative;margin-top:10px;">
+	<span style="position:absolute;margin-left:50px;left:0">
+		<a href="{/literal}{$root_uri}{literal}comp/points">more scores...</a>
+	</span>
 	<h4>
 		Latest Scores
 		<span data-ng-if="previous_match">- Match #{{previous_match_number}}</span>
