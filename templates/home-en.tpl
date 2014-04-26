@@ -30,34 +30,6 @@
 	<script type="text/javascript" src="{$root_uri}js/competition-filters.js"></script>
 	<script type="text/javascript" src="{$root_uri}js/competition-resources.js"></script>
 	<script type="text/javascript" src="{$root_uri}js/controllers/CompMode.js"></script>
-
-	{literal}
-	<script type="text/javascript">
-		var setStream = function() {
-			var videos = { A: "sr20141", B:"sr20142" };
-			var current = null;
-			var setContent = function(video) {
-				var template = $("#embed-template").html();
-				template = template.replace('@VIDEO@', video);
-				$("#stream").html(template);
-			};
-			var styleLinks = function(which) {
-				$(".stream-link").css("color", "");
-				$("#stream-" + which + "-link").css("color", "black");
-			};
-			return function(which) {
-				if (which == current) {
-					// don't want to re-load the stream if nothing's changed
-					return;
-				}
-				setContent(videos[which]);
-				styleLinks(which);
-				current = which;
-			};
-		}();
-		$(document).ready(function() { setStream('A'); });
-	</script>
-	{/literal}
 {else}
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
@@ -96,35 +68,16 @@
 
 	<div class="content">
 		<div id="competition">
-			<span class="more-link">
+			<span class="top-links" id="live-stream-link">
+				<a href="http://batc-uk.org/live-stream.html">
+					View live stream<br />
+					<img src="{$root_uri}images/template/batc-streaming.png" alt="Live stream provided by BATC UK" />
+				</a>
+			</span>
+			<span class="top-links" id="more-link">
 				<a href="{$root_uri}events/sr2014/2014-04-26-competition">Tell me more...</a>
 			</span>
 			<h1 style="text-align: center;">SR2014 Live!</h1>
-			<!-- TODO: update this feed to the right one -->
-			<div id="streams" style="float: left;" data-ng-init="stream = stream||1">
-				<p id="chooser">
-					Live stream:
-					<a id="stream-A-link" class="stream-link" href="#stream-A" onclick="setStream('A');">Arena A</a> |
-					<a id="stream-B-link" class="stream-link" href="#stream-B" onclick="setStream('B');">Arena B</a>
-				</p>
-				<div id="stream"></div>
-<script type="text/template" id="embed-template">
-<embed style="height: 310px; width: 320px;"
-       src="http://www.batc.tv/player/BATCPlayer.swf"
-       quality="high"
-       allowfullscreen="true"
-       flashvars="vol=1.0&amp;video=@VIDEO@&amp;islive=true&amp;auto=true"
-       name="main"
-       allowscriptaccess="sameDomain"
-       pluginspage="http://www.macromedia.com/go/getflashplayer"
-       type="application/x-shockwave-flash"
-   />
-</script>
-				<a href="http://www.batc.org.uk/" target="_blank">
-					<img height="81" width="320" src="{$root_uri}images/template/batc-streaming.png" />
-				</a>
-			</div>
-
 			<div id="match-info">
 {literal}
 <div class="scored match">
@@ -221,7 +174,36 @@
 {/literal}
 			</div>
 
-			<br style="clear: both;" />
+			<div id="leaderboard-container" class="info-box">
+				<!-- TODO: maybe move to left so that you read this first
+				  -- this tells you that the TLAs are teams -->
+				<span class="more-link">
+					<a href="{$root_uri}comp/league">more...</a>
+				</span>
+				<h2><a href="{$root_uri}comp/league">Leaderboard</a></h2>
+				<div id="leaderboard">
+{literal}
+<table>
+	<thead>
+		<tr>
+			<th>Position</th>
+			<th>Points</th>
+			<th>Team</th>
+		</tr>
+	</thead>
+	<tr data-ng-repeat="item in league_points|limitTo:10" id="{{item.tla}}">
+		<td>{{item.pos}}</td>
+		<td>{{item.points}}</td>
+		<td title="{{item.tla|teamName:teams}}">
+		<a href="{/literal}{$root_uri}{literal}teams/{{item.tla}}">{{item.tla}}</a>
+		</td>
+	</tr>
+</table>
+{/literal}
+				</div>
+			</div>
+
+			<br style="clear: left;" />
 
 			<div style="width: 600px" class="info-box">
 				<span class="more-link">
@@ -253,35 +235,6 @@
 			</td>
 		</tr>
 	</tbody>
-</table>
-{/literal}
-				</div>
-			</div>
-
-			<div style="width: 300px; padding-left: 20px;" class="info-box">
-				<!-- TODO: maybe move to left so that you read this first
-				  -- this tells you that the TLAs are teams -->
-				<span class="more-link">
-					<a href="{$root_uri}comp/league">more...</a>
-				</span>
-				<h2><a href="{$root_uri}comp/league">Leaderboard</a></h2>
-				<div id="leaderboard">
-{literal}
-<table>
-	<thead>
-		<tr>
-			<th>Position</th>
-			<th>Points</th>
-			<th>Team</th>
-		</tr>
-	</thead>
-	<tr data-ng-repeat="item in league_points|limitTo:10" id="{{item.tla}}">
-		<td>{{item.pos}}</td>
-		<td>{{item.points}}</td>
-		<td title="{{item.tla|teamName:teams}}">
-		<a href="{/literal}{$root_uri}{literal}teams/{{item.tla}}">{{item.tla}}</a>
-		</td>
-	</tr>
 </table>
 {/literal}
 				</div>
