@@ -323,76 +323,36 @@
 						<ul>
 							<li><a href="#date_soton">Southampton</a></li>
 							<li><a href="#date_bristol">Bristol</a></li>
-							<li><a href="#date_munich">Munich</a></li>
-							<li><a href="#date_norfolk">Norfolk</a></li>
-							<li><a href="#date_oxford">Oxford</a></li>
-							<li><a href="#date_surrey">Guildford</a></li>
+							<li><a href="#date_london">London</a></li>
 						</ul>
 						<div id="date_soton">
-							<a href="{$root_uri}events/tech_days">Tech Days</a>:
-                            <ul>
-                                <li><a href="{$root_uri}events/sr2014/2013-11-30-soton_tech_day_1">30<sup>th</sup> November</a></li>
-                                <li><a href="{$root_uri}events/sr2014/2014-02-15-soton_tech_day_2">15<sup>th</sup> February</a></li>
-                                <li><a href="{$root_uri}events/sr2014/2014-03-15-soton_tech_day_3">15<sup>th</sup> March</a></li>
-                            </ul>
-
                             <a href="{$root_uri}events/kickstart">Kickstart:</a>
                             <ul>
-                                <li><a href="{$root_uri}events/sr2014/2013-10-12-soton_kickstart">12<sup>th</sup> October</a></li>
+                                <li>18<sup>th</sup> October 2014</li>
                             </ul>
 						</div>
 						<div id="date_bristol">
-							<a href="{$root_uri}events/tech_days">Tech Days:</a>
-                            <ul>
-
-                                <li><a href="{$root_uri}events/sr2014/2013-11-30-bristol_tech_day_1">30<sup>th</sup> November</a></li>
-                                <li><a href="{$root_uri}events/sr2014/2014-02-08-bristol_tech_day_2">8<sup>th</sup> February</a></li>
-                                <li><a href="{$root_uri}events/sr2014/2014-03-08-bristol_tech_day_3">8<sup>th</sup> March</a></li>
-                            </ul>
-
                             <a href="{$root_uri}events/kickstart">Kickstart:</a>
                             <ul>
-                                <li><a href="{$root_uri}events/sr2014/2013-10-12-bristol_kickstart">12<sup>th</sup> October</a></li>
+                                <li>18<sup>th</sup> October 2014</li>
                             </ul>
 						</div>
-						<div id="date_oxford">
-							<a href="{$root_uri}events/tech_days">Tech Days:</a>
-                            <ul>
-                                <li><i>To be announced</i></li>
-                            </ul>
-						</div>
-						<div id="date_surrey">
-							<a href="{$root_uri}events/tech_days">Tech Days:</a>
-                            <ul>
-                                <li><a href="{$root_uri}events/sr2014/2013-12-07-surrey_tech_day_1">7<sup>th</sup> December</a></li>
-                                <li><a href="{$root_uri}events/sr2014/2014-03-01-surrey_tech_day_2">1<sup>st</sup> March</a></li>
-                            </ul>
-						</div>
-						<div id="date_norfolk">
-							<a href="{$root_uri}events/tech_days">Tech Days:</a>
-                            <ul>
-                                <li><i>To be announced</i></li>
-                            </ul>
+			<div id="date_london">
                             <a href="{$root_uri}events/kickstart">Kickstart:</a>
                             <ul>
-                                <li><a href="{$root_uri}events/sr2014/2013-10-12-norfolk_kickstart">12<sup>th</sup> October</a></li>
-                            </ul>
-
-
-						</div>
-						<div id="date_munich">
-							<a href="{$root_uri}events/tech_days">Tech Days:</a>
-                            <ul>
-                                <li><i>To be announced</i></li>
+                                <li>18<sup>th</sup> October 2014</li>
                             </ul>
 						</div>
 					</div>
-					<div>
-						<a href="{$root_uri}events/competition">Competition:</a>
-						<ul>
-							<li><a href="{$root_uri}events/sr2014/2014-04-26-competition">26<sup>th</sup> and 27<sup>th</sup> April 2014</a></li>
-						</ul>
-					</div>
+
+
+                                       <div>
+                                               <a href="{$root_uri}events/competition">Competition:</a>
+                                               <ul>
+                                                       <li>April 2015</li>
+                                               </ul>
+                                        </div>
+
 
 				</div>
 {/if}
