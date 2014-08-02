@@ -126,7 +126,7 @@
 	</div>
 </div>
 <script type="text/ng-template" id="match-info">
-	<h4>{{data.description}} (#{{data.match.number}})</h4>
+	<h4>{{data.description}} (#{{data.match.num}})</h4>
 	<div class="game" data-ng-repeat-start="(arena, game) in data.match.games">
 		<table>
 			<thead>
@@ -225,10 +225,10 @@
 	</thead>
 	<tbody>
 		<tr data-ng-repeat="match in matches"
-			data-ng-class="{current: match.number==current_match_number}"
-			id="match-{{match.number}}">
+			data-ng-class="{current: match.num==current_match_number}"
+			id="match-{{match.num}}">
 			<td title="Begins at {{match.time|date:'HH:mm:ss on EEEE, d MMMM'}}.">{{match.time|date:'HH:mm'}}</td>
-			<td>{{match.number}}</td>
+			<td>{{match.num}}</td>
 			<td data-ng-repeat="team in match.teams track by $index"
 				title="{{team|teamName:teams}}">
 				<!--- TODO: non-literal filtering, possibly based on the existence of the page -->
