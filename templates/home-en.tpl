@@ -50,7 +50,6 @@
 
 {if $smarty.const.COMPETITION_MODE}
 <!-- TODO:
-* Add a link to /comp/gamepoints somewhere
 * Add an outline of and link to the rules?
 -->
 
