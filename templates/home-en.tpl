@@ -318,7 +318,7 @@
 
 {if !$smarty.const.COMPETITION_MODE}
 				<div class="box">
-					<h3><a href="{$root_uri}key_dates">SR2014 Key Dates</a></h3>
+					<h3><a href="{$root_uri}key_dates">SR2015 Key Dates</a></h3>
 					<div id="date_tabs">
 						<ul>
 							<li><a href="#date_soton">Southampton</a></li>
