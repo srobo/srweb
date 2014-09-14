@@ -328,19 +328,25 @@
 						<div id="date_soton">
                             <a href="{$root_uri}events/kickstart">Kickstart:</a>
                             <ul>
-                                <li>25<sup>th</sup> October 2014</li>
+                                <li><a href="{$root_uri}events/sr2015/2014-10-25-soton_kickstart">
+                                    25<sup>th</sup> October 2014
+                                </a></li>
                             </ul>
 						</div>
 						<div id="date_bristol">
                             <a href="{$root_uri}events/kickstart">Kickstart:</a>
                             <ul>
-                                <li>25<sup>th</sup> October 2014</li>
+                                <li><a href="{$root_uri}events/sr2015/2014-10-25-bristol_kickstart">
+                                    25<sup>th</sup> October 2014
+                                </a></li>
                             </ul>
 						</div>
 			<div id="date_london">
                             <a href="{$root_uri}events/kickstart">Kickstart:</a>
                             <ul>
-                                <li>25<sup>th</sup> October 2014</li>
+                                <li><a href="{$root_uri}events/sr2015/2014-10-25-london_kickstart">
+                                    25<sup>th</sup> October 2014
+                                </a></li>
                             </ul>
 						</div>
 					</div>
