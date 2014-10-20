@@ -176,3 +176,7 @@ div.box ul.ui-tabs-nav li.ui-tabs-selected a {
 }
 
 div.box div.ui-tabs-hide { display: none; }
+
+#date_tabs li.ui-state-active {
+	font-weight: bold;
+}
