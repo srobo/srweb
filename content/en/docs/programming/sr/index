@@ -46,11 +46,6 @@ R.motors[1].m0.power = -20  # WILL work, if motor 1 exists
 R.motors.m0.power = 42      # WON'T WORK
 
 # the above is similar to the situation for 'ruggeduinos' and 'servos'
-
-
-R.power.led[0] = 1       # WILL work
-R.power.led = 0          # WON'T WORK
-R.power[0].led[0] = 1    # WON'T WORK
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A number of examples in the documentation will assume you've instantiated the required `Robot` class and have called it `R`.
@@ -116,6 +111,6 @@ R.init()
 R.wait_start()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-During the setup phase, the Robot hardware is inaccessible. For example,`R.motors` is unavailable since enumerations occurs in the `init` function. In this phase you can configure how the finds and Robot finds and configures hardware.
+During the setup phase, the Robot hardware is inaccessible. For example,`R.motors` is unavailable since enumerations occurs in the `init` function. In this phase you can configure how the Robot finds and configures hardware.
 
 After the `init` call, all hardware is accessible. If you have any hardware which must be initialised before the start button is pressed, the initialisation phase is the time to do so.
