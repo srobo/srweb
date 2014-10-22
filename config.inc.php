@@ -91,7 +91,7 @@ $MENU_PAGES = array(
 
 	'About the Competition'	=> 'schools/',
 	'How to Enter'  	=> 'schools/how_to_enter',
-	'KickStart'     	=> 'schools/kickstart',
+	'Kickstart'     	=> 'schools/kickstart',
 	'Kit'			=> 'schools/kit/',
 	'Support'       	=> 'schools/support',
 	'Team Leaders'  	=> 'schools/team-leaders/',
