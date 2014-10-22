@@ -383,7 +383,7 @@
             ]
         },
         "motor-programming": {
-            "question": "Please test the Motor with the <a href=\"ROOT_URL/docs/kit/manual_control_interface\" target=\"_blank\">manual control interface</a>. Does the Motor respond to the manual control interface?",
+            "question": "Please test the Motor with the tablet. Does the Motor respond to the tablet controller?",
             "answers": [
                 {
                     "answer": "Yes",
@@ -467,7 +467,7 @@
             ]
         },
         "servo-programming": {
-            "question": "Please test the Servo with the <a href=\"ROOT_URL/docs/kit/manual_control_interface\" target=\"_blank\">manual control interface</a>. Does the Servo respond to the manual control interface?",
+            "question": "Please test the Servo with the tablet. Does the Servo respond to the tablet controller?",
             "answers": [
                 {
                     "answer": "Yes",
