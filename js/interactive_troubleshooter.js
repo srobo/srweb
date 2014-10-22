@@ -19,13 +19,26 @@
         appendQuestionById(troubleshooter, id);
     }
 
+    function ensureNoTrailingSlash(text) {
+        var penultimate_index = text.length - 1;
+        if (text.substr(penultimate_index) == '/') {
+            text = text.substr(0, penultimate_index);
+        }
+        return text;
+    }
+
+    function fixLinks(text) {
+        var root = ensureNoTrailingSlash(ROOT_URL);
+        return text.replace(/ROOT_URL/g, root);
+    }
+
     function answerClicked(radioBtn, parent, answer) {
         parent.innerHTML = "";
 
         if ("message" in answer) {
             var newMessage = document.createElement('p');
             newMessage.className = "message";
-            newMessage.innerHTML = answer.message;
+            newMessage.innerHTML = fixLinks(answer.message);
             parent.appendChild(newMessage);
         }
 
@@ -57,19 +70,6 @@
         }
         var question = data.questions[id];
         appendQuestion(parent, question);
-    }
-
-    function ensureNoTrailingSlash(text) {
-        var penultimate_index = text.length - 1;
-        if (text.substr(penultimate_index) == '/') {
-            text = text.substr(0, penultimate_index);
-        }
-        return text;
-    }
-
-    function fixLinks(text) {
-        var root = ensureNoTrailingSlash(ROOT_URL);
-        return text.replace(/ROOT_URL/g, root);
     }
 
     function appendQuestion(parent, question) {
