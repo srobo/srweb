@@ -6,29 +6,40 @@
 Servo Board
 ===========
 
-The Servo Board can be used to control up to 8 RC servos.
-Many devices are available that can be controlled as servos such as RC motor speed controllers and these can also be used with the board.
+The Servo Board can be used to control up to 12 RC servos.
+Many devices are available that can be controlled as servos, such as RC motor speed controllers, and these can also be used with the board.
 
-Board Diagram
--------------
-
+<!--
 Indicators
 ----------
 
-|   LED           | Meaning                | Inital power-up state
+|   LED           | Meaning                | Initial power-up state
 |-----------------|------------------------|----------------------
+| Power           | The board is powered   | On
+-->
 
 Case Dimensions
 ---------------
+
+The case measures 68x68x21mm. Don't forget that the cables will stick out.
 
 Specification
 -------------
 
 |  Parameter                               |   Value   |
 |------------------------------------------|-----------|
+| Number of servo channels                 | 12        |
+| Nominal input voltage                    | 11.1V ± 15% |
+| Output voltage                           | 5.5V      |
+| Maximum total output current [^1]        | 10A       |
+
+[^1]: If the auxiliary input is connected, outputs 8-11 have an independent maximum current.
 
 Designs
 -------
 
 You can access the schematics and source code of the firmware on the servo board in the following places.
 You do not need this information to use the board but it may be of interest to some people.
+
+* [Firmware source](https://www.studentrobotics.org/cgit/boards/servo-v4-fw.git/)
+* [Hardware designs](https://www.studentrobotics.org/cgit/boards/servo-v4-hw.git/)
