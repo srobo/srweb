@@ -15,7 +15,6 @@ Your kit will come with several pieces of battery related equipment:
 1. Two 11.1V 2200mAh LiPo Batteries.
 2. One battery charger.
 3. One battery charging bag.
-4. One battery power cable.
 
 You must **not** use any batteries, chargers, bags or cables not explicitly authorized by Student Robotics. If in doubt, please contact info@studentrobotics.org.
 
@@ -42,9 +41,8 @@ Operating Batteries
 -------------------
 
 To use your batteries, you must connect them to the Student Robotics power
-board. To do this, connect a battery to the battery power cable, and then
-connect the battery power cable to the power board. Do not tamper with the
-battery power cable, or power any other electronics with the battery.
+board. Do not tamper with the cable, or power any other electronics with the
+battery.
 
 During operation, the battery is protected by a fuse inserted into the power
 board (blue, rated for 15A of current). If any equipment is short circuited,
