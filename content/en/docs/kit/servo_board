@@ -6,57 +6,29 @@
 Servo Board
 ===========
 
-<img src="/images/content/kit/servo_board.png" alt="A photo of an un-cased servo board" title="An un-cased servo board" class="right" />
 The Servo Board can be used to control up to 8 RC servos.
 Many devices are available that can be controlled as servos such as RC motor speed controllers and these can also be used with the board.
 
-The servo board needs to be powered from the motor rail on the [power board](/docs/kit/power_board) in order to power the servos.
-Without this, the "5V Power LED" won't light, and the servos won't do anything,
-but the kit will not report any problems with the board.
-
 Board Diagram
 -------------
-
-![servo board diagram](/images/content/kit/servo_board_diagram.png "The Servo Board")
 
 Indicators
 ----------
 
 |   LED           | Meaning                | Inital power-up state
 |-----------------|------------------------|----------------------
-| Power           | The board is powered   | On
-| SRIC Activity   | The board is transferring data | Off
-| Token           | The token-ring is functioning | On
-| 5V Power        | The servos are powered | Off
 
 Case Dimensions
 ---------------
-
-![servo board case](/images/content/kit/servo_board_case.png "The Servo Board Case")
-
-All dimensions are in mm. Don't forget that the CAT5 cables stick out slightly.
 
 Specification
 -------------
 
 |  Parameter                               |   Value   |
 |------------------------------------------|-----------|
-| Absolute Maximum Input Voltage           | 16V       |
-| Output Voltage                           | 5V        |
-| Maximum Output Current[^1]               | 5A        |
-| Number of servo channels                 | 8         |
-| Minimum on-time                          | 0.6ms     |
-| Maximum on-time                          | 2.4ms     |
-| Worst-case refresh rate                  | 50Hz      |
-
-[^1]: Shared between all 8 outputs
 
 Designs
 -------
 
 You can access the schematics and source code of the firmware on the servo board in the following places.
 You do not need this information to use the board but it may be of interest to some people.
-
- * [Full Schematics](/resources/kit/servo-schematic.pdf)
- * [Firmware Source](https://www.studentrobotics.org/cgit/boards/servo-fw.git/)
- * [Hardware Designs](https://www.studentrobotics.org/cgit/boards/servo-hw.git/)
