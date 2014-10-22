@@ -9,25 +9,27 @@ Mechanical Kit
 As well as the main electronic kit that we supply we also supply a 'mech kit' which consists of various mechanical/structural parts which can be used to build your robot.
 You will almost certainly need to get extra parts to make a usable robot chassis but we provide you with some stuff to get started.
 
-| Item                    | Qty   | Part Number
-|-------------------------|-------|------------
-| Threaded Bar M6         | 2x 1m | [Farnell 1419417][F-1419417]
-| Bolt Pan Head M3 12mm   | 100   | [Farnell 1420391][F-1420391]
-| Bolt Pan Head M4 20mm   | 100   | [Farnell 1419996][F-1419996]
-| Flat Washer M3          | 100   | [Farnell 1623987][F-1623987]
-| Flat Washer M4          | 100   | [Farnell 1623991][F-1623991]
-| Flat Washer M6          | 100   | [Farnell 1377500][F-1377500]
-| Hex Nut M3              | 100   | [Farnell 1419447][F-1419447]
-| Hex Nut M4              | 100   | [Farnell 1419449][F-1419449]
-| Hex Nut M6              | 50    | [Farnell 1419451][F-1419451]
-| Hex Nut M3 (Nyloc)      | 20    | [Farnell 1420431][F-1420431]
-| Hex Nut M4 (Nyloc)      | 20    | [Farnell 1420432][F-1420432]
-| Hex Nut M6 (Nyloc)      | 20    | [Farnell 1420435][F-1420435]
-| Cable Tie 2.5x100mm     | 100   | [CableTiesOnline TR1][CTO-TR1]
-| Cable Tie 3.6x140mm     | 100   | [CableTiesOnline TR2][CTO-TR2]
-| Cable Tie 4.8x200mm     | 100   | [CableTiesOnline TR5][CTO-TR5]
-| 12 Compartment Box      | 1     | [Farnell 3861867][F-3861867]
+| Item                           | Qty   | Part Number
+|--------------------------------|-------|------------
+| Threaded Bar M6                | 2x 1m | [Farnell 1419417][F-1419417]
+| Bolt Pan Head M3 12mm          | 50    | [Farnell 1420391][F-1420391]
+| Bolt Pan Head M4 20mm          | 50    | [Farnell 1419996][F-1419996]
+| Flat Washer M3                 | 50    | [Farnell 1623987][F-1623987]
+| Flat Washer M4                 | 50    | [Farnell 1623991][F-1623991]
+| Flat Washer M6                 | 50    | [Farnell 1377500][F-1377500]
+| Hex Nut M3                     | 25    | [Farnell 1419447][F-1419447]
+| Hex Nut M4                     | 25    | [Farnell 1419449][F-1419449]
+| Hex Nut M6                     | 25    | [Farnell 1419451][F-1419451]
+| Hex Nut M3 (Nyloc)             | 20    | [Farnell 1420431][F-1420431]
+| Hex Nut M4 (Nyloc)             | 20    | [Farnell 1420432][F-1420432]
+| Hex Nut M6 (Nyloc)             | 20    | [Farnell 1420435][F-1420435]
+| Cable Tie 2.5x100mm            | 100   | [CableTiesOnline TR1][CTO-TR1]
+| Cable Tie 3.6x140mm            | 100   | [CableTiesOnline TR2][CTO-TR2]
+| Cable Tie 4.8x200mm            | 100   | [CableTiesOnline TR5][CTO-TR5]
+| Compartment Box [^1]           | 1     | [Farnell 3861867][F-3861867]
 | Aluminium L section 3/4"x1.6mm | 4x 1m | [AluminiumWarehouse][AW]
+
+[^1]: Not all teams will have received this.
 
 [F-1419417]: http://xgoat.com/p/farnell/1419417
 [F-1420391]: http://xgoat.com/p/farnell/1420391
