@@ -10,6 +10,28 @@ The Power Board distributes power to the SR kit from the battery. It provides
 six individual general-purpose power outputs along with a separate power connector
 for the Brain Board.
 
+Connectors
+----------
+
+There are six power output connectors on the board, labelled L0–L3, H0, and H1.
+These are enabled when your robot code is started, and supply around 11.1V
+(±15%). They should be used to connect to the motor and servo board power
+inputs. The "H" connectors will supply more current than the "L" connectors.
+
+The 5V connectors can be used to connect low-current devices that take 5V
+inputs, such as the Brain Board.
+
+There is also a Micro USB B connector which should be used to connect the Brain
+Board for control of the power board.
+
+Finally, there are connectors for external Start and On\|Off switches. You may
+connect any push-to-make latching switch for the On\|Off button, or a
+push-to-make button for the start button.
+
+<div class="info">If you intend to use only the internal On|Off switch, you
+must connect a CamCon to the On|Off connector with a wire connecting one pin to
+the other pin on the same connector.</div>
+
 Indicators
 ----------
 
