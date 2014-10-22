@@ -6,85 +6,37 @@
 Power Board
 ===========
 
-<img src="/images/content/kit/power_board.png" alt="A photo of an un-cased power board without LCD" title="An un-cased power board without LCD" class="right" />
-The Power Board is the central piece of the electronics kit.
-It runs the code that you write in the SR IDE and controls all of the other boards in the kit.
-Your kit includes a single Power Board which is connected into the [Token Ring](/docs/kit/token_ring), it also has a USB hub connected to it which allows both the webcam and the USB memory stick to be plugged in.
-
-<div class="warning" markdown=1>
-The LiPo [batteries](/docs/kit/batteries) do *not* support charging through the power board.
-They must be charged using the charger provided.
-The power board is supplied with tape over the charger fuse slot and this should not be removed.
-</div>
+The Power Board distributes power to the SR kit from the battery. It provides
+six individual general-purpose power outputs along with a separate power connector
+for the Brain Board.
 
 Board Diagram
 -------------
-
-![power board diagram](/images/content/kit/power_board_diagram.png "The Power Board")
-
-Note that there are now two revisions of the power board in the wild.
-The 'SR13.F' revision does not have the charger connector and fuse.
 
 Indicators
 ----------
 
 |   LED           | Meaning                        | Inital power-up state
 |-----------------|--------------------------------|----------------------
-| 3.3V            | The board is powered           | On
-| 5V              | The BeagleBoard is powered     | On
-| Charging        | The battery is flat            | Off
-| Motor Rail      | The Motor Rail is powered      | On
-| Token           | The token-ring is functioning  | On
-| Blown Fuse      | The main fuse has blown or is missing | Off
-| User            | Controllable from user code    | Off
 
 Controls
 --------
 
 | Control        | Use
 |----------------|----------------------------
-| Button 0       | Various, wait for it to ask!
-| Button 1       | Jump to the bottom of the display
-| Button 2       | Page down the display
-| Left Knob      | Horizontal scroll the display
-| Right Knob     | Vertical scroll the display
 
 
 Case Dimensions
 ---------------
-
-![power board case](/images/content/kit/power_board_case.png "The Power Board Case")
-
-All dimensions are in mm. Don't forget that the CAT5 cables stick out slightly and the USB cable more so.
-
-Note that the case for the SR13.F board revision is 115mm wide, not 113mm wide.
 
 [Specification](#Specification) {#Specification}
 -------------
 
 |  Parameter                           |   Value   |
 |--------------------------------------|-----------|
-| Absolute Maximum Input Voltage       | 16V       |
-| Motor Rail Output Voltage (Nominal)  | 11.1V ± 15% |
-| Maximum Motor Rail Switching Current | 25A       |
-| Maximum USB Hub Output Current       | 1A        |
-| Main Battery Fuse Current            | 15A       |
-| Display Resolution                   | 480x272   |
-| Display Refresh Rate                 | 69Hz      |
-| Processor                            | 720MHz ARM Cortex A8 |
-| RAM                                  | 256MB     |
 
 Designs
 -------
 
 You can access the schematics and source code of the firmware for the power board in the following places.
 You do not need this information to use the board but it may be of interest to some people.
-
- * [Full Schematics](/resources/kit/power-schematic.pdf)
- * [Firmware Source](https://www.studentrobotics.org/cgit/boards/power-fw.git/)
- * [Hardware Designs](https://www.studentrobotics.org/cgit/boards/power-hw.git/)
- * [BeagleBoard](http://beagleboard.org/) - We use the revision C4 board
- * [BeagleBoard OS](https://www.studentrobotics.org/cgit/sr-oe.git/) - Ångström with some custom SR configuration
- * [Vision Software](https://www.studentrobotics.org/cgit/libkoki.git/)
- * [Python Environment](https://www.studentrobotics.org/cgit/pyenv.git/)
- * [GUI](https://www.studentrobotics.org/cgit/kit-gui.git/)
