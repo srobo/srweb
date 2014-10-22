@@ -10,33 +10,44 @@ The Power Board distributes power to the SR kit from the battery. It provides
 six individual general-purpose power outputs along with a separate power connector
 for the Brain Board.
 
-Board Diagram
--------------
-
 Indicators
 ----------
 
-|   LED           | Meaning                        | Inital power-up state
-|-----------------|--------------------------------|----------------------
+|   LED           | Meaning                         | Inital power-up state
+|-----------------|---------------------------------|----------------------
+| PWR\|FLAT       | Green when powered, orange when the battery is low | Green
+| 5V              | Green when 5V is being supplied | Green
+
 
 Controls
 --------
 
 | Control        | Use
 |----------------|----------------------------
+| ON\|OFF        | Turns the power board on, when used in conjunction with an external switch
+| START          | Starts your program (can be used instead of the tablet interface)
 
 
 Case Dimensions
 ---------------
+
+The case measures 83x99x24mm. Don't forget that the cables will stick out.
 
 [Specification](#Specification) {#Specification}
 -------------
 
 |  Parameter                           |   Value   |
 |--------------------------------------|-----------|
+| Main battery fuse current            | 40A       |
+| Motor rail output voltage (nominal)  | 11.1V ± 15% |
+| Maximum output current per 5V channel| 1A        |
+
 
 Designs
 -------
 
 You can access the schematics and source code of the firmware for the power board in the following places.
 You do not need this information to use the board but it may be of interest to some people.
+
+* [Firmware source](https://www.studentrobotics.org/cgit/boards/power-v4-fw.git/)
+* [Hardware designs](https://www.studentrobotics.org/cgit/boards/power-v4-hw.git/)
