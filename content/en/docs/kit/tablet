@@ -1,0 +1,21 @@
+//TITLE:        Tablet
+//DESCRIPTION:  Explains how to use the Student Robotics tablet as part of the kit issued to teams.
+//KEYWORDS:     tablet
+//CONTENT_TYPE: markdown
+
+Tablet
+======
+
+The tablet provided with your kit allows you to interface with and debug your
+robot.
+
+Connecting to the robot
+-----------------------
+
+First you should make sure the tablet is connected to your robot's WiFi. This
+should happen automatically, but if there is a problem you can manually connect
+to the robot using the information provided.
+
+Open the "Student Robotics" app when you are connected to the robot's WiFi and
+that will open the browser to `http://robot.sr/` and display the tablet
+interface for your robot.
