@@ -16,12 +16,6 @@ Under the [tutorials](/docs/tutorials/) section,
  where everything is arranged alphabetically in the aforementioned sub-sections.
 
 
-<div class="info" markdown="1">
- It would be advisable to start with the [walkthrough](/docs/tutorials/walkthrough);
- it will guide you through everything you need to know to get on your way to writing some brilliant code for your robot.
-</div>
-
-
 Within this documentation, you will come across a number of black boxes like this:
 
 ~~~
