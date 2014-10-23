@@ -253,9 +253,7 @@
                 },
                 {
                     "answer": "The Motors are all spinning at different speeds",
-                    "message": "Double check your code for discrepancies, however, it is worth noting that no two Motors will give you exactly the same output, and you will need to account for this in your code.<br />Ensuring your batteries are charged will result in <strong>predictable</strong> operation, and allow you to cope with the issue.",
-                    "askiffixed": true,
-                    "nextquestion": "motor-programming"
+                    "message": "Double check your code for discrepancies, however, it is worth noting that no two Motors will give you exactly the same output, and you will need to account for this in your code.<br />Ensuring your batteries are charged will result in <strong>predictable</strong> operation, and allow you to cope with the issue.<br /><br />Congratulations, you have solved task B2, the code word is <strong>many</strong>."
                 }
             ]
         },
