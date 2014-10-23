@@ -17,16 +17,16 @@ _-30_ would be backwards (depending upon which way you wired up the motor) &mdas
 To gain access to all of this functionality, all you need to do is write:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-from sr import *
+from sr.robot import *
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ...at the top of your code (before you use any of its functionality, basically).
 This imports the Student Robotics module that we've written to interface with our hardware.
 
-Then, within the `sr` module, there is a `Robot` class that should be instantiated, as follows:
+Then, within the `sr.robot` module, there is a `Robot` class that should be instantiated, as follows:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-from sr import *
+from sr.robot import *
 R = Robot()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -49,7 +49,7 @@ R.motors.m0.power = 42      # WON'T WORK
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A number of examples in the documentation will assume you've instantiated the required `Robot` class and have called it `R`.
-From here in, if you see a `R.something`, the requirement of the `sr` import line and the instantiation of `Robot` as `R` is implicit.
+From here in, if you see a `R.something`, the requirement of the `sr.robot` import line and the instantiation of `Robot` as `R` is implicit.
 
 [Other Robot Attributes](/docs/programming/sr/#OtherRobotAttributes) {#OtherRobotAttributes}
 ----------------------
@@ -70,7 +70,7 @@ usbkey
 
 :   An example of how the `usbkey` attribute might be used:
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    from sr import *
+    from sr.robot import *
     import os
 
     R = Robot()

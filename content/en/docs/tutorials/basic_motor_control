@@ -107,7 +107,7 @@ Doing this is actually very easy; the only thing you need to realise is that a p
 Here's the code:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-from sr import *
+from sr.robot import *
 import time
 
 R = Robot()
@@ -128,7 +128,7 @@ while True:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You're familiar with the first few lines; in fact, the only lines you may not be familiar with are the `R.motors[0]...` lines.
-For a comprehensive reference to the `motor` object, see the `sr` module's [`motor`](/docs/programming/sr/motors/) page.
+For a comprehensive reference to the `motor` object, see the `sr.robot` module's [`motor`](/docs/programming/sr/motors/) page.
 But, to summarise:
 
 <div class="info">
@@ -161,7 +161,7 @@ Our aim is to do the forwards and backwards bit (as above), but, before we loop 
 Here's the code:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-from sr import *
+from sr.robot import *
 import time
 
 R = Robot()

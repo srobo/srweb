@@ -65,7 +65,7 @@ You'll now be presented with a code editor to write the code in, like this:
 In the editor, write (or paste!) the following:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-from sr import *
+from sr.robot import *
 import time
 
 R = Robot()

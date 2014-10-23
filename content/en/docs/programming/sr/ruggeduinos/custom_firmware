@@ -8,20 +8,20 @@ Custom firmware
 
 The Ruggeduino that came as part of your kit was shipped with a firmware that provides the functionality outlined in the [Ruggeduino](/docs/programming/sr/ruggeduinos) page.
 You may wish to extend the functionality of this firmware, or completely replace it.
-The `sr` library provides support for three Ruggeduino firmware scenarios:
+The `sr.robot` library provides support for three Ruggeduino firmware scenarios:
 
  1. Default SR firmware
  2. Extended SR firmware: Firmwares that add commands to the default SR firmware.
  3. Completely custom: Any firmware not derived from the SR firmware.
 
-By default, the [`sr`](/docs/programming/sr/) library assumes that all connected Ruggeduinos are running the SR firmware.
+By default, the [`sr.robot`](/docs/programming/sr/) library assumes that all connected Ruggeduinos are running the SR firmware.
 If you wish to use an extended SR firmware, or completely custom firmware,
  then you need to tell the `Robot` object what to do with your Ruggeduino(s).
 To do this, you will need to expand the initialisation of your `Robot` object as detailed [here](/docs/programming/sr/#CustomRobotInit).
 Your code will then look something like this:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-from sr import *
+from sr.robot import *
 
 R = Robot.setup()
 
@@ -105,7 +105,7 @@ You'll need to extend the `Ruggeduino` class, giving it at least one extra metho
 Start by adding this to your code:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-from sr import *
+from sr.robot import *
 
 class CustomisedRuggeduino(Ruggeduino):
     pass
@@ -116,7 +116,7 @@ At the moment, it behaves in exactly the same way as the `Ruggeduino` class.
 You now need to add your custom method to it:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-from sr import *
+from sr.robot import *
 
 class CustomisedRuggeduino(Ruggeduino):
 
@@ -167,7 +167,7 @@ Now that you've extended the `Ruggeduino` class to create your `CustomisedRugged
  it's time to tell the `Robot` object about it using the `ruggeduino_set_handler_by_fwver` function:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-from sr import *
+from sr.robot import *
 
 # The class that you wrote in step 2
 class CustomisedRuggeduino(Ruggeduino):
@@ -236,7 +236,7 @@ After calling `Robot.setup()`, you should call the `ruggeduino_ignore_id`
 You'll need the ID later, so it's best to save it into a variable:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-from sr import *
+from sr.robot import *
 
 RUGGEDUINO_ID = "752303138333517171B1" # Replace this with the actual ID
 
@@ -271,7 +271,7 @@ R.wait_start()
 You may wish to use pyserial to communicate with the Ruggeduino, in which case you could open it like so:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 import serial
-from sr import *
+from sr.robot import *
 
 RUGGEDUINO_ID = "752303138333517171B1"
 

@@ -6,7 +6,7 @@
 Vision
 ======
 
-The `sr` library contains support for detecting libkoki markers with the provided webcam.
+The `sr.robot` library contains support for detecting libkoki markers with the provided webcam.
 Markers are attached to various items in the Student Robotics arena.
 Each marker encodes a number in a machine-readable way, which means that robots can identify these objects.
 For information on which markers codes are which, see the [markers page](/docs/programming/sr/vision/markers).
@@ -16,9 +16,9 @@ Using knowledge of the physical size of the different markers and the characteri
 Therefore, if the robot can see a marker that is at a fixed location in the arena,
  a robot can calculate its exact position in the arena.
 
-The `sr` library provides all of this power through a single function, `R.see`:
+The `sr.robot` library provides all of this power through a single function, `R.see`:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-from sr import *
+from sr.robot import *
 R = Robot()
 markers = R.see()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -28,7 +28,7 @@ A detailed description of the attributes of Marker objects is provided [later in
 
 Here's an example that will repeatedly print out the distance to each token marker that the robot can see:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-from sr import *
+from sr.robot import *
 R = Robot()
 
 while True:
