@@ -23,10 +23,7 @@ The table below lists the *libkoki* markers that your robot will know about and 
 |-------------|-------|---------------|
 | Arena       | 00-27 | 250mm x 250mm |
 | Robots      | 28-31 | 100mm x 100mm |
-| Slots       | 32-39 | 160mm x 160mm |
-| Token Top   | 40-43 | 160mm x 160mm |
-| Token Bottom| 44-47 | 160mm x 160mm |
-| Token Sides | 48-51 | 160mm x 160mm |
+| Flags       | 32-61 | 250mm x 250mm |
 
 
 You can download all of these markers, as PDFs, in a single [ZIP file](/resources/2014/markers/sr-dev-markers-2014.zip).

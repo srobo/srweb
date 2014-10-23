@@ -1,6 +1,6 @@
 //TITLE:	Vision
 //DESCRIPTION:	Explains how to use the vision parts of the Student Robotics' robot API.
-//KEYWORDS:	vision, see, markers, marker, token, libkoki
+//KEYWORDS:	vision, see, markers, marker, flag, libkoki
 //CONTENT_TYPE:	markdown
 
 Vision
@@ -26,7 +26,7 @@ When called, this function takes a photo through the webcam and searches for mar
 It returns a list of `Marker` objects, each of which describes one of the markers that were found in the image.
 A detailed description of the attributes of Marker objects is provided [later in this page](#Marker).
 
-Here's an example that will repeatedly print out the distance to each token marker that the robot can see:
+Here's an example that will repeatedly print out the distance to each flag marker that the robot can see:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from sr.robot import *
 R = Robot()
@@ -36,8 +36,8 @@ while True:
     print "I can see", len(markers), "markers:"
 
     for m in markers:
-        if m.info.marker_type == MARKER_TOKEN_SIDE:
-            print " - Token {0} is {1} metres away".format( m.info.offset, m.dist )
+        if m.info.marker_type == MARKER_FLAG:
+            print " - Flag {0} is {1} metres away".format( m.info.offset, m.dist )
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 [Choosing Resolution](/docs/programming/sr/vision/#ChoosingResolution) {#ChoosingResolution}
@@ -128,10 +128,7 @@ marker_type
 
     * `MARKER_ARENA`
     * `MARKER_ROBOT`
-    * `MARKER_SLOT`
-    * `MARKER_TOKEN_TOP`
-    * `MARKER_TOKEN_BOTTOM`
-    * `MARKER_TOKEN_SIDE`
+    * `MARKER_FLAG`
 
 offset
 :   The offset of the numeric code of the marker from the lowest numbered marker of its type.
