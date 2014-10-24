@@ -374,7 +374,7 @@
             ]
         },
         "servo-board-usb": {
-            "question": "Is the Ruggeduino connected to the Power Board via an appropriately connected USB Hub?",
+            "question": "Is the Servo Board connected to the Power Board via an appropriately connected USB Hub?",
             "answers": [
                 {
                     "answer": "Yes",
@@ -382,7 +382,7 @@
                 },
                 {
                     "answer": "No",
-                    "message": "You should connect up your Ruggeduino to the Power Board as described.",
+                    "message": "You should connect up your Servo Board to the Power Board as described.",
                     "askiffixed": true,
                     "nextquestion": "servo-programming"
                 }
