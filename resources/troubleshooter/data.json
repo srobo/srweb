@@ -45,7 +45,7 @@
             ]
         },
         "power-board-function-checks": {
-            "question": "Choose the option that best describes your situation.<br/><img src=\"ROOT_URL/images/content/kit/power_board_diagram.png\" />",
+            "question": "Choose the option that best describes your situation.",
             "answers": [
                 {
                     "answer": "My Power Board isn't doing anything",
@@ -331,7 +331,7 @@
             ]
         },
         "servo-board-function-check": {
-            "question": "Choose the option that best describes your situation.<br /><img src=\"ROOT_URL/images/content/kit/servo_board.png\" alt=\"A photo of the Servo Board\" />",
+            "question": "Choose the option that best describes your situation.",
             "answers": [
                 {
                     "answer": "Nothing is happening",
@@ -346,7 +346,7 @@
             ]
         },
         "servo-board-led": {
-            "question": "Is the Power light on your Servo Board on?<br /><img src=\"ROOT_URL/images/content/kit/servo_board_diagram.png\" />",
+            "question": "Is the Power light on your Servo Board on?",
             "answers": [
                 {
                     "answer": "Yes",
