@@ -4,7 +4,7 @@ import urlparse
 import helpers
 
 def test_data_file():
-    data = helpers.ensure_valid_json('resources/2014/teams.json')
+    data = helpers.ensure_valid_json('resources/2015/teams.json')
 
     for info in data.values():
         assert 'URL' in info
