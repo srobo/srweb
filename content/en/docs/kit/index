@@ -55,6 +55,7 @@ As well as the aforementioned boards the kit also contains the following items.
 | ODROID Power Cable     | 1   | DC Plug and Cable Assembly with MicroCamCon                           | [G138960965859][G138960965859]              |
 | Battery (LiPo)         | 2   | 11.1V 2.2Ah Lithium Polymer                                           | N/A                                         | Please read the [documentation](/docs/kit/batteries) for storage and usage information
 | Battery Bag            | 1   | HPI Plazma Pouch Lipo Safe Bag (18x22cm) or Overlander Lipo Safe Sack | [HPI 101289][HPI-101289] [0000153][0000153] | Batteries should always be stored in the battery bag
+| Screwdriver            | 1   | Duratool Precision 2.5mm Slot Screwdriver                             | [Farnell 2103271][F-2103271]                |
 
 [ST7202USBGB]: http://uk.startech.com/Cards-Adapters/USB-2/Hub/7-Port-USB-20-Hub-UK~ST7202USBGB
 [TL-WN823N]: http://www.tp-link.com/en/products/details/?model=TL-WN823N
@@ -68,6 +69,7 @@ As well as the aforementioned boards the kit also contains the following items.
 [F-3882275]: http://www.xgoat.com/p/farnell/3882275
 [F-3881854]: http://www.xgoat.com/p/farnell/3881854
 [F-1717047]: http://www.xgoat.com/p/farnell/1717047
+[F-2103271]: http://www.xgoat.com/p/farnell/2103271
 [EB-230435]: http://www.ebuyer.com/230435-logitech-c270-hd-webcam-720p-hd-video-960-000582
 [G138960965859]: http://www.hardkernel.com/main/products/prdt_info.php?g_code=G138960965859
 [0000153]: http://www.modelsport.co.uk/overlander-lipo-safe-sack/rc-car-products/38313
