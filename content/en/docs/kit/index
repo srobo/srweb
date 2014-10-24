@@ -15,7 +15,7 @@ We provide modules, known as 'boards', in each kit.
 These modules can be plugged together and as a whole form the basis for controlling your robot.
 The boards provided are as follows; more details can be found on their individual pages.
 
- * Brain Board
+ * [Brain Board](/docs/kit/brain_board)
  * [Power Board](/docs/kit/power_board)
  * [Motor Board x2](/docs/kit/motor_board)
  * [Ruggeduino (including two screw shields)](/docs/kit/ruggeduino)
