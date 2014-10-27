@@ -21,6 +21,8 @@ Indicators
 | Power           | The board is powered   | On
 -->
 
+There are 8 servo connections on the left-side of the board, and 4 on the right. Servo cables are connected vertically, with 0V (the black or brown wire) at the bottom of the board.
+
 Case Dimensions
 ---------------
 
