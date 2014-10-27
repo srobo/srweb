@@ -33,7 +33,7 @@ They will be able to tell you the details of your account, or reset your passwor
 
 ### Password Change
 If you know your password, but want to change it,
-you can do this using the self service [change-password](/password) form.
+you can do this using the self service side of the [user management page](/userman).
 
 ### Other Problems
 If your team-leader was unable to resolve your account issue,
