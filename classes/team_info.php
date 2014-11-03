@@ -4,6 +4,10 @@ require_once('classes/simplepie/simplepie.inc');
 
 $team_info_college_lut = json_decode(file_get_contents(TEAMS_JSON), true);
 
+if ($team_info_college_lut === null) {
+	trigger_error("Failed to parse team LUT '" . TEAMS_JSON . "'.", E_USER_WARNING);
+}
+
 class LiveStatusItem extends stdClass
 {
 	public $content;
