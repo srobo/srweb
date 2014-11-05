@@ -336,6 +336,7 @@
                             <ul>
                                 <li><a href="{$root_uri}events/sr2015/2014-12-06-soton_tech_day_1">
                                     6<sup>th</sup> December 2014
+                                </a></li>
                             </ul>
 						</div>
 						<div id="date_bristol">
