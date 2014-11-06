@@ -10,3 +10,4 @@
 /adjust-perms
 /subscribed_people.csv
 /local.config.inc.php
+*.pyc
