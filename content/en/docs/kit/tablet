@@ -28,3 +28,10 @@ will open the browser and display the tablet interface for your robot. If you
 are experiencing problems with the app, you can try connecting to the robot
 manually by opening the "Chrome Shell" app from the apps list and navigating to
 `http://robot.sr/`.
+
+<div class="warning">
+If the tablet is already connected to a WiFi access point before turning on the
+robot, it will not automatically switch to the robot access point. You will
+need to do that yourselves by either disconnecting from the original access
+point or by selecting the robot one in the WiFi settings screen on the tablet.
+</div>
