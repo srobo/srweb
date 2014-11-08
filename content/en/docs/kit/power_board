@@ -13,6 +13,9 @@ The Power Board distributes power to the SR kit from the battery. It provides
 six individual general-purpose power outputs along with a separate power connector
 for the Brain Board.
 
+It also holds the internal On|Off switch for the whole robot as well as
+the Start button which is used to start your robot code running.
+
 Board Diagram
 ----------
 <img src="/images/content/kit/power_board_v4_diagram.png" alt="A diagram of a power board" />
