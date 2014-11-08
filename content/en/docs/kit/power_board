@@ -13,6 +13,10 @@ The Power Board distributes power to the SR kit from the battery. It provides
 six individual general-purpose power outputs along with a separate power connector
 for the Brain Board.
 
+Board Diagram
+----------
+<img src="/images/content/kit/power_board_v4_diagram.png" alt="A diagram of a power board" />
+
 Connectors
 ----------
 
