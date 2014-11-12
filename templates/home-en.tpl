@@ -346,6 +346,12 @@
                                     25<sup>th</sup> October 2014
                                 </a></li>
                             </ul>
+                            <a href="{$root_uri}events/tech_days">Tech Days:</a>
+                            <ul>
+                                <li><a href="{$root_uri}events/sr2015/2014-12-06-bristol_tech_day_1">
+                                    6<sup>th</sup> December 2014
+                                </a></li>
+                            </ul>
 						</div>
 			<div id="date_london">
                             <a href="{$root_uri}events/kickstart">Kickstart:</a>
