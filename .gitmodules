@@ -1,12 +1,3 @@
-[submodule "community-guidelines"]
-	path = community-guidelines
-	url = ../community-guidelines
-[submodule "tickets"]
-	path = tickets
-	url = ../ticket-access.git
-[submodule "mediaconsent"]
-	path = mediaconsent
-	url = ../media-consent-access.git
 [submodule "js/lib/angular-ui-select2"]
 	path = js/lib/angular-ui-select2
 	url = git://github.com/angular-ui/ui-select2.git
