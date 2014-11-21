@@ -43,6 +43,7 @@ function _getOutputForPage($p, $base_uri, $root_uri){
 	$xml = new SimpleXMLElement($feed);
 	$items = $xml->xpath('/rss/channel/item');
 
+	$output = '';
 	for($i = ($p - 1) * ITEMS_PER_PAGE; $i < count($items) && $i < ($p - 1) * ITEMS_PER_PAGE + ITEMS_PER_PAGE; $i++){
 
 		$item = $items[$i];
