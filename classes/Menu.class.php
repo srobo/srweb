@@ -32,7 +32,7 @@ class Menu {
 		//starting with the root, traverse the tree, concatenating the output.
 		foreach ($this->root->subMenuItems as $item){
 
-			$output .= $item->getItemHTML($this->root_uri);
+			$output .= $item->getItemHTML();
 
 		}//foreach
 
