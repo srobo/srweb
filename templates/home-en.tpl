@@ -375,7 +375,7 @@
 				</div>
 {/if}
 				<div class="box clearboth">
-					<h3><a href="{$root_uir}ide">The IDE</a></h3>
+					<h3><a href="{$root_uri}ide">The IDE</a></h3>
 					<p>
 						<a href="{$root_uri}ide"><img src="{$root_uri}images/template/sr_round_flat.png" alt="SR logo" title="SR logo" /></a>
 
