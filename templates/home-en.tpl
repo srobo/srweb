@@ -324,6 +324,7 @@
 							<li><a href="#date_soton">Southampton</a></li>
 							<li><a href="#date_bristol">Bristol</a></li>
 							<li><a href="#date_london">London</a></li>
+							<li><a href="#date_munich">Munich</a></li>
 						</ul>
 						<div id="date_soton">
                             <a href="{$root_uri}events/kickstart">Kickstart:</a>
@@ -362,6 +363,14 @@
                             </ul>
 						</div>
 					</div>
+						<div id="date_munich">
+                            <a href="{$root_uri}events/kickstart">Kickstart:</a>
+                            <ul>
+                                <li>
+                                    8<sup>th</sup> November 2014
+                                </li>
+                            </ul>
+						</div>
 
 
                                        <div>
