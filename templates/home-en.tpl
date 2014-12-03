@@ -354,7 +354,7 @@
                                 </a></li>
                             </ul>
 						</div>
-			<div id="date_london">
+						<div id="date_london">
                             <a href="{$root_uri}events/kickstart">Kickstart:</a>
                             <ul>
                                 <li><a href="{$root_uri}events/sr2015/2014-10-25-london_kickstart">
@@ -362,7 +362,6 @@
                                 </a></li>
                             </ul>
 						</div>
-					</div>
 						<div id="date_munich">
                             <a href="{$root_uri}events/kickstart">Kickstart:</a>
                             <ul>
@@ -371,16 +370,14 @@
                                 </li>
                             </ul>
 						</div>
+					</div>
 
-
-                                       <div>
-                                               <a href="{$root_uri}events/competition">Competition:</a>
-                                               <ul>
-                                                       <li>April 2015</li>
-                                               </ul>
-                                        </div>
-
-
+					<div>
+						<a href="{$root_uri}events/competition">Competition:</a>
+						<ul>
+							<li>April 2015</li>
+						</ul>
+					</div>
 				</div>
 {/if}
 				<div class="box clearboth">
@@ -420,4 +417,3 @@
 </body>
 
 </html>
-
