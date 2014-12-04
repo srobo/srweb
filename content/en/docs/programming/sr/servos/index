@@ -33,7 +33,7 @@ You can get a servo's currently set position in a similar way:
 bees = R.servos[0][0]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-[How the set position relates to the servo angle](/docs/programming/sr/servos/#ServoAngle) {#ServoAngle}
+[How the set position relates to the servo angle](#ServoAngle) {#ServoAngle}
 -----------------------------------------------
 
 <div class="warning">

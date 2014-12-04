@@ -55,7 +55,7 @@ R.motors.m0.power = 42      # WON'T WORK
 A number of examples in the documentation will assume you've instantiated the required `Robot` class and have called it `R`.
 From here in, if you see a `R.something`, the requirement of the `sr.robot` import line and the instantiation of `Robot` as `R` is implicit.
 
-[Other Robot Attributes](/docs/programming/sr/#OtherRobotAttributes) {#OtherRobotAttributes}
+[Other Robot Attributes](#OtherRobotAttributes) {#OtherRobotAttributes}
 ----------------------
 
 As well as the attributes listed above, the Robot class also has the following attributes, which you may find useful:
@@ -86,7 +86,7 @@ usbkey
     f.close()
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-[Custom Robot Object Initialisation](/docs/programming/sr/#CustomRobotInit) {#CustomRobotInit}
+[Custom Robot Object Initialisation](#CustomRobotInit) {#CustomRobotInit}
 ----------------------
 
 Normally the Robot object is initialised with the following:

@@ -13,7 +13,7 @@ As there is only one power board, it is not accessed like a list like `motors` f
 R.power.something...
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-[Battery Status](/docs/programming/sr/power/#battery) {#battery}
+[Battery Status](#battery) {#battery}
 -------
 
 The power board can report both the battery voltage, in Volts, and the current being drawn from it, in Amps.

@@ -43,7 +43,7 @@ while True:
             print " - Flag {0} is {1} metres away".format( m.info.offset, m.dist )
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-[Choosing Resolution](/docs/programming/sr/vision/#ChoosingResolution) {#ChoosingResolution}
+[Choosing Resolution](#ChoosingResolution) {#ChoosingResolution}
 -------------------
 
 By default, the `R.see` function will take a photo at a resolution of 800x600.
@@ -86,10 +86,10 @@ Smaller images will process faster, but markers will be less likely to be detect
 Additionally, the act of changing resolution takes a significant amount of time.
 The optimum resolution to use in a given situation is best determined through experiment.
 
-[Objects of the Vision System](/docs/programming/sr/vision/#vision_objects) {#vision_objects}
+[Objects of the Vision System](#vision_objects) {#vision_objects}
 ==============================
 
-[`Marker`](/docs/programming/sr/vision/#Marker) {#Marker}
+[`Marker`](#Marker) {#Marker}
 ----------
 A `Marker` object contains information about a *detected* marker.
 It has the following attributes:
@@ -119,7 +119,7 @@ res
 timestamp
 :   The timestamp at which the image was taken (a float).
 
-[`MarkerInfo`](/docs/programming/sr/vision/#MarkerInfo) {#MarkerInfo}
+[`MarkerInfo`](#MarkerInfo) {#MarkerInfo}
 --------------
 
 The `MarkerInfo` object contains information about a marker.
@@ -144,7 +144,7 @@ size
 :   The size of the marker in metres.
     This is the length of the side of the main black body of the marker.
 
-[`Point`](/docs/programming/sr/vision/#Point) {#Point}
+[`Point`](#Point) {#Point}
 ---------
 
 A `Point` object describes a position in three different ways.
@@ -178,7 +178,7 @@ polar
     print "rot_y", p.polar.rot_y
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-[`Orientation`](/docs/programming/sr/vision/#Orientation) {#Orientation}
+[`Orientation`](#Orientation) {#Orientation}
 ---------------
 
 An `Orientation` object describes the orientation of a marker.  It has three attributes:

@@ -34,7 +34,7 @@ R.wait_start()
 
 The next step depends on whether you are running an extended SR firmware, or a completely custom firmware.
 
-[Extension of the SR firmware](/docs/programming/sr/ruggeduinos/custom_firmware#extension) {#extension}
+[Extension of the SR firmware](#extension) {#extension}
 ------------------------------
 
 You may wish to extend the SR firmware with additional functionality.
@@ -221,7 +221,7 @@ R.ruggeduinos["752303138333517171B1"]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-[Completely custom firmware](/docs/programming/sr/ruggeduinos/custom_firmware#completely) {#completely}
+[Completely custom firmware](#completely) {#completely}
 ----------------------------
 
 When configured correctly, the `Robot` object will perform absolutely no serial communications with a completely custom firmware.
