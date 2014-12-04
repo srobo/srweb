@@ -6,7 +6,7 @@
 SR Module
 =========
 
-Student Robotics has written a module &mdash; _sr_  &mdash; which is used to interface with the hardware.
+Student Robotics has written a module &mdash; _sr.robot_  &mdash; which is used to interface with the hardware.
 It handles all the low-level interactions so you don't have to.
 To set the output power of output 0 of the first motor board to -30%, for example, you would simply write:
 
