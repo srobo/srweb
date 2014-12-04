@@ -129,8 +129,8 @@ code
 :   The numeric code of the marker.
 
 marker_type
-:   The type of object that this marker represents.
-:   One of:
+:   The type of object that this marker represents.<br />
+    One of:
 
     * `MARKER_ARENA`
     * `MARKER_ROBOT`
@@ -158,8 +158,8 @@ world
 :   The Cartesian coordinates of the point in 3D space in metres, with three attributes: `x`, `y`, and `z`.
 
 polar
-:   The polar coordinates of the point in 3D space.
-:   This has three attributes:
+:   The polar coordinates of the point in 3D space.<br />
+    This has three attributes:
 
     length
     :   The distance to the point.
@@ -170,7 +170,7 @@ polar
     rot_y
     :   Rotation about the y-axis in degrees.
 
-:   For example, the following code displays the polar coordinate of a `Point` object `p`:
+    For example, the following code displays the polar coordinate of a `Point` object `p`:
 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     print "length", p.polar.length
