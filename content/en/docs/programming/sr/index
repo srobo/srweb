@@ -1,12 +1,14 @@
 //TITLE:	SR Module
 //DESCRIPTION:	An introduction to the module provided by us
-//KEYWORDS:	
+//KEYWORDS:
 //CONTENT_TYPE:	markdown
 
 SR Module
 =========
 
-Student Robotics has written a module &mdash; _sr_  &mdash; which is used to interface with the hardware. It handles all the low-level interactions so you don't have to. To set the output power of output 0 of the first motor board to -30%, for example, you would simply write:
+Student Robotics has written a module &mdash; _sr_  &mdash; which is used to interface with the hardware.
+It handles all the low-level interactions so you don't have to.
+To set the output power of output 0 of the first motor board to -30%, for example, you would simply write:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 R.motors[0].m0.power = -30
@@ -38,7 +40,9 @@ Within your `Robot` (`R` in this case), you then have access to the following at
 * [ruggeduinos](/docs/programming/sr/ruggeduinos/)
 * [vision](/docs/programming/sr/vision/)
 
-They can be used in your code just like the example above. Note that `motors`, `ruggeduinos`, and `servos` are Python lists, and so should be accessed as such. Here are some examples:
+They can be used in your code just like the example above.
+Note that `motors`, `ruggeduinos`, and `servos` are Python lists, and so should be accessed as such.
+Here are some examples:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 R.motors[0].m0.power = 50   # WILL work, if motor 0 exists
@@ -69,6 +73,7 @@ usbkey
     Note that the USB memory stick is mounted synchronously, so any writes to it will block until complete and may slow down your code.
 
 :   An example of how the `usbkey` attribute might be used:
+
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     from sr.robot import *
     import os
@@ -111,6 +116,10 @@ R.init()
 R.wait_start()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-During the setup phase, the Robot hardware is inaccessible. For example,`R.motors` is unavailable since enumerations occurs in the `init` function. In this phase you can configure how the Robot finds and configures hardware.
+During the setup phase, the Robot hardware is inaccessible.
+For example,`R.motors` is unavailable since enumerations occurs in the `init` function.
+In this phase you can configure how the Robot finds and configures hardware.
 
-After the `init` call, all hardware is accessible. If you have any hardware which must be initialised before the start button is pressed, the initialisation phase is the time to do so.
+After the `init` call, all hardware is accessible.
+If you have any hardware which must be initialised before the start button is pressed,
+ the initialisation phase is the time to do so.
