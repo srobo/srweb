@@ -7,7 +7,7 @@ Servos
 ======
 
 A servo board can have a number of servos plugged into it, with their positions controlled using the `servos` object.
-As with `io` and `motors`, `servos` is a list, with indexes based on the order of their SR part codes, printed on a sticker on the bottom of the case.
+As with `ruggeduinos` and `motors`, `servos` is a list, with indexes based on the order of their SR part codes, printed on a sticker on the bottom of the case.
 The position of servos can range from `-100` to `100` inclusive:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
