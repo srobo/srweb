@@ -3,7 +3,7 @@
 <head>
 	<title>Team {$team->team_id} | Student Robotics</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="keywords" content="SR Student Robotics Team {$team->team_name} {$team->college_name}" />
+	<meta name="keywords" content="SR Student Robotics Team {$team->team_name} {$team->college.name}" />
 	<meta name="description" content="Information about Student Robotics team '{$team->team_name}'" />
 	<link rel="stylesheet" type="text/css" href="{$root_uri}css/main.css" />
 	<link rel="stylesheet" type="text/css" href="{$root_uri}css/content_extra.css" />
