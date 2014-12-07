@@ -155,10 +155,11 @@ image
     This has two attributes: `x` and `y`.
 
 world
-:   The Cartesian coordinates of the point in 3D space in metres, with three attributes: `x`, `y`, and `z`.
+:   The [Cartesian coordinates](https://en.wikipedia.org/wiki/Cartesian_coordinate_system) of the point in 3D space.
+    This has three attributes: `x`, `y`, and `z`, each of which specifies a distance in metres.
 
 polar
-:   The polar coordinates of the point in 3D space.<br />
+:   The [polar coordinates](https://en.wikipedia.org/wiki/Polar_coordinate_system) of the point in 3D space.<br />
     This has three attributes:
 
     length
