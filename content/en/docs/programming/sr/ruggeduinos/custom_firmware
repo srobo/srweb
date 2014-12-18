@@ -135,6 +135,13 @@ R.ruggeduinos[0].bake_cake()
 R.ruggeduinos[0].digital_read(3)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+<div class="warning" markdown="1">
+The IDE will unfortunately error about the lack of a `bake_cake` method (or your equivalent) in the above code.
+This is an expected restriction of the way the IDE checks the syntax of your code.
+
+You can therefore ignore these errors (though you should be careful that the error is one of these and not something else).
+</div>
+
 #### `with self.lock:`
 
 You'll notice that the code above contains a line that reads:
