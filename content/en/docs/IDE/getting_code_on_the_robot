@@ -12,7 +12,7 @@ You can also pull the stick out of your robot while it's powered up, change the 
 The new code should load and will run when you press the button.
 </div>
 
-To get the code onto your robot, you'll need to use the provided memory stick.
+To get the code onto your robot, you'll need to use the a <abbr title="File Allocation Table">FAT</abbr>‐formatted memory stick (the most common file system used on memory sticks and they usually come pre‐formatted), such as the one provided for you in your kit.
 The code is transferred from the IDE to the memory stick, and then the memory stick is plugged into the robot's USB hub.
 You can follow these steps when you've got some code you'd like to run:
 
