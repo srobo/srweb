@@ -43,10 +43,10 @@ First, download [the Linux ZIP][linux-zip] and extract it.
 
 The simulator requires three libraries: [pygame][], [PyPyBox2D][], and [PyYAML][].
 The easiest way to install these is through your distribution's package manager (although PyPyBox2D is only available through `pip`).
-For example, on Ubuntu, you might run the following commands:
+For example, on Ubuntu, you might run the following commands (the Python development tools are required for `pip` to install PyPyBox2D):
 
 ~~~ .bash
-$ sudo apt-get install python-pip python-pygame python-yaml
+$ sudo apt-get install python-dev python-pip python-pygame python-yaml
 $ sudo pip install pypybox2d
 ~~~
 
