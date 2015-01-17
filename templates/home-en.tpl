@@ -325,6 +325,7 @@
 							<li><a href="#date_bristol">Bristol</a></li>
 							<li><a href="#date_london">London</a></li>
 							<li><a href="#date_munich">Munich</a></li>
+							<li><a href="#date_oxford">Oxford</a></li>
 						</ul>
 						<div id="date_soton">
                             <a href="{$root_uri}events/kickstart">Kickstart:</a>
@@ -374,6 +375,14 @@
                                 <li>
                                     8<sup>th</sup> November 2014
                                 </li>
+                            </ul>
+						</div>
+						<div id="date_oxford">
+                            <a href="{$root_uri}events/tech_days">Tech Days:</a>
+                            <ul>
+                                <li><a href="{$root_uri}events/sr2015/2015-02-21-oxford_tech_day_1">
+                                    21<sup>st</sup> February 2015
+                                </a></li>
                             </ul>
 						</div>
 					</div>
