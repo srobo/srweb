@@ -20,7 +20,7 @@ If you wish to use an extended SR firmware, or completely custom firmware,
 To do this, you will need to expand the initialisation of your `Robot` object as detailed [here](/docs/programming/sr/#CustomRobotInit).
 Your code will then look something like this:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 from sr.robot import *
 
 R = Robot.setup()
@@ -30,7 +30,7 @@ R.init()
 R.wait_start()
 
 # The rest of your code
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 
 The next step depends on whether you are running an extended SR firmware, or a completely custom firmware.
 
@@ -104,18 +104,18 @@ You could try [this one](http://www.jesshamrick.com/2011/05/18/an-introduction-t
 You'll need to extend the `Ruggeduino` class, giving it at least one extra method to perform your command.
 Start by adding this to your code:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 from sr.robot import *
 
 class CustomisedRuggeduino(Ruggeduino):
     pass
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 
 You've just declared a class called `CustomisedRuggeduino` (you will probably want to call it something else that makes more sense in your application).
 At the moment, it behaves in exactly the same way as the `Ruggeduino` class.
 You now need to add your custom method to it:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 from sr.robot import *
 
 class CustomisedRuggeduino(Ruggeduino):
@@ -124,16 +124,16 @@ class CustomisedRuggeduino(Ruggeduino):
     def bake_cake(self):
         with self.lock:
             self.command("c")
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 
 Skipping ahead for a moment: Once we've told your `Robot` object about this `CustomisedRuggeduino`
  class (which we do in the next step), you will be able to do this:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 R.ruggeduinos[0].bake_cake()
 # and you'll still be able to do this:
 R.ruggeduinos[0].digital_read(3)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 
 <div class="warning" markdown="1">
 The IDE will unfortunately error about the lack of a `bake_cake` method (or your equivalent) in the above code.
@@ -145,9 +145,9 @@ You can therefore ignore these errors (though you should be careful that the err
 #### `with self.lock:`
 
 You'll notice that the code above contains a line that reads:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 with self.lock:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 Whenever you call `self.command`, you need to ensure that it is called within a block of code headed by this `with` statement.
 This is a tool that makes your code "thread-safe".
 If you're not using threads, then you will still need to use it, but it won't affect the behaviour of your program.
@@ -158,14 +158,14 @@ The response from your command is returned by the `self.command` function.
 Remember that it will be a string, so you will need to convert it as necessary.
 
 If, for example, our cake-baking function on our Ruggeduino responds with the number of cakes that were baked, then we could do this:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 class CustomisedRuggeduino(Ruggeduino):
 
     def bake_cake(self):
         with self.lock:
             resp = self.command("c")
         return int(resp)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 
 
 ### Step 3: Tell the `Robot` to use your extended class
@@ -173,7 +173,7 @@ class CustomisedRuggeduino(Ruggeduino):
 Now that you've extended the `Ruggeduino` class to create your `CustomisedRuggeduino` class,
  it's time to tell the `Robot` object about it using the `ruggeduino_set_handler_by_fwver` function:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 from sr.robot import *
 
 # The class that you wrote in step 2
@@ -193,7 +193,7 @@ R.wait_start()
 
 # Now you can call your custom function!
 R.ruggeduinos[0].bake_cake()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 
 You're done!  You can now use your custom cake-baking firmware!
 
@@ -208,24 +208,24 @@ You can change the string "SRCustom" in your firmwares to be something different
  and then change the string you pass to `ruggeduino_set_handler_by_fwver` to suit.
 For example, if you change it to be "CakeBaker" in one of your ruggeduinos,
  but leave it as "SRCustom" in the other, then your enumeration code would become:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 R.ruggeduino_set_handler_by_fwver("SRcustom", CustomisedRuggeduino)
 R.ruggeduino_set_handler_by_fwver("CakeBaker", CakeBakerRuggeduino)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 
 Alternatively, you can set the handling class using the ID of the Ruggeduino.
 The Ruggeduino IDs are written to the robot log when you run a program on your robot with your Ruggeduino connected.
 Instead of using `ruggeduino_set_handler_by_fwver`, you use `ruggeduino_set_handler_by_id`:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 R.ruggeduino_set_handler_by_id("752303138333517171B1", CustomisedRuggeduino)
 R.ruggeduino_set_handler_by_id("10231028301928310283", CakeBakerRuggeduino)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 
 You will then be able to access your ruggeduino using its ID like so:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 R.ruggeduinos["752303138333517171B1"]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 
 
 [Completely custom firmware](#completely) {#completely}
@@ -242,7 +242,7 @@ After calling `Robot.setup()`, you should call the `ruggeduino_ignore_id`
  method of the robot object, with the ID as an argument.
 You'll need the ID later, so it's best to save it into a variable:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 from sr.robot import *
 
 RUGGEDUINO_ID = "752303138333517171B1" # Replace this with the actual ID
@@ -256,12 +256,12 @@ R.init()
 R.wait_start()
 
 # The rest of your code
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 
 If you need to communicate with the Ruggeduino firmware, you will need its serial device path.
 This is accessible after the `R.init()` call through the list of Ruggeduinos:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 # ... Robot.setup() ... etc.
 
 R.init()
@@ -273,10 +273,10 @@ ruggeduino_device = R.ruggeduinos[RUGGEDUINO_ID].serial_dev
 R.wait_start()
 
 # The rest of your code
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 
 You may wish to use pyserial to communicate with the Ruggeduino, in which case you could open it like so:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 import serial
 from sr.robot import *
 
@@ -289,7 +289,7 @@ R.wait_start()
 
 ser = serial.Serial( R.ruggeduinos[RUGGEDUINO_ID].serial_dev )
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 
 Refer to the [pyserial documentation](http://pyserial.sourceforge.net/) for more information on how to use pyserial.
 
