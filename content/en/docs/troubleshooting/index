@@ -14,7 +14,7 @@ If you don't find the information you need in this section you can use the
 1. [`sr.robot` python library issues](/docs/troubleshooting/python) &mdash; Common problems with the `sr.robot` python library and possible solutions.
 2. [Interactive Troubleshooter](/docs/troubleshooting/interactive_troubleshooter) &mdash; Consider using the Interactive Troubleshooter to narrow down your problem and find a solution.
 
-General Troubleshooting Tips
+[General Troubleshooting Tips](#GeneralTips) {#GeneralTips}
 ----------------------------
 
 Simplify the task
