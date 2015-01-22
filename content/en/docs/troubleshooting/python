@@ -15,7 +15,7 @@ If you encounter one that isn't on this list, quickly check your code and search
 This error message appears when you have entered a statement that doesn't obey the forms of the language.
 For example:
 
-~~~~~
+~~~~~ .python
 def foo(s):
 	print s
 
@@ -45,7 +45,7 @@ Other causes of syntax errors to look out for are:
 
 ## [Name Error](#NameError) {#NameError}
 
-~~~~~
+~~~~~ .python
 x = 5
 print X     # wrong case
 ~~~~~
@@ -69,7 +69,7 @@ This would list the functions that the error occurred in, if it was inside a fun
 If you try to access an element of a list that does not exist, you'll get this error.
 For example:
 
-~~~~~
+~~~~~ .python
 a = ["Molly", "Polly", "Dolly"]
 print a[0]
 print a[3]
@@ -93,7 +93,7 @@ So, the last element in the array is actually number 2, and element number 3 doe
 If you forget to indent some code, **or mix tabs and spaces**, you will get an indentation error.
 For example:
 
-~~~~~
+~~~~~ .python
 if x < 5:
 do_some_stuff()
 ~~~~~
