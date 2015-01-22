@@ -34,6 +34,11 @@ table.charger_lcd td {
 	}
 }
 
+.positive-connector {
+	font-weight:bold;
+	color:red;
+}
+
 /* docs/troubleshooting/interactive_troubleshooter */
 #docs_troubleshooting_interactive_troubleshooter #resetbtnattop {
 	margin-top: 20px;

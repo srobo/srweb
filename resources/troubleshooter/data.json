@@ -260,14 +260,20 @@
             ]
         },
         "motor-board-led": {
-            "question": "Is the Power light on your Motor Board on?<br /><img src=\"ROOT_URL/images/content/kit/mcv4b_board_diagram.png\" />",
+            "question": "What colour is the the Power light on your Motor Board?<br /><img src=\"ROOT_URL/images/content/kit/mcv4b_board_diagram.png\" />",
             "answers": [
                 {
-                    "answer": "Yes",
+                    "answer": "Green",
                     "nextquestion": "motor-board-usb"
                 },
                 {
-                    "answer": "No",
+                    "answer": "Red",
+                    "message": "The <a href=\"ROOT_URL/docs/kit/motor_board\" target=\"_blank\">Motor Board</a>'s power connection is most likely back to front. Adjust the connection to the Power Board as described <a href=\"ROOT_URL/docs/kit/assembly#Connections\" target=\"_blank\">in the docs</a>.",
+                    "askiffixed": true,
+                    "nextquestion": "motor-board-usb"
+                },
+                {
+                    "answer": "Off",
                     "nextquestion": "motor-board-power"
                 }
             ]
