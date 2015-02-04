@@ -311,7 +311,7 @@
 					<p>
 						Student Robotics is always looking for more people to get involved, and not just schools.
 						Whether you're a University student or a company considering sponsoring the competition,
-						you are more than welcome to get involved.
+						you are more than welcome to <a href="{$root_uri}about/how_to_help">get involved</a>.
 					</p>
 {/if}
 				</div>
