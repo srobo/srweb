@@ -50,6 +50,10 @@
                 {
                     "answer": "My Power Board isn't doing anything",
                     "nextquestion": "power-board-power-check"
+                },
+                {
+                    "answer": "My Power Board is beeping",
+                    "message": "This means that the board's current limit has been triggered. Try connecting fewer things to the board, or change your code so that your motors turn on more slowly."
                 }
             ]
         },

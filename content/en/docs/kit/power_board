@@ -50,6 +50,8 @@ Indicators
 | PWR\|FLAT       | Green when powered, orange when the battery is low | Green
 | 5V              | Green when 5V is being supplied | Green
 
+If the Power Board starts beeping (and all the outputs turn off) then this
+means that the board's current limit has been triggered.
 
 Controls
 --------
