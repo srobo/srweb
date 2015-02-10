@@ -65,10 +65,16 @@ moves (we provide velcro to help this). You should also build a compartment for
 the battery to be placed in, so that accidental collisions do not damage the
 battery.
 
-When the battery has been almost completely discharged, the power board will
-automatically turn off and begin beeping. You should immediately disconnect
-the battery, and being charging it. You should keep your second battery charged,
-so that you can immediately switch to using it. Do not store a discharged
+### Flat Batteries
+
+When the battery has been almost completely discharged, the Power Board will
+automatically turn off and the LED marked "Power / Flat Battery Indicator"
+in the [diagram](/docs/kit/power_board#BoardDiagram) will flash red and green.
+You should
+immediately disconnect the battery, and begin charging it. You should keep
+your second battery charged, so that you can immediately switch to using it.
+
+Do not store a discharged
 battery for more than a few days without charging it, as it may discharge
 further and become damaged.
 
