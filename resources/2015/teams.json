@@ -67,6 +67,10 @@
         "URL":"http://www.collyers.ac.uk/sixth-form",
         "name":"Collyers Sixth Form College"
     },
+    "CLY2":{
+        "URL":"http://www.collyers.ac.uk/sixth-form",
+        "name":"Collyers Sixth Form College"
+    },
     "COR":{
         "URL":"http://www.corsham.wilts.sch.uk/",
         "name":"The Corsham School"
@@ -106,10 +110,6 @@
     "HZW":{
         "URL":"http://www.hazelwick.w-sussex.sch.uk/",
         "name":"Hazelwick Comprehensive School"
-    },
-    "ICE":{
-        "URL":"http://www.iceniacademy.org.uk/",
-        "name":"Iceni Academy"
     },
     "JMS":{
         "URL":"http://www.johnmason.oxon.sch.uk/",
