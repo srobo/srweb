@@ -369,20 +369,6 @@
        id="rect4328"
        style="fill:#00ff00;fill-opacity:1;stroke:none" />
     <rect
-       width="20"
-       height="20"
-       x="422.11182"
-       y="700.99988"
-       id="rect4328-2"
-       style="fill:#00ff00;fill-opacity:1;stroke:none" />
-    <rect
-       width="20"
-       height="20"
-       x="846.60931"
-       y="74.654465"
-       id="rect4328-2-9"
-       style="fill:#ff0000;fill-opacity:1;stroke:none" />
-    <rect
        width="56.215916"
        height="194.07306"
        x="832.02826"
@@ -1205,6 +1191,36 @@
       <path
          d="m 90.354324,758.2677 5.314961,0 -5.314961,8.85827 z"
          id="path4175-3-7-6"
+         style="fill:#00ff00;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       transform="matrix(3.7629627,0,0,2.2577772,506.60936,-1637.3451)"
+       id="g4171-2-9">
+      <rect
+         width="5.3149605"
+         height="8.8582678"
+         x="90.354324"
+         y="758.2677"
+         id="rect4173-4-2"
+         style="fill:#ff0000;fill-opacity:1;stroke:none" />
+      <path
+         d="m 90.354324,758.2677 5.314961,0 -5.314961,8.85827 z"
+         id="path4175-8-3"
+         style="fill:#00ff00;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       transform="matrix(3.7629627,0,0,2.2577772,82.111865,-1010.9996)"
+       id="g4171-1-8">
+      <rect
+         width="5.3149605"
+         height="8.8582678"
+         x="90.354324"
+         y="758.2677"
+         id="rect4173-63-6"
+         style="fill:#ff0000;fill-opacity:1;stroke:none" />
+      <path
+         d="m 90.354324,758.2677 5.314961,0 -5.314961,8.85827 z"
+         id="path4175-6-7"
          style="fill:#00ff00;fill-opacity:1;stroke:none" />
     </g>
   </g>
