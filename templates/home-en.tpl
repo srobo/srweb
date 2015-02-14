@@ -95,7 +95,7 @@
 			<thead>
 				<tr>
 					<th data-ng-repeat="tla in game.teams"
-					    title="{{tla|teamName:teams}}">
+					    title="{{team|teamInfo:teams|teamName}}">
 						{{tla}}
 					</th>
 				</tr>
@@ -135,7 +135,7 @@
 				</tr>
 			</thead>
 			<tr>
-				<td data-ng-repeat="tla in game.teams track by $index" title="{{tla|teamName:teams}}">
+				<td data-ng-repeat="tla in game.teams track by $index" title="{{tla|teamInfo:teams|teamName}}">
 					{{tla}}
 					<span data-ng-if="!tla">-</span>
 				</td>
@@ -195,7 +195,7 @@
 	<tr data-ng-repeat="item in league_points|limitTo:10" id="{{item.tla}}">
 		<td>{{item.pos}}</td>
 		<td>{{item.points}}</td>
-		<td title="{{item.tla|teamName:teams}}">
+		<td title="{{item.tla|teamInfo:teams|teamName}}">
 		<a href="{/literal}{$root_uri}{literal}teams/{{item.tla}}">{{item.tla}}</a>
 		</td>
 	</tr>
@@ -228,7 +228,7 @@
 			<td title="Begins at {{match.time|date:'HH:mm:ss on EEEE, d MMMM'}}.">{{match.time|date:'HH:mm'}}</td>
 			<td>{{match.num}}</td>
 			<td data-ng-repeat="team in match.teams track by $index"
-				title="{{team|teamName:teams}}">
+				title="{{team|teamInfo:teams|teamName}}">
 				<!--- TODO: non-literal filtering, possibly based on the existence of the page -->
 				<a data-ng-if="team != '-'"
 				   href="{/literal}{$root_uri}{literal}teams/{{team}}">{{team}}</a>
