@@ -22,7 +22,6 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular-resource.min.js"></script>
 	<script type="text/javascript">
-		var SRWEB_ROOT = "{$root_uri}";
 		var API_ROOT = "/comp-api";
 	</script>
 
