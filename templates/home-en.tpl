@@ -391,7 +391,9 @@
 					<div>
 						<a href="{$root_uri}events/competition">Competition:</a>
 						<ul>
-							<li>April 2015</li>
+							<li><a href="{$root_uri}events/sr2015/2015-04-25-competition">
+								25<sup>th</sup> and 26<sup>th</sup> April 2015
+							</a></li>
 						</ul>
 					</div>
 				</div>
