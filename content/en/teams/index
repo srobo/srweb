@@ -20,11 +20,25 @@ Each team will be updating the photos below as they go so you can easily track t
 if (count($teams) == 0) {
 	echo "<p>No teams have entered a status yet.</p>";
 } else {
+	$rookie_banner = <<<ROOKIE
+	<span class="rookie marker">R</span>
+	<span class="rookie banner" title="This is the first time a team from this school or college has entered Student Robotics">
+		Rookie Team
+	</span>
+ROOKIE;
 	echo '<ul id="teams_container">';
 	$i = 1;
 	foreach ($teams as $team) {
-		echo "<li>";
+		$rookie = $team->college['rookie'];
+		$class = '';
+		if ($rookie) {
+			$class = ' class="rookie-team"';
+		}
+		echo "<li", $class, ">";
 		echo "<a href=\"" . $team->team_id . "\">";
+		if ($rookie) {
+			echo $rookie_banner;
+		}
 		if (!empty($team->thumb))
 			echo "<img src=\"/{$team->thumb}\" alt=\"{$team->team_name}'s robot.\" />";
 		else

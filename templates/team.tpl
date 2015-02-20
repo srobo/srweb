@@ -21,6 +21,12 @@
 	<div id="{$page_id}" class="content team-page">
 		<a class="link-top" href="{$root_uri}teams">Back to all teams</a>
 
+		{if !empty($team->college.rookie) }
+		<h2 id="rookie-team"
+		    title="This is the first time a team from this school or college has entered Student Robotics"
+		    >Rookie Team</h2>
+		{/if}
+
 		<h1>{$team->team_id}: {$team->team_name}</h1>
 
 		{if !empty($team->image) }
