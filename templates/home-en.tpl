@@ -84,7 +84,7 @@
 	</span>
 	<h4>
 		Latest Scores
-		<span data-ng-if="previous_match">- Match #{{previous_match_number}}</span>
+		<span data-ng-if="previous_match">- Match #{{previous_match.num}}</span>
 	</h4>
 	<span data-ng-if="!previous_match">No scores yet recorded.</span>
 	<div class="game"
@@ -157,17 +157,17 @@
 </script>
 
 <div class="current match"
-     data-ng-if="current_match_number != null"
+     data-ng-if="current_match != null"
      data-ng-init="data={description:'Current Match',match:current_match}"
      data-ng-include="'match-info'">
 </div>
 <div class="match"
-     data-ng-if="next_match_number != null"
+     data-ng-if="next_match != null"
      data-ng-init="data={description:'Next Match',match:next_match}"
      data-ng-include="'match-info'">
 </div>
 <div class="match"
-     data-ng-if="upcoming_match_number != null"
+     data-ng-if="upcoming_match != null"
      data-ng-init="data={description:'Upcoming Match',match:upcoming_match}"
      data-ng-include="'match-info'">
 </div>
@@ -223,7 +223,7 @@
 	</thead>
 	<tbody>
 		<tr data-ng-repeat="match in matches"
-			data-ng-class="{current: match.num==current_match_number}"
+			data-ng-class="{current: match.num==current_match.num}"
 			id="match-{{match.num}}">
 			<td title="Begins at {{match.time|date:'HH:mm:ss on EEEE, d MMMM'}}.">{{match.time|date:'HH:mm'}}</td>
 			<td>{{match.num}}</td>
