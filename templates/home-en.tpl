@@ -158,17 +158,17 @@
 </script>
 
 <div class="current match"
-     data-ng-if="current_match != null"
+     data-ng-if="current_match.exists"
      data-ng-init="data={description:'Current Match',match:current_match}"
      data-ng-include="'match-info'">
 </div>
 <div class="match"
-     data-ng-if="next_match != null"
+     data-ng-if="next_match.exists"
      data-ng-init="data={description:'Next Match',match:next_match}"
      data-ng-include="'match-info'">
 </div>
 <div class="match"
-     data-ng-if="upcoming_match != null"
+     data-ng-if="upcoming_match.exists"
      data-ng-init="data={description:'Upcoming Match',match:upcoming_match}"
      data-ng-include="'match-info'">
 </div>
