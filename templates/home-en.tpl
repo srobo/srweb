@@ -340,6 +340,9 @@
                                 <li><a href="{$root_uri}events/sr2015/2015-02-21-soton_tech_day_2">
                                     21<sup>st</sup> February 2015
                                 </a></li>
+                                <li><a href="{$root_uri}events/sr2015/2015-03-14-soton_tech_day_3">
+                                    14<sup>th</sup> March 2015
+                                </a></li>
                             </ul>
 						</div>
 						<div id="date_bristol">
