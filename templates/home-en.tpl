@@ -89,19 +89,20 @@
 	<span data-ng-if="!previous_match">No scores yet recorded.</span>
 	<div class="game"
 	     data-ng-repeat-start="(arena, game) in previous_match.games">
-		<h4>Arena {{arena}}</h4>
+		<h4 style="color: {{arenas[arena].colour}};">Arena {{arenas[arena].display_name}}</h4>
 		<table class="scores"
 		       data-ng-if="game.scores">
 			<thead>
 				<tr>
-					<th data-ng-repeat="tla in game.teams"
+					<th data-ng-repeat="tla in game.teams track by $index"
 					    title="{{team|teamInfo:teams|teamName}}">
 						{{tla}}
+						<span data-ng-if="!tla">-</span>
 					</th>
 				</tr>
 			</thead>
 			<tr data-ng-repeat="(type, scores) in game.scores">
-				<td data-ng-repeat="tla in game.teams">
+				<td data-ng-repeat="tla in game.teams track by $index">
 					{{scores[tla]}}
 				</td>
 			</tr>
@@ -129,7 +130,7 @@
 		<table>
 			<thead>
 				<tr>
-					<th data-ng-repeat="tla in game.teams">
+					<th data-ng-repeat="tla in game.teams track by $index">
 						{{$index}}
 					</th>
 				</tr>
@@ -192,11 +193,11 @@
 			<th>Team</th>
 		</tr>
 	</thead>
-	<tr data-ng-repeat="item in league_points|limitTo:10" id="{{item.tla}}">
-		<td>{{item.pos}}</td>
-		<td>{{item.points}}</td>
-		<td title="{{item.tla|teamInfo:teams|teamName}}">
-		<a href="{/literal}{$root_uri}{literal}teams/{{item.tla}}">{{item.tla}}</a>
+	<tr data-ng-repeat="team in teams|leaderboard:10" id="{{team.tla}}">
+		<td>{{team.league_pos}}</td>
+		<td>{{team.scores.league}}</td>
+		<td title="{{team|teamName}}">
+			<a href="{/literal}{$root_uri}{literal}teams/{{item.tla}}">{{team.tla}}</a>
 		</td>
 	</tr>
 </table>
@@ -218,11 +219,11 @@
 		<tr>
 			<th>Time</th>
 			<th>Match</th>
-			<th data-ng-repeat="arena in arenas" colspan="4">Arena {{arena}}</th>
+			<th data-ng-repeat="arena in arenas" colspan="4" style="color: {{arena.colour}};">Arena {{arena.display_name}}</th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr data-ng-repeat="match in matches"
+		<tr data-ng-repeat="match in matches|matchesEndingAfterNow:time_offset|limitTo:10"
 			data-ng-class="{current: match.num==current_match.num}"
 			id="match-{{match.num}}">
 			<td title="Begins at {{match.time|date:'HH:mm:ss on EEEE, d MMMM'}}.">{{match.time|date:'HH:mm'}}</td>
