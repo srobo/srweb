@@ -273,7 +273,7 @@ This is accessible after the `R.init()` call through the list of Ruggeduinos:
 
 R.init()
 
-ruggeduino_device = R.ruggeduinos[RUGGEDUINO_ID].serial_dev
+ruggeduino_device = R.ruggeduinos[RUGGEDUINO_ID].path
 
 # Do your Ruggeduino initialisation here if you wish
 
@@ -295,7 +295,7 @@ R.ruggeduino_ignore_id( RUGGEDUINO_ID )
 R.init()
 R.wait_start()
 
-ser = serial.Serial( R.ruggeduinos[RUGGEDUINO_ID].serial_dev )
+ser = serial.Serial( R.ruggeduinos[RUGGEDUINO_ID].path )
 
 ~~~~~
 
