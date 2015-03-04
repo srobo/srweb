@@ -75,7 +75,7 @@ They support the following resolutions:
 |  864 x 480                |       | yes   |
 |  960 x 544                |       | yes   |
 |  960 x 720                | yes   | yes   |
-|  1280 x 576               |       | yes   |
+|  1024 x 576               |       | yes   |
 |  1280 x 720               | yes   | yes   |
 |  1280 x 800               | yes   |       |
 |  1280 x 960               |       | yes   |
@@ -192,4 +192,3 @@ rot_y
 
 rot_z
 :   Rotation of the marker about the z-axis.
-
