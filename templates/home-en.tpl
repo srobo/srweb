@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="app">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" data-ng-app="app">
 
 <head>
 	<title>Welcome to Student Robotics | Student Robotics</title>
