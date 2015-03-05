@@ -49,13 +49,26 @@
             "answers": [
                 {
                     "answer": "My Power Board isn't doing anything",
-                    "nextquestion": "power-board-power-check"
+                    "nextquestion": "power-board-switch-check"
                 },
                 {
                     "answer": "My Power Board is beeping",
                     "message": "This means that the board's current limit has been triggered. Try connecting fewer things to the board, or change your code so that your motors turn on more slowly."
                 }
             ]
+        },
+        "power-board-switch-check": {
+           "question": "Is the external On|Off switch connected?",
+           "answers": [
+               {
+                   "answer": "Yes",
+                   "nextquestion": "power-board-power-check"
+               },
+               {
+                   "answer": "No",
+                   "message": "There is an external On|Off switch connector. If you are not connecting a switch, you must connect a loop of wire between the two terminals. See the preparation section in <a href=\"ROOT_URL/docs/kit/assembly\" target=\"_blank\">kit assembly</a> for more details."
+               }
+           ]
         },
         "power-board-power-check": {
             "question": "Is the battery plugged in and charged?",
