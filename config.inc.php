@@ -25,8 +25,8 @@ ini_set('display_errors', 1);
 default_define('LIVE_SITE',	false);
 
 /* Dates of this year's competition */
-default_define('COMPETITION_START',	"2014-04-26 00:00:00");
-default_define('COMPETITION_END',	"2014-04-27 23:00:00");
+default_define('COMPETITION_START',	"2015-04-25 00:00:00");
+default_define('COMPETITION_END',	"2015-04-26 23:00:00");
 
 /* Work out if we're in competition mode */
 function is_competition_mode() {
