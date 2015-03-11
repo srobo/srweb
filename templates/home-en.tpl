@@ -229,7 +229,7 @@
 			data-ng-class="{current: match.num==current_match.num}"
 			id="match-{{match.num}}">
 			<td title="Begins at {{match.time|date:'HH:mm:ss on EEEE, d MMMM'}}.">{{match.time|date:'HH:mm'}}</td>
-			<td>{{match.num}}</td>
+			<td title="{{match.display_name}}">{{match.num}}</td>
 			<td data-ng-repeat="team in match.teams track by $index"
 				title="{{team|teamInfo:teams|teamName}}">
 				<!--- TODO: non-literal filtering, possibly based on the existence of the page -->
