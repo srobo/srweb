@@ -36,6 +36,7 @@
 	<script type="text/javascript" src="{$root_uri}js/live-streams.js"></script>
 {else}
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="{$root_uri}/js/home-page-video.js"></script>
 
 	{literal}
 	<script type="text/javascript">
@@ -185,7 +186,7 @@
 
 			<div id="leaderboard-container" class="info-box">
 				<!-- TODO: maybe move to left so that you read this first
-				  -- this tells you that the TLAs are teams -->
+				   this tells you that the TLAs are teams -->
 				<span class="more-link">
 					<a href="{$root_uri}comp/league">more...</a>
 				</span>
@@ -254,17 +255,28 @@
 
 	<div class="content">
 
+		<script id="videoPlayerHTML" type="text/html">
+			<iframe id="videoPlayer" width="960" height="540"
+				src="https://www.youtube-nocookie.com/embed/SRgzY5sUYQ8?autoplay=1&amp;rel=0&amp;showinfo=0"
+				frameborder="0" allowfullscreen>
+			</iframe>
+		</script>
+
 		<div id="topBanner">
-			<img src="{$root_uri}images/content/srobo_website_robot.png" alt="Image of Robot" />
+			<!-- videoPlayerHTML is placed here -->
 
-			<h1>Welcome to Student Robotics</h1>
+			<div class="overlayText">
+				<h1>Welcome to Student Robotics</h1>
 
-			<p>Student Robotics is an exciting annual
-			  competition that challenges teams of 16-18
-			  year-olds to build fully autonomous robots.
-			  Participating teams must design, build and
-			  test their robots, ready to compete against
-			  other teams.</p>
+				<p>Student Robotics is an exciting annual
+				  competition that challenges teams of 16-18
+				  year-olds to build fully autonomous robots.
+				  Participating teams must design, build and
+				  test their robots, ready to compete against
+				  other teams.</p>
+
+				<p><a class="playActionLink" href="https://www.youtube.com/watch?v=SRgzY5sUYQ8">Watch video</a></p>
+			</div>
 		</div>
 
 		<div id="latestNews">
