@@ -219,3 +219,8 @@ div#schools_how_to_enter iframe {
 	margin:0 auto;
 	width:600px;
 }
+
+.col2 {
+	width: 50%;
+	display: inline-block;
+}
