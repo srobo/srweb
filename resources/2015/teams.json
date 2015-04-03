@@ -19,6 +19,11 @@
         "name":"Barton Peveril College",
         "rookie":false
     },
+    "BPV2":{
+        "URL":"http://www.barton-peveril.ac.uk/",
+        "name":"Barton Peveril College",
+        "rookie":false
+    },
     "BRK":{
         "URL":"http://www.brock.ac.uk/",
         "name":"Brockenhurst College",
@@ -43,11 +48,6 @@
         "URL":"http://www.catscollege.com/en/locations/cambridge/",
         "name":"CATS College Cambridge",
         "rookie":true
-    },
-    "CCR":{
-        "URL":"http://www.cirencester.ac.uk/",
-        "name":"Cirencester College",
-        "rookie":false
     },
     "CDU":{
         "URL":"http://www.cedarsupper.org.uk",
@@ -89,11 +89,6 @@
         "name":"Collyers Sixth Form College",
         "rookie":false
     },
-    "COR":{
-        "URL":"http://www.corsham.wilts.sch.uk/",
-        "name":"The Corsham School",
-        "rookie":true
-    },
     "COT":{
         "URL":"http://www.cotham.bristol.sch.uk/",
         "name":"Cotham School",
@@ -115,6 +110,11 @@
         "rookie":true
     },
     "GRD":{
+        "URL":"http://www.gordano.n-somerset.sch.uk/",
+        "name":"Gordano School",
+        "rookie":false
+    },
+    "GRD2":{
         "URL":"http://www.gordano.n-somerset.sch.uk/",
         "name":"Gordano School",
         "rookie":false
@@ -223,11 +223,6 @@
         "URL":"http://www.rgs-guildford.co.uk/",
         "name":"Royal Grammar School, Guildford",
         "rookie":false
-    },
-    "RHY":{
-        "URL":"http://learn.caerphilly.org.uk/ysgolgyfuncwmrhymni/",
-        "name":"Ysgol Gyfun Cwm Rhymni",
-        "rookie":true
     },
     "SPC":{
         "URL":"http://www.st-petersschool.co.uk/",
