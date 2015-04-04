@@ -248,9 +248,10 @@
 			<td title="Begins at {{match.time|date:'HH:mm:ss on EEEE, d MMMM'}}.">{{match.time|date:'HH:mm'}}</td>
 			<td title="{{match.display_name}}">{{match.num}}</td>
 			<td data-ng-repeat="team in match.teams track by $index"
+				data-ng-class="{no_match: !team}"
 				title="{{team|teamInfo:teams|teamName}}">
 				<!--- TODO: non-literal filtering, possibly based on the existence of the page -->
-				<a data-ng-if="team != '-'"
+				<a data-ng-if="team && team != '-'"
 				   href="{/literal}{$root_uri}{literal}teams/{{team}}">{{team}}</a>
 				<span data-ng-if="team == '-'">{{team}}</span>
 			</td>
