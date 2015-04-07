@@ -31,6 +31,9 @@
 	<script type="text/javascript" src="{$root_uri}js/competition-filters.js"></script>
 	<script type="text/javascript" src="{$root_uri}js/competition-resources.js"></script>
 	<script type="text/javascript" src="{$root_uri}js/controllers/CompMode.js"></script>
+
+	<script type="text/javascript" src="https://jwpsrv.com/library/XE4vyEM1EeOQDCIACqoGtw.js"></script>
+	<script type="text/javascript" src="{$root_uri}js/live-streams.js"></script>
 {else}
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
@@ -68,16 +71,19 @@
 
 	<div class="content">
 		<div id="competition">
-			<span class="top-links" id="live-stream-link">
-				<a href="http://batc-uk.org/live-stream.html">
-					View live stream<br />
-					<img src="{$root_uri}images/template/batc-streaming.png" alt="Live stream provided by BATC UK" />
-				</a>
-			</span>
 			<span class="top-links" id="more-link">
 				<a href="{$root_uri}events/sr2014/2014-04-26-competition">Tell me more...</a>
 			</span>
 			<h1 style="text-align: center;">SR2014 Live!</h1>
+			<div id="live-stream-wrapper">
+				<div id="live-stream-controls">
+					<a id="live-stream-a-link" class="selected" href="#">Arena A</a> |
+					<a id="live-stream-b-link" href="#">Arena B</a> |
+					<a id="live-stream-hide-link" href="#">No stream</a>
+				</div>
+				<div id="live-stream-a"></div>
+				<div id="live-stream-b"></div>
+			</div>
 			<div id="match-info">
 {literal}
 <div class="scored match" style="position:relative;margin-top:10px;">
