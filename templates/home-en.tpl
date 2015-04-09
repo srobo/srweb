@@ -85,8 +85,7 @@
 		<a href="{/literal}{$root_uri}{literal}comp/points">more scores...</a>
 	</span>
 	<h4>
-		Latest Scores
-		<span data-ng-if="previous_match">- Match #{{previous_match.num}}</span>
+		Latest Scores<span data-ng-if="previous_match">: {{previous_match.display_name}}</span>
 	</h4>
 	<span data-ng-if="!previous_match">No scores yet recorded.</span>
 	<div class="game"
@@ -127,7 +126,7 @@
 	</div>
 </div>
 <script type="text/ng-template" id="match-info">
-	<h4>{{data.description}} (#{{data.match.num}})</h4>
+	<h4>{{data.description}}: {{data.match.display_name}}</h4>
 	<div class="game" data-ng-repeat-start="(arena, game) in data.match.games">
 		<table>
 			<thead>
@@ -161,17 +160,17 @@
 
 <div class="current match"
      data-ng-if="current_match.exists"
-     data-ng-init="data={description:'Current Match',match:current_match}"
+     data-ng-init="data={description:'Current',match:current_match}"
      data-ng-include="'match-info'">
 </div>
 <div class="match"
      data-ng-if="next_match.exists"
-     data-ng-init="data={description:'Next Match',match:next_match}"
+     data-ng-init="data={description:'Next',match:next_match}"
      data-ng-include="'match-info'">
 </div>
 <div class="match"
      data-ng-if="upcoming_match.exists"
-     data-ng-init="data={description:'Upcoming Match',match:upcoming_match}"
+     data-ng-init="data={description:'Upcoming',match:upcoming_match}"
      data-ng-include="'match-info'">
 </div>
 
