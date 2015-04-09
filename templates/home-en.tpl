@@ -27,6 +27,7 @@
 		var API_ROOT = "/comp-api";
 	</script>
 
+	<script type="text/javascript" src="{$root_uri}js/lib/angularjs-ordinal-filter/ordinal.js"></script>
 	<script type="text/javascript" src="{$root_uri}js/competition-utils.js"></script>
 	<script type="text/javascript" src="{$root_uri}js/competition-filters.js"></script>
 	<script type="text/javascript" src="{$root_uri}js/competition-resources.js"></script>
@@ -111,7 +112,12 @@
 			</thead>
 			<tr data-ng-repeat="(type, scores) in game.scores">
 				<td data-ng-repeat="tla in game.teams track by $index">
-					{{scores[tla]}}
+					<span data-ng-if="type != 'ranking'">
+						{{scores[tla]}}
+					</span>
+					<span data-ng-if="type == 'ranking'">
+						{{scores[tla]|ordinal}}
+					</span>
 				</td>
 			</tr>
 		</table>
