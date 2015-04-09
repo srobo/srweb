@@ -96,8 +96,24 @@
 		Latest Scores<span data-ng-if="previous_match">: {{previous_match.display_name}}</span>
 	</h4>
 	<span data-ng-if="!previous_match">No scores yet recorded.</span>
-	<div class="game"
-	     data-ng-repeat-start="(arena, game) in previous_match.games">
+	<div class="game headings"
+	     data-ng-repeat-start="(arena, game) in previous_match.games"
+	     data-ng-class="{single: $first}"
+	     data-ng-show="!$first || $last">
+		<h4>&nbsp;</h4>
+		<table class="scores"
+		       data-ng-if="game.scores">
+			<thead>
+				<tr>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
+			<tr data-ng-repeat="(type, scores) in game.scores">
+				<th>{{type|titleCase}}</th>
+			</tr>
+		</table>
+	</div>
+	<div class="game" data-ng-repeat-end>
 		<h4 style="color: {{arenas[arena].colour}};">Arena {{arenas[arena].display_name}}</h4>
 		<table class="scores"
 		       data-ng-if="game.scores">
@@ -123,24 +139,25 @@
 		</table>
 		<p data-ng-if="!game.scores">No scores yet recorded for this game.</p>
 	</div>
-	<div class="game headings" data-ng-repeat-end data-ng-if="!$last">
-		<h4>&nbsp;</h4>
-		<table class="scores"
-		       data-ng-if="game.scores">
-			<thead>
-				<tr>
-					<th>&nbsp;</th>
-				</tr>
-			</thead>
-			<tr data-ng-repeat="(type, scores) in game.scores">
-				<th>{{type|titleCase}}</th>
-			</tr>
-		</table>
-	</div>
 </div>
 <script type="text/ng-template" id="match-info">
 	<h4>{{data.description}}: {{data.match.display_name}}</h4>
-	<div class="game" data-ng-repeat-start="(arena, game) in data.match.games">
+	<div class="game headings"
+	     data-ng-repeat-start="(arena, game) in data.match.games"
+	     data-ng-class="{single: $first}"
+	     data-ng-show="!$first || $last">
+		<table>
+			<thead>
+				<tr>
+					<th>Corner</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Team</th>
+			</tr>
+		</table>
+	</div>
+	<div class="game" data-ng-repeat-end>
 		<table>
 			<thead>
 				<tr>
@@ -154,18 +171,6 @@
 					{{tla}}
 					<span data-ng-if="!tla">-</span>
 				</td>
-			</tr>
-		</table>
-	</div>
-	<div class="game headings" data-ng-repeat-end data-ng-if="!$last">
-		<table>
-			<thead>
-				<tr>
-					<th>Corner</th>
-				</tr>
-			</thead>
-			<tr>
-				<th>Team</th>
 			</tr>
 		</table>
 	</div>
