@@ -72,9 +72,9 @@
 	<div class="content">
 		<div id="competition">
 			<span class="top-links" id="more-link">
-				<a href="{$root_uri}events/sr2014/2014-04-26-competition">Tell me more...</a>
+				<a href="{$root_uri}events/sr2015/2015-04-25-competition">Tell me more...</a>
 			</span>
-			<h1 style="text-align: center;">SR2014 Live!</h1>
+			<h1 style="text-align: center;">SR2015 Live!</h1>
 			<div id="live-stream-wrapper">
 				<div id="live-stream-controls">
 					<a id="live-stream-a-link" class="selected" href="#">Arena A</a> |
