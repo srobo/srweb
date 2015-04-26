@@ -315,7 +315,7 @@
 					<h3><a href="{$root_uri}about">Who are we?</a></h3>
 					<p>
 						<!-- TODO: or something better -->
-						Student Robotics run an annual robotics <a href="/~peter/sr/srweb/schools/game">competition</a>
+						Student Robotics run an annual robotics <a href="{$root_uri}schools/game">competition</a>
 						for sixth-form schools and colleges.
 						All of the <a href="{$root_uri}schools/kit">kit</a> the schools &amp; colleges use is designed, built, tested and distributed by us.
 						Student Robotics is run, in its entirety, by a <a href="{$root_uri}about/committee">team</a> of university students and recent graduates
