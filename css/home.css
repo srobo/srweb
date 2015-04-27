@@ -11,7 +11,7 @@ div.content p {
 
 div.content div#topBanner {
 	position: relative;
-	background: url('../images/content/sr2014-youtube-video-shot.jpg');
+	background: url('../images/template/sr2014-youtube-video-shot.jpg');
 	background-size: cover;
 	background-position: 50% 50%, center;
 	width: 960px;

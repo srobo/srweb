@@ -37,7 +37,7 @@
 	<script type="text/javascript" src="{$root_uri}js/live-streams.js"></script>
 {else}
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="{$root_uri}/js/home-page-video.js"></script>
+	<script type="text/javascript" src="{$root_uri}js/home-page-video.js"></script>
 
 	{literal}
 	<script type="text/javascript">
