@@ -10,6 +10,12 @@ The SR robot simulator allows you to try out programming ideas with a virtual ro
 The virtual robot has a simple grabber and two motors (configured for skid steering).
 Its programming interface is very similar to that for your real robot (see the [Interface section](#Interface)).
 
+<div class="warning">
+	While the simulator's interface attempts to be as realistic as possible, it will not be identical to that of your actual robot.
+	It is therefore highly unlikely that code which works in the simulator will work in the real world without modification.
+	There is no substitute for real-world testing!
+</div>
+
 Installation
 ------------
 
