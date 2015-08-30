@@ -8,6 +8,7 @@ Disallow: /cgit/*?id=
 Disallow: /cgit/*/commit/
 Disallow: /cgit/*/diff/
 Disallow: /cgit/*/refs/
+Disallow: /cgit/*/snapshot/
 Disallow: /.git/
 Disallow: /ide/
 Disallow: /forum/
