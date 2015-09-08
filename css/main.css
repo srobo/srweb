@@ -415,6 +415,25 @@ div.content div.info {
 	margin-bottom:15px;
 }
 
+div.content div.footnotes {
+	font-size:0.8em;
+}
+
+div.content div.footnotes p {
+	font-size: 1.0em;
+}
+
+div.content div.footnotes hr {
+	width:40%;
+	margin-left:10px;
+	margin-bottom:5px;
+	border-top:1px solid #C0C0C0;
+}
+
+div.content div.footnotes li p {
+	margin:0;
+}
+
 div#original {
 	height:auto;
 	padding:2px;
