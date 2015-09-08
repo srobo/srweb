@@ -111,6 +111,7 @@ div.content div#expandedMenu h3 {
 div.content div#expandedMenu ul {
 	list-style:none;
 	margin-left:0;
+	padding: 0;
 }
 
 div.content div#expandedMenu ul li a {
@@ -178,6 +179,10 @@ div.content div#boxWrapper div.box img {
 	float:right;
 	margin-left:10px;
 	margin-bottom:5px;
+}
+
+div.content div#boxWrapper div.box ul {
+	margin:0;
 }
 
 div.box ul.ui-tabs-nav {

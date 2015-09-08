@@ -49,16 +49,6 @@ div.docs div#content {
 	padding-left:10px;
 }
 
-div.docs div#content ul {
-	margin-left:45px;
-}
-
-div.docs div#content ol {
-	margin-left:45px;
-	list-style:decimal;
-	margin-bottom:15px;
-}
-
 pre code {
 	background:#FFF4B8;
 }
