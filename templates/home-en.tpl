@@ -348,87 +348,22 @@
 
 {if !$smarty.const.COMPETITION_MODE}
 				<div class="box">
-					<h3><a href="{$root_uri}key_dates">SR2015 Key Dates</a></h3>
+					<h3><a href="{$root_uri}key_dates">SR2016 Key Dates</a></h3>
 					<div id="date_tabs">
 						<ul>
-							<li><a href="#date_soton">Southampton</a></li>
-							<li><a href="#date_bristol">Bristol</a></li>
-							<li><a href="#date_london">London</a></li>
-							<li><a href="#date_munich">Munich</a></li>
-							<li><a href="#date_oxford">Oxford</a></li>
 						</ul>
 						<div id="date_soton">
-                            <a href="{$root_uri}events/kickstart">Kickstart:</a>
-                            <ul>
-                                <li><a href="{$root_uri}events/sr2015/2014-10-25-soton_kickstart">
-                                    25<sup>th</sup> October 2014
-                                </a></li>
-                            </ul>
-                            <a href="{$root_uri}events/tech_days">Tech Days:</a>
-                            <ul>
-                                <li><a href="{$root_uri}events/sr2015/2014-12-06-soton_tech_day_1">
-                                    6<sup>th</sup> December 2014
-                                </a></li>
-                                <li><a href="{$root_uri}events/sr2015/2015-02-21-soton_tech_day_2">
-                                    21<sup>st</sup> February 2015
-                                </a></li>
-                                <li><a href="{$root_uri}events/sr2015/2015-03-14-soton_tech_day_3">
-                                    14<sup>th</sup> March 2015
-                                </a></li>
-                            </ul>
-						</div>
-						<div id="date_bristol">
-                            <a href="{$root_uri}events/kickstart">Kickstart:</a>
-                            <ul>
-                                <li><a href="{$root_uri}events/sr2015/2014-10-25-bristol_kickstart">
-                                    25<sup>th</sup> October 2014
-                                </a></li>
-                            </ul>
-                            <a href="{$root_uri}events/tech_days">Tech Days:</a>
-                            <ul>
-                                <li><a href="{$root_uri}events/sr2015/2014-12-06-bristol_tech_day_1">
-                                    6<sup>th</sup> December 2014
-                                </a></li>
-                                <li><a href="{$root_uri}events/sr2015/2015-02-07-bristol_tech_day_2">
-                                    7<sup>th</sup> February 2015
-                                </a></li>
-                                <li><a href="{$root_uri}events/sr2015/2015-03-14-bristol_tech_day_3">
-                                    14<sup>th</sup> March 2015
-                                </a></li>
-                            </ul>
-						</div>
-						<div id="date_london">
-                            <a href="{$root_uri}events/kickstart">Kickstart:</a>
-                            <ul>
-                                <li><a href="{$root_uri}events/sr2015/2014-10-25-london_kickstart">
-                                    25<sup>th</sup> October 2014
-                                </a></li>
-                            </ul>
-						</div>
-						<div id="date_munich">
-                            <a href="{$root_uri}events/kickstart">Kickstart:</a>
-                            <ul>
-                                <li>
-                                    8<sup>th</sup> November 2014
-                                </li>
-                            </ul>
-						</div>
-						<div id="date_oxford">
-                            <a href="{$root_uri}events/tech_days">Tech Days:</a>
-                            <ul>
-                                <li><a href="{$root_uri}events/sr2015/2015-02-21-oxford_tech_day_1">
-                                    21<sup>st</sup> February 2015
-                                </a></li>
-                            </ul>
+							<a href="{$root_uri}events/kickstart">Kickstart:</a>
+							<ul>
+								<li>Late October (Date not confirmed)</li>
+							</ul>
 						</div>
 					</div>
 
 					<div>
 						<a href="{$root_uri}events/competition">Competition:</a>
 						<ul>
-							<li><a href="{$root_uri}events/sr2015/2015-04-25-competition">
-								25<sup>th</sup> and 26<sup>th</sup> April 2015
-							</a></li>
+							<li>April 2016 (Date not confirmed)</li>
 						</ul>
 					</div>
 				</div>
