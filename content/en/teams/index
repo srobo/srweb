@@ -11,6 +11,9 @@ $teams = array_values(get_team_info());
 
 <h1>Meet the Teams</h1>
 
+<p>SR2016 will be commencing soon. Once the competition has begun you will be able to follow their progress on this page. If you are interested in taking part then please <a href="/schools/how_to_enter">register your interest</a> and we'll get in touch with more information.</p>
+
+<!--
 <p>
 The SR2015 competiton is in full swing and here you can find a list of the teams taking part.
 Each team will be updating the photos below as they go so you can easily track their progress.
@@ -62,3 +65,4 @@ Competitors can modify their Team Status via the
 <a href="/docs/IDE/shortcuts_menu" title="The shortcuts menu is the little 'v' next to the projects tab">shortcuts menu</a>
 in the <a href="/ide/">IDE</a>.
 </p>
+-->
