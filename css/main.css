@@ -324,8 +324,13 @@ div.content iframe.video.right {
 
 div.content ul, div.content ol {
 	margin-left:20px;
-	padding-left:30px;
+	padding-left:10px;
 	margin-bottom:10px;
+}
+
+div.content > ul, div.content > ol,
+div#content > ul, div#content > ol {
+	padding-left:30px;
 }
 
 div.content ul {
@@ -342,6 +347,7 @@ div.content ol {
 
 div.content li {
 	line-height:1.5em;
+	padding-left:5px;
 }
 
 div.content li p {
