@@ -85,6 +85,10 @@ section.bar#season {
 	margin-top: 10px;
 }
 
+section.bar#season p#key-dates {
+	text-align: center;
+}
+
 section.bar#season h1, section.bar#getinvolved h1 {
 	color: #0D1F61;
 }

@@ -40,6 +40,8 @@
 		<section id="season" class="bar">
 			<h1>The SR Season</h1>
 			<p>The season begins around the end of October with the Kickstart event. Throughout the season teams are supported by mentors and regular Tech Days. This all culminates in a two-day Competition in April.</p>
+			<br>
+			<p id="key-dates">You can view the planned dates for upcoming events on the <a href="{$root_uri}key_dates">key dates page</a>.</p>
 			<div class="seasonBoxes">
 				<div>
 					<h2>Kickstart</h2>
