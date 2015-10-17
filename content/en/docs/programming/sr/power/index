@@ -6,7 +6,7 @@
 Power
 =====
 
-There are a few things that can be done with the power board, namely current and voltage sensing.
+There are a few things that can be done with the power board, namely current and voltage sensing, and beeping.
 As there is only one power board, it is not accessed like a list like `motors` for example:
 
 ~~~~~ .python
@@ -27,3 +27,21 @@ print R.power.battery.voltage, R.power.battery.current
 A fully charged battery will measure 12.6V.
 The power board will turn off and signal a low battery at 10.2V.
 The discharge curve is roughly linear between 11.4V and 10.4V.
+
+
+[Beeping](#beeping) {#beeping}
+-------
+
+The power board has a piezo buzzer which can beep.
+
+The beep function accepts 1 or 2 parameters, `duration` is compulsory and is measured in milliseconds. `note` is optional, but must be one string of `a-g` or `uc`. `frequency` is also optional, and should be an integer. One of `note` and `frequency`, must be given. If both are given, `note` is used.
+
+~~~~~ .python
+# Beep for 0.5s in D.
+R.power.beep(500, note='d')
+
+# Beep for 2s at 400Hz
+R.power.beep(2000, frequency=400)
+~~~~~
+
+`ValueError` is raised if the note is not recognised or the frequency is not an integer.
