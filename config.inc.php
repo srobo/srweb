@@ -177,7 +177,7 @@ default_define('TEAM_STATUS_DIR', 	ROOT_DIR . '/dev-content/team-status');
 default_define('TEAM_STATUS_IMG',	'images/dev-teams');
 
 // changes each SR year
-default_define('TEAMS_JSON', 'resources/2015/teams.json');
+default_define('TEAMS_JSON', 'resources/2016/teams.json');
 
 //404 log stuff
 default_define('LOG404_ENABLED',	true);
