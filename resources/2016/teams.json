@@ -1,267 +1,267 @@
 {
     "ABD": {
-        "URL": "http://www.abingdon.org.uk/", 
-        "name": "Abingdon School", 
+        "URL": "http://www.abingdon.org.uk/",
+        "name": "Abingdon School",
         "rookie": true
-    }, 
+    },
     "BDF": {
-        "URL": "http://www.bedfordschool.org.uk/", 
-        "name": "Bedford School", 
+        "URL": "http://www.bedfordschool.org.uk/",
+        "name": "Bedford School",
         "rookie": false
-    }, 
+    },
     "BGS": {
-        "URL": "http://www.bristolgrammarschool.co.uk/", 
-        "name": "Bristol Grammar School", 
+        "URL": "http://www.bristolgrammarschool.co.uk/",
+        "name": "Bristol Grammar School",
         "rookie": false
-    }, 
+    },
     "BPV": {
-        "URL": "http://www.barton-peveril.ac.uk/", 
-        "name": "Barton Peveril College", 
+        "URL": "http://www.barton-peveril.ac.uk/",
+        "name": "Barton Peveril College",
         "rookie": false
-    }, 
+    },
     "BRK": {
-        "URL": "http://www.brock.ac.uk/", 
-        "name": "Brockenhurst College", 
+        "URL": "http://www.brock.ac.uk/",
+        "name": "Brockenhurst College",
         "rookie": false
-    }, 
+    },
     "BRN": {
-        "URL": "http://www.stbrn.ac.uk/", 
-        "name": "St Brendan's Sixth Form College", 
+        "URL": "http://www.stbrn.ac.uk/",
+        "name": "St Brendan's Sixth Form College",
         "rookie": false
-    }, 
+    },
     "BTE": {
-        "URL": "http://www.bteacademy.co.uk/", 
-        "name": "BTE Academy", 
+        "URL": "http://www.bteacademy.co.uk/",
+        "name": "BTE Academy",
         "rookie": false
-    }, 
+    },
     "BWS": {
-        "URL": "http://www.bws-school.org.uk/", 
-        "name": "Bishop Wordsworth's school", 
+        "URL": "http://www.bws-school.org.uk/",
+        "name": "Bishop Wordsworth's school",
         "rookie": false
-    }, 
+    },
     "CAT": {
-        "URL": "http://www.catscollege.com/locations/cambridge.htm", 
-        "name": "CATS College Cambridge", 
+        "URL": "http://www.catscollege.com/locations/cambridge.htm",
+        "name": "CATS College Cambridge",
         "rookie": false
-    }, 
+    },
     "CBG": {
-        "URL": "http://www.coombegirlsschool.org/", 
-        "name": "Coombe Girls' School", 
+        "URL": "http://www.coombegirlsschool.org/",
+        "name": "Coombe Girls' School",
         "rookie": true
-    }, 
+    },
     "CDU": {
-        "URL": "http://www.cedarsupper.org.uk/", 
-        "name": "Cedars Upper School", 
+        "URL": "http://www.cedarsupper.org.uk/",
+        "name": "Cedars Upper School",
         "rookie": false
-    }, 
+    },
     "CGA": {
-        "URL": "http://www.clapton.hackney.sch.uk/", 
-        "name": "Clapton Girls Academy", 
+        "URL": "http://www.clapton.hackney.sch.uk/",
+        "name": "Clapton Girls Academy",
         "rookie": true
-    }, 
+    },
     "CGS": {
-        "URL": "http://www.colstonsgirls.bristol.sch.uk/", 
-        "name": "Colston's Girls School", 
+        "URL": "http://www.colstonsgirls.bristol.sch.uk/",
+        "name": "Colston's Girls School",
         "rookie": false
-    }, 
+    },
     "CHW": {
-        "URL": "https://www.cherwell.oxon.sch.uk/", 
-        "name": "The Cherwell School", 
+        "URL": "https://www.cherwell.oxon.sch.uk/",
+        "name": "The Cherwell School",
         "rookie": true
-    }, 
+    },
     "CLC": {
-        "URL": "https://www.cornwall.ac.uk/", 
-        "name": "Cornwall College, Saltash", 
+        "URL": "https://www.cornwall.ac.uk/",
+        "name": "Cornwall College, Saltash",
         "rookie": false
-    }, 
+    },
     "CLF": {
-        "URL": "http://www.cliftonhigh.bristol.sch.uk/", 
-        "name": "Clifton High School", 
+        "URL": "http://www.cliftonhigh.bristol.sch.uk/",
+        "name": "Clifton High School",
         "rookie": false
-    }, 
+    },
     "CLY": {
-        "URL": "http://www.collyers.ac.uk/", 
-        "name": "Collyers Sixth Form College", 
+        "URL": "http://www.collyers.ac.uk/",
+        "name": "Collyers Sixth Form College",
         "rookie": false
-    }, 
+    },
     "COR": {
-        "URL": "http://www.corsham.wilts.sch.uk/", 
-        "name": "The Corsham School", 
+        "URL": "http://www.corsham.wilts.sch.uk/",
+        "name": "The Corsham School",
         "rookie": false
-    }, 
+    },
     "CPR": {
-        "URL": "http://thecooperschool.co.uk/", 
-        "name": "The Cooper School", 
+        "URL": "http://thecooperschool.co.uk/",
+        "name": "The Cooper School",
         "rookie": false
-    }, 
+    },
     "CRB": {
-        "URL": "http://www.cranbrookschool.co.uk/", 
-        "name": "Cranbrook School", 
+        "URL": "http://www.cranbrookschool.co.uk/",
+        "name": "Cranbrook School",
         "rookie": false
-    }, 
+    },
     "DUL": {
-        "URL": "http://www.dulwich.org.uk/", 
-        "name": "Dulwich College", 
+        "URL": "http://www.dulwich.org.uk/",
+        "name": "Dulwich College",
         "rookie": false
-    }, 
+    },
     "GRD": {
-        "URL": "http://www.gordanoschool.org.uk/", 
-        "name": "Gordano School", 
+        "URL": "http://www.gordanoschool.org.uk/",
+        "name": "Gordano School",
         "rookie": false
-    }, 
+    },
     "HAM": {
-        "URL": "http://www.hamptonschool.org.uk/", 
-        "name": "Hampton School", 
+        "URL": "http://www.hamptonschool.org.uk/",
+        "name": "Hampton School",
         "rookie": false
-    }, 
+    },
     "HAY": {
-        "URL": "http://www.haydonschool.com/", 
-        "name": "Haydon School", 
+        "URL": "http://www.haydonschool.com/",
+        "name": "Haydon School",
         "rookie": true
-    }, 
+    },
     "HKS": {
-        "URL": "http://www.gym-hksb.de/", 
-        "name": "Gymnasium Hohenkirchen-Siegertsbrunn", 
+        "URL": "http://www.gym-hksb.de/",
+        "name": "Gymnasium Hohenkirchen-Siegertsbrunn",
         "rookie": true
-    }, 
+    },
     "HLB": {
-        "URL": "https://www.haileybury.com/", 
-        "name": "Haileybury", 
+        "URL": "https://www.haileybury.com/",
+        "name": "Haileybury",
         "rookie": true
-    }, 
+    },
     "HRS": {
-        "URL": "http://www.hillsroad.ac.uk/", 
-        "name": "Hills Road Sixth Form College", 
+        "URL": "http://www.hillsroad.ac.uk/",
+        "name": "Hills Road Sixth Form College",
         "rookie": false
-    }, 
+    },
     "HSO": {
-        "URL": "http://www.headington.org/", 
-        "name": "Headington School", 
+        "URL": "http://www.headington.org/",
+        "name": "Headington School",
         "rookie": false
-    }, 
+    },
     "HZW": {
-        "URL": "http://www.hazelwick.org/", 
-        "name": "Hazelwick School", 
+        "URL": "http://www.hazelwick.org/",
+        "name": "Hazelwick School",
         "rookie": false
-    }, 
+    },
     "KDE": {
-        "URL": "http://kennetexplorers.org.uk/", 
-        "name": "Kennet District Explorer Scouts", 
+        "URL": "http://kennetexplorers.org.uk/",
+        "name": "Kennet District Explorer Scouts",
         "rookie": false
-    }, 
+    },
     "KEG": {
-        "URL": "http://www.kegs.org.uk/", 
-        "name": "KEGS", 
+        "URL": "http://www.kegs.org.uk/",
+        "name": "KEGS",
         "rookie": false
-    }, 
+    },
     "KES": {
-        "URL": "http://prospectus.kes.hants.sch.uk/", 
-        "name": "King Edward VI School, Southampton", 
+        "URL": "http://prospectus.kes.hants.sch.uk/",
+        "name": "King Edward VI School, Southampton",
         "rookie": false
-    }, 
+    },
     "KEV": {
-        "URL": "http://www.king-ed.suffolk.sch.uk/", 
-        "name": "King Edward VI School", 
+        "URL": "http://www.king-ed.suffolk.sch.uk/",
+        "name": "King Edward VI School",
         "rookie": true
-    }, 
+    },
     "KTC": {
-        "URL": "http://www.kingsthorpecollege.org.uk/", 
-        "name": "Kingsthorpe College", 
+        "URL": "http://www.kingsthorpecollege.org.uk/",
+        "name": "Kingsthorpe College",
         "rookie": true
-    }, 
+    },
     "LFG": {
-        "URL": "http://www.lfg.musin.de/", 
-        "name": "Lion-Feuchtwanger-Gymnasium", 
+        "URL": "http://www.lfg.musin.de/",
+        "name": "Lion-Feuchtwanger-Gymnasium",
         "rookie": false
-    }, 
+    },
     "LHS": {
-        "URL": "http://www.lodeheathschool.co.uk/", 
-        "name": "Lode Heath School", 
+        "URL": "http://www.lodeheathschool.co.uk/",
+        "name": "Lode Heath School",
         "rookie": true
-    }, 
+    },
     "LSS": {
-        "URL": "http://www.lawrencesheriffschool.net/", 
-        "name": "Lawrence Sheriff School", 
+        "URL": "http://www.lawrencesheriffschool.net/",
+        "name": "Lawrence Sheriff School",
         "rookie": false
-    }, 
+    },
     "MAI": {
-        "URL": "http://www.gym-indersdorf.de/", 
-        "name": "Gymnasium Markt Indersdorf", 
+        "URL": "http://www.gym-indersdorf.de/",
+        "name": "Gymnasium Markt Indersdorf",
         "rookie": false
-    }, 
+    },
     "MCS": {
-        "URL": "http://www.mcsoxford.org/", 
-        "name": "Magdalen College School", 
+        "URL": "http://www.mcsoxford.org/",
+        "name": "Magdalen College School",
         "rookie": false
-    }, 
+    },
     "MEA": {
-        "URL": "http://merchantsacademy.org/", 
-        "name": "Merchants' Academy", 
+        "URL": "http://merchantsacademy.org/",
+        "name": "Merchants' Academy",
         "rookie": false
-    }, 
+    },
     "MFG": {
-        "URL": "http://www.themfg.co.uk/", 
-        "name": "The Mirfield Free Grammar and Sixth Form", 
+        "URL": "http://www.themfg.co.uk/",
+        "name": "The Mirfield Free Grammar and Sixth Form",
         "rookie": false
-    }, 
+    },
     "PSC": {
-        "URL": "http://www.psc.ac.uk/", 
-        "name": "Peter Symonds", 
+        "URL": "http://www.psc.ac.uk/",
+        "name": "Peter Symonds",
         "rookie": false
-    }, 
+    },
     "QEH": {
-        "URL": "http://www.qehbristol.co.uk/", 
-        "name": "QEH Bristol", 
+        "URL": "http://www.qehbristol.co.uk/",
+        "name": "QEH Bristol",
         "rookie": false
-    }, 
+    },
     "QMC": {
-        "URL": "http://www.qmc.ac.uk/", 
-        "name": "Queen Mary's College ", 
+        "URL": "http://www.qmc.ac.uk/",
+        "name": "Queen Mary's College ",
         "rookie": false
-    }, 
+    },
     "RGS": {
-        "URL": "http://www.rgs-guildford.co.uk/", 
-        "name": "Royal Grammar School Guildford", 
+        "URL": "http://www.rgs-guildford.co.uk/",
+        "name": "Royal Grammar School Guildford",
         "rookie": false
-    }, 
+    },
     "SCS": {
-        "URL": "http://www.silcoates.org.uk/", 
-        "name": "Silcoates School", 
+        "URL": "http://www.silcoates.org.uk/",
+        "name": "Silcoates School",
         "rookie": true
-    }, 
+    },
     "SEN": {
-        "URL": "http://www.shsb.org.uk/page/default.asp?title=Home&pid=1", 
-        "name": "Southend High School for Boys", 
+        "URL": "http://www.shsb.org.uk/page/default.asp?title=Home&pid=1",
+        "name": "Southend High School for Boys",
         "rookie": false
-    }, 
+    },
     "SWI": {
-        "URL": "http://www.swgs.wilts.sch.uk/", 
-        "name": "South Wilts Grammar School for Girls", 
+        "URL": "http://www.swgs.wilts.sch.uk/",
+        "name": "South Wilts Grammar School for Girls",
         "rookie": false
-    }, 
+    },
     "TLC": {
-        "URL": "http://www.ladiescollege.com/", 
-        "name": "The Ladies' College ", 
+        "URL": "http://www.ladiescollege.com/",
+        "name": "The Ladies' College ",
         "rookie": true
-    }, 
+    },
     "TTN": {
-        "URL": "http://www.richardtaunton.ac.uk/", 
-        "name": "Richard Taunton 6th Form College", 
+        "URL": "http://www.richardtaunton.ac.uk/",
+        "name": "Richard Taunton 6th Form College",
         "rookie": false
-    }, 
+    },
     "TWG": {
-        "URL": "http://www.twgsb.org.uk/", 
-        "name": "Tunbridge Wells Grammar School for Boys", 
+        "URL": "http://www.twgsb.org.uk/",
+        "name": "Tunbridge Wells Grammar School for Boys",
         "rookie": false
-    }, 
+    },
     "UVH": {
-        "URL": "http://www.uvhs.uk/", 
-        "name": "Ulverston Victoria High School", 
+        "URL": "http://www.uvhs.uk/",
+        "name": "Ulverston Victoria High School",
         "rookie": true
-    }, 
+    },
     "WHS": {
-        "URL": "http://www.whsg.info/", 
-        "name": "Westcliff High School for Girls", 
+        "URL": "http://www.whsg.info/",
+        "name": "Westcliff High School for Girls",
         "rookie": false
     }
 }
