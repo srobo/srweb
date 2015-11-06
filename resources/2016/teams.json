@@ -54,14 +54,14 @@
         "name": "Cedars Upper School",
         "rookie": false
     },
-    "CGA": {
-        "URL": "http://www.clapton.hackney.sch.uk/",
-        "name": "Clapton Girls Academy",
-        "rookie": true
-    },
     "CGS": {
         "URL": "http://www.colstonsgirls.bristol.sch.uk/",
         "name": "Colston's Girls School",
+        "rookie": false
+    },
+    "CHB": {
+        "URL": "http://www.camphillboys.bham.sch.uk/",
+        "name": "King Edward VI Camp Hill School for Boys",
         "rookie": false
     },
     "CHW": {
@@ -87,7 +87,7 @@
     "COR": {
         "URL": "http://www.corsham.wilts.sch.uk/",
         "name": "The Corsham School",
-        "rookie": false
+        "rookie": true
     },
     "CPR": {
         "URL": "http://thecooperschool.co.uk/",
@@ -174,11 +174,6 @@
         "name": "Lion-Feuchtwanger-Gymnasium",
         "rookie": false
     },
-    "LHS": {
-        "URL": "http://www.lodeheathschool.co.uk/",
-        "name": "Lode Heath School",
-        "rookie": true
-    },
     "LSS": {
         "URL": "http://www.lawrencesheriffschool.net/",
         "name": "Lawrence Sheriff School",
@@ -192,11 +187,6 @@
     "MCS": {
         "URL": "http://www.mcsoxford.org/",
         "name": "Magdalen College School",
-        "rookie": false
-    },
-    "MEA": {
-        "URL": "http://merchantsacademy.org/",
-        "name": "Merchants' Academy",
         "rookie": false
     },
     "MFG": {
@@ -239,6 +229,11 @@
         "name": "South Wilts Grammar School for Girls",
         "rookie": false
     },
+    "TBG": {
+        "URL": "http://www.tbgs.co.uk/",
+        "name": "Torquay Boy's Grammar School",
+        "rookie": false
+    },
     "TLC": {
         "URL": "http://www.ladiescollege.com/",
         "name": "The Ladies' College ",
@@ -258,6 +253,11 @@
         "URL": "http://www.uvhs.uk/",
         "name": "Ulverston Victoria High School",
         "rookie": true
+    },
+    "WGS": {
+        "URL": "http://www.wisbechgrammar.com/",
+        "name": "Wisbech Grammar School",
+        "rookie": false
     },
     "WHS": {
         "URL": "http://www.whsg.info/",
