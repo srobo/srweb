@@ -149,7 +149,9 @@ token_net
 
 offset
 :   The offset of the numeric code of the marker from the lowest numbered marker of its type.
-    (e.g. Markers 28 and 29, which are the lowest numbered markers that represent robots, have offsets of 0 and 1 respectively.)
+    For example: markers 28 and 29, which are the lowest numbered markers that represent robots, have offsets of 0 and 1 respectively.
+    Due to the arrangement of the ids for the token markers, this value is only defined for the
+    `MARKER_ARENA` and `MARKER_ROBOT` type tokens.
 
 size
 :   The size of the marker in metres.
