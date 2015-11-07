@@ -6,9 +6,9 @@
 Motors
 ======
 
-The `motors` object is used to control a collection of motors.
+The `motors` object is used to control a collection of motor boards.
 Similar to `ruggeduinos` and `servos`, `motors` can be used like a list.
-To do something with the **first motor** board, you would use:
+To do something with the **first motor board**, you would use:
 
 ~~~~~ .python
 R.motors[0].something...
@@ -29,7 +29,7 @@ Found the following devices:
 </pre>
 
 
-However, like `ruggeduinos`, `motors` is actually a dictionary.
+However, like `ruggeduinos` and `servos`, `motors` is actually a dictionary.
 As a result, in `motors` you can also use the SR Part Code of the motor board as a key.
 For example, if you had a board that was labelled "SR0A123",
 you could do this instead:
@@ -49,19 +49,19 @@ import time
 
 R = Robot()
 
-# motor 0, channel 0 to full power forward
+# motor board 0, channel 0 to full power forward
 R.motors[0].m0.power = 100
 
-# motor 1, channel 0 to full power reverse
+# motor board 1, channel 0 to full power reverse
 R.motors[1].m0.power = -100
 
-# motor 0, channel 1 to half power forward
+# motor board 0, channel 1 to half power forward
 R.motors[0].m1.power = 50
 
-# motor 1, channel 0 stopped
+# motor board 1, channel 0 stopped
 R.motors[1].m0.power = 0
 
-# the following will put motor 0, channel 1 at 25% power (forwards) for 2.5 seconds:
+# the following will put motor board 0, channel 1 at 25% power (forwards) for 2.5 seconds:
 R.motors[0].m1.power = 25
 time.sleep(2.5)       # wait for 2.5 seconds
 R.motors[0].m1.power = 0
@@ -70,7 +70,7 @@ R.motors[0].m1.power = 0
 You can read the current power value for a motor using the same field:
 
 ~~~~~ .python
-# get the current output power of motor 0, channel 0
+# get the current output power of motor board 0, channel 0
 currentTarget = R.motors[0].m0.power
 ~~~~~
 
