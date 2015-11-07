@@ -23,10 +23,14 @@ p.validation-error-msg {
 
 /* Teams pages */
 /* /teams/ */
+ul#teams_container {
+	padding:0;
+}
 ul#teams_container li {
 	list-style:none;
 	float:left;
-	margin:8px;
+	margin:12px 9px;
+	padding:0;
 	text-align:center;
 	width:160px;
 }
