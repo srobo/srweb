@@ -12,7 +12,7 @@ including 6 for analogue input (labelled A0 to A5).
 
 The `ruggeduinos` object is used to control a collection of Ruggeduinos.
 Similar to `motors` and `servos`, `ruggeduinos` can be used like a list.
-To do something with the **first Ruggeduino** board, you would use:
+To do something with the **first Ruggeduino**, you would use:
 
 ~~~~~ .python
 R.ruggeduinos[0].something...
