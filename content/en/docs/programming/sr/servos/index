@@ -24,12 +24,17 @@ It is important that you use integers (whole numbers, such as `10` instead of
 `10.0`) when specifying servo positions.
 </div>
 
-You can only set a servo's position, not read it back.
-So, the following example is invalid:
+You can read the last value a servo was set to using similar code:
 
 ~~~~~ .python
-bees = R.servos[0][0]  # Error
+# get the last setting of the second servo on the first Servo Board
+lastSetting = R.servos[0][1]
 ~~~~~
+
+<div class="info" markdown="1">
+While it is possible to retrieve the last position a servo was set to,
+this does not guarantee that the servo is currently in that position.
+</div>
 
 [How the set position relates to the servo angle](#ServoAngle) {#ServoAngle}
 -----------------------------------------------
