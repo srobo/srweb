@@ -23,6 +23,7 @@ RewriteCond %{REQUEST_URI}	!(resources/2012/markers(.*))$
 RewriteCond %{REQUEST_URI}	!(resources/2013/markers(.*))$
 RewriteCond %{REQUEST_URI}	!(resources/2014/markers(.*))$
 RewriteCond %{REQUEST_URI}	!(resources/2015/markers(.*))$
+RewriteCond %{REQUEST_URI}	!(resources/2016/markers(.*))$
 
 
 RewriteRule ^(.+)$ 	index.php?page=$1	[L,QSA]
