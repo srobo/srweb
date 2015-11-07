@@ -1,21 +1,54 @@
 //TITLE:	Servos
-//DESCRIPTION:
-//KEYWORDS:
+//DESCRIPTION:	Explains how to use the Student Robotics robot API to control servos.
+//KEYWORDS:	python, robot, servo, programming, position
 //CONTENT_TYPE:	markdown
 
 Servos
 ======
 
-A servo board can have a number of servos plugged into it, with their positions controlled using the `servos` object.
-As with `ruggeduinos` and `motors`, `servos` is a list, with indexes based on the order of their SR part codes, printed on a sticker on the bottom of the case.
+The `servos` object is used to control a collection of Servo Boards.
+Similar to `motors` and `ruggeduinos`, `servos` can be used like a list.
+To do something with the **first Servo Board**, you would use:
+
+~~~~~ .python
+R.servos[0].something...
+~~~~~
+
+...because indexes are 0-based (counting starts from 0, not 1).
+
+When you have more than one Servo Board connected to your kit
+they will be ordered based upon their serial number.
+
+The SR Part Code of each detected motor board is also printed to the log when your robot starts.
+It will look something like this:
+
+<pre class="not-code">
+Found the following devices:
+ - Servos:
+    0: Servo( serialnum = "SR0LG31" )
+</pre>
+
+
+However, like `motors` and `ruggeduinos`, `servos` is actually a dictionary.
+As a result, in `servos` you can also use the SR Part Code of the Servo Board as a key.
+For example, if you had a board that was labelled "SR0LG31",
+you could do this instead:
+
+~~~~~ .python
+R.servos["SR0LG31"].something...
+~~~~~
+
+Setting servo positions
+-----------------------
+
 The position of servos can range from `-100` to `100` inclusive:
 
 ~~~~~ .python
-# R.servos[N][SERVO_NUMBER] = POS
+# R.servos[SERVO_BOARD_ID][SERVO_NUMBER] = POS
 
-# set servo 1's position (on the first servo board connected, board 0) to 20
+# set servo 1's position (on the first Servo Board connected, board 0) to 20
 R.servos[0][1] = 20
-# Set servo 2's position (on the servo board with part code SRABC) to -55
+# Set servo 2's position (on the Servo Board with part code SRABC) to -55
 R.servos["SRABC"][2] = -55
 ~~~~~
 
