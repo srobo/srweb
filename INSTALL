@@ -14,25 +14,42 @@ https://www.studentrobotics.org/trac/wiki/ApacheInstallGuide
 * Install php-Smarty:
 
 	+ for yum: `sudo yum install php-Smarty`
-	+ for apt: `sudo apt-get install smarty`
+	+ for apt: `sudo apt-get install smarty3`
 	+ (for both, ensure config.inc.php is set correctly)
 
-* ensure 'templates_compiled' is owned by apache user. There are a number
-  of ways you can do this:
+* ensure 'templates_compiled' and 'cache' is owned by apache user.
+  There are a number of ways you can do this:
 
-	+ `chown $APACHEU:$APACHEG templates_compiled/` (where $APACHEU
-	  and $APACHEG are the Apache user and Apache group, respectively)
-	+ `setfacl -m u:$APACHEU:rwx templates_compiled/` to allow r/w/x
-	  access to the apache user as well as the owner.
+	+ `chown $APACHEU:$APACHEG templates_compiled/ cache/` (where
+	  $APACHEU and $APACHEG are the Apache user and Apache group,
+	  respectively)
+	+ `setfacl -m u:$APACHEU:rwx templates_compiled/ cache/` to
+	  allow r/w/x access to the apache user as well as the owner.
 	  The `install.sh` script provided can perform this option for you.
 	+ You could also chmod, but depending on the dir's location, that
           may not be the best way.
 
-* modify the .htaccess file to use the correct 'RewriteBase' and ensure
-  mod_rewrite is installed and loaded in the main Apache configuration file.
+* ensure that mod_expires and mod_rewrite are installed and loaded in the
+  main Apache configuration file.
+  These are usually installed by default but not loaded. You can load them
+  using `sudo a2enmod rewrite expires`. You'll need to restart apache after
+  doing so, `sudo apachectl restart` will do this.
 
-* ensure that mod_expires is installed and loaded in the main Apache
-  configuration file.
+* If deploying to a URL other than the root (for example if using a per-user
+  public_html, you might have <http://localhost/~dave/srweb>) you'll need
+  to modify the .htaccess file to use the correct 'RewriteBase'.
+
+* You will probably also need to enable use of overrides in the .htaccess
+  file. This can be done by ensuring that Apache is told `AllowOverride All`
+  for the directory which contains the checkout. This means adding something
+  like:
+    ```<Directory /var/www/html/>
+           AllowOverride All
+       </Directory>```
+  to one of its config files.
+  On Ubuntu this can be done by adding those contents to a new 'httpd.conf'
+  file in /etc/apache2/conf-available/ and then running `sudo a2enconf httpd`
+  and reloading the apache configuration `sudo apachectl reload`.
 
 
 That should be it! Hope that helped.
