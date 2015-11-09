@@ -28,7 +28,7 @@ When called, this function takes a photo through the webcam and searches for mar
 It returns a list of `Marker` objects, each of which describes one of the markers that were found in the image.
 A detailed description of the attributes of Marker objects is provided [later in this page](#Marker).
 
-Here's an example that will repeatedly print out the distance to each flag marker that the robot can see:
+Here's an example that will repeatedly print out the distance to each token side marker that the robot can see:
 
 ~~~~~ .python
 from sr.robot import *
@@ -39,8 +39,8 @@ while True:
     print "I can see", len(markers), "markers:"
 
     for m in markers:
-        if m.info.marker_type == MARKER_FLAG:
-            print " - Flag {0} is {1} metres away".format( m.info.offset, m.dist )
+        if m.info.marker_type == MARKER_TOKEN_SIDE:
+            print " - Marker #{0} is {1} metres away".format( m.info.code, m.dist )
 ~~~~~
 
 [Choosing Resolution](#ChoosingResolution) {#ChoosingResolution}
