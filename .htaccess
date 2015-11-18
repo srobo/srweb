@@ -25,5 +25,7 @@ RewriteCond %{REQUEST_URI}	!(resources/2014/markers(.*))$
 RewriteCond %{REQUEST_URI}	!(resources/2015/markers(.*))$
 RewriteCond %{REQUEST_URI}	!(resources/2016/markers(.*))$
 
+# Forbid access to /script/*
+RewriteRule ^/script/(.*)$ - [F,L]
 
 RewriteRule ^(.+)$ 	index.php?page=$1	[L,QSA]

@@ -1,6 +1,28 @@
 Installation Instructions for SRweb
 ==================================
 
+Simple Installation
+-------------------
+
+There are a number of scripts in the `script` directory which follow the [Scripts to Rule Them All](http://githubengineering.com/scripts-to-rule-them-all/) convention.
+
+For example, to get up and running with a basic `srweb` instance, you simply need to run:
+
+	./script/setup
+	./script/server
+
+If you have not worked on `srweb` for sometime and think there might have been some changes you can run:
+
+	./script/update
+	./script/server
+
+Once the server is running you can access it by going to [http://localhost:8000](http://localhost:8000).
+
+Note that these scripts do not perfectly replicate the production environment however they are suitable for use for development.
+
+Legacy Instructions
+-------------------
+
 SRweb is a website, and as such you'll need a working webserver to run it.
 This guide generally expects you've got [Apache](http://httpd.apache.org/)
 available, and that you know roughly how to configure it.
