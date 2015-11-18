@@ -1,0 +1,66 @@
+#!/bin/bash
+
+# script/bootstrap: Resolve all dependencies that the application requires to
+#                   run.
+
+function progress {
+    echo "$(tput bold)$(tput setaf 4)==>$(tput sgr0) $(tput bold)$1$(tput sgr0)"
+}
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+progress "Updating submodules…"
+git submodule update --init
+
+if [ "$(uname -s)" = "Darwin" ]; then
+    hash brew 2>/dev/null || {
+        progress "Installing Homebrew…"
+        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    }
+
+    brew tap | grep 'homebrew/bundle' 2>&1 >/dev/null || {
+        brew tap Homebrew/bundle
+    }
+
+    brew bundle check 2>&1 >/dev/null || {
+        progress "Installing Homebrew dependencies…"
+        brew bundle
+    }
+
+    progress "Starting Homebrew services…"
+    brew services start php56
+elif hash apt-get 2>/dev/null; then
+    dpkg -s nginx php5 php5-cli php5-fpm 2>&1 >/dev/null || {
+        progress "Installing dependencies…"
+        sudo apt-get install -y nginx php5 php5-cli php5-fpm
+    }
+
+    sudo chown -R www-data:www-data templates_compiled
+else
+    echo "Unsupported platform. Please install Homebrew or apt-get."
+    exit 1
+fi
+
+if [ ! -f composer.phar ]; then
+    progress "Installing Composer…"
+    curl -sS https://getcomposer.org/installer | php
+fi
+
+progress "Running Composer…"
+php composer.phar install
+
+cat << EOF > local.config.inc.php
+<?php
+
+/* srweb doesn't officially use Composer */
+// require __DIR__ . '/vendor/autoload.php';
+
+define('SMARTY_DIR', __DIR__ . '/vendor/smarty/smarty/libs/');
+
+/* some platforms require this */
+date_default_timezone_set("Europe/London");
+
+?>
+EOF

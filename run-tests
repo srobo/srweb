@@ -1,11 +1,2 @@
 #!/bin/sh
-
-echo "Nose API and Unit tests"
-nosetests -d tests $@
-result=$?
-
-echo "Jasmine JS tests"
-jasmine-node tests/js
-result=$((result | $?))
-
-exit $result
+script/test

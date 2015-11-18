@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# script/test: Run test suite for application. Optionally pass in a path to an
+#              individual test file to run a single test.
+
+function progress {
+    echo "$(tput bold)$(tput setaf 4)==>$(tput sgr0) $(tput bold)$1$(tput sgr0)"
+}
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+progress "Running tests…"
+
+progress "Nose API and Unit tests"
+nosetests -d tests $@
+result=$?
+
+progress "Jasmine JS tests"
+jasmine-node tests/js
+result=$((result | $?))
+
+exit $result
