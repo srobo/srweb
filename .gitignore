@@ -15,7 +15,3 @@
 /ticket-api
 /mediaconsent
 *.pyc
-
-/vendor
-composer.phar
-composer.lock
