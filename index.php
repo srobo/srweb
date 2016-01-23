@@ -115,6 +115,7 @@ if ($page == 'home'){
 	$smarty->assign('content_dir', CONTENT_DIR);
 	$smarty->assign('root_uri', ROOT_URI);
 	$smarty->assign('base_uri', BASE_URI);
+	$smarty->assign('page_uri', $page);
 	$smarty->assign('page_id', str_replace('/', '_', $page));
 	$smarty->assign('header_file', $header_file);
 	$smarty->assign('footer_file', $footer_file);
