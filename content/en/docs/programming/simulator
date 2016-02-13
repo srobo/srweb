@@ -70,6 +70,8 @@ First, download [the Mac OS X ZIP][macosx-zip] and extract it. All files referre
 
 To install the prerequisites for the simulator, run `install-macosx.command`.
 
+You may find that you will need to alter your security settings to allow our software to run on your computer. You can do this in System Preferences in the Security & Privacy section and allow running apps from anywhere. You will also need to make sure that you have [Homebrew][homebrew] installed.
+
 To run a program in the simulator, run `run-macosx.command`, and enter the names of the files you wish to run, separated by commas.
 To test it out, enter `test.py` and press ENTER. A test program will run in a simulated arena.
 
@@ -172,3 +174,4 @@ for m in markers:
 [pypybox2d]: https://pypi.python.org/pypi/pypybox2d/2.1-r331
 [pyyaml]: https://pypi.python.org/pypi/PyYAML/
 [pip]: https://pip.pypa.io/en/latest/
+[homebrew]: http://brew.sh/
