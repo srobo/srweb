@@ -86,6 +86,10 @@ Smaller images will process faster, but markers will be less likely to be detect
 Additionally, the act of changing resolution takes a significant amount of time.
 The optimum resolution to use in a given situation is best determined through experiment.
 
+The Logitech C500 has a [field of view][fov] of 72&deg; and the C270 has a field of view of 60&deg;.
+
+[fov]: https://en.wikipedia.org/wiki/Field_of_view
+
 [Definition of Axes](#axes) {#axes}
 ===================================
 
