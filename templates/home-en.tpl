@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" data-ng-app="app">
 
 <head>
 	<title>Welcome to Student Robotics | Student Robotics</title>
@@ -10,16 +10,41 @@
 	<meta name="google-site-verification" content="GizX0DcCqEeGihd9CyYaqM1bVXUB-lhB9rhm53UdRC8" />
 	<link rel="stylesheet" type="text/css" href="{$root_uri}css/main.css" />
 	<link rel="stylesheet" type="text/css" href="{$root_uri}css/home.css" />
+{if $smarty.const.COMPETITION_MODE}
+	<link rel="stylesheet" type="text/css" href="{$root_uri}css/comp.css" />
+	<link rel="stylesheet" type="text/css" href="{$root_uri}css/home_competition.css" />
+{/if}
 	<link rel="alternate" type="application/rss+xml" title="SR RSS" href="{$root_uri}feed.php" />
 	<link rel="shortcut icon" href="{$root_uri}images/template/favicon.ico" />
+
+{if $smarty.const.COMPETITION_MODE}
+	<script type="text/javascript" src="{$root_uri}js/polyfill.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular-resource.min.js"></script>
+	<script type="text/javascript">
+		var API_ROOT = "/comp-api";
+	</script>
+
+	<script type="text/javascript" src="{$root_uri}js/lib/angularjs-ordinal-filter/ordinal.js"></script>
+	<script type="text/javascript" src="{$root_uri}js/competition-utils.js"></script>
+	<script type="text/javascript" src="{$root_uri}js/competition-filters.js"></script>
+	<script type="text/javascript" src="{$root_uri}js/competition-resources.js"></script>
+	<script type="text/javascript" src="{$root_uri}js/controllers/CompMode.js"></script>
+
+	<script type="text/javascript" src="https://jwpsrv.com/library/XE4vyEM1EeOQDCIACqoGtw.js"></script>
+	<script type="text/javascript" src="{$root_uri}js/live-streams.js"></script>
+{/if}
 
 	{include file="tracking.tpl"}
 </head>
 
-<body>
+<body data-ng-controller="CompMode">
 {include file="tracking-image.tpl"}
 <div id="pageWrapper">
-
+{if $smarty.const.COMPETITION_MODE}
+	{include file="comp-home.tpl"}
+{else}
 	{include file="header-en.tpl"}
 
 	<div class="content">
@@ -70,7 +95,7 @@
 			<p class="readmore"><a href="{$root_uri}about/how_to_help">See how you can help&hellip;</a></p>
 		</section>
 	</div>
-
+{/if}
 	{include file="footer-en.tpl"}
 
 </div>
