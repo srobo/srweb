@@ -79,13 +79,13 @@ The case measures 83x99x24mm. Don't forget that the cables will stick out.
 |  Parameter                           |   Value   |
 |--------------------------------------|-----------|
 | Main battery fuse current            | 40A       |
-| Overall current limit*               | 30A       |
+| Overall current limit[^2]            | 30A       |
 | High current outputs (H0-1)          | 20A       |
 | Low current outputs (L0-3)           | 10A       |
 | Motor rail output voltage (nominal)  | 11.1V ± 15% |
 | Maximum output current per 5V channel| 1A        |
 
-*If overall current limit is exceeded, the Power Board will turn off and start beeping.
+[^2]: If overall current limit is exceeded, the Power Board will turn off and start beeping.
 
 
 Designs
