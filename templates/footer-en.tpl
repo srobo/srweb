@@ -7,5 +7,5 @@
 		<img src="{$root_uri}images/template/twitter25x25.png" alt="Twitter" title="SR Twitter feed" /></a>
 	<a class="youtube" href="https://www.youtube.com/user/StudentRobotics">
 		<img src="{$root_uri}images/template/youtube25x59.png" alt="YouTube" title="SR YouTube account" /></a>
-	<span class="copyright">&copy; Student Robotics 2011-2015</span>
+	<span class="copyright">&copy; Student Robotics 2011-2016</span>
 </footer>
