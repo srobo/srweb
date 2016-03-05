@@ -49,13 +49,12 @@ To use your batteries, you must connect them to the Student Robotics power
 board. Do not tamper with the cable, or power any other electronics with the
 battery.
 
-During operation, the battery is protected by a fuse inserted into the power
-board (blue, rated for 15A of current). If any equipment is short circuited,
-the fuse will blow to prevent damage to the battery. This is an important safety
-feature: do **not**, under any circumstances, bypass the fuse. If you blow the
-fuse, you should contact Student Robotics to discuss why this happened. Do not
-replace the fuse with another fuse rated for more than 15A of current, without
-first receiving authorisation from Student Robotics.
+During operation, the battery is protected by over-current protection and a fuse
+in the power board. If any equipment is short circuited, the over-current
+protection will activate - protecting the battery. In extreme circumstances the
+fuse may blow to prevent damage to the battery. This is an important safety
+feature: do **not**, under any circumstances, bypass the fuse. The fuse is not
+user serviceable and if the fuse has blown then the power board must be replaced.
 
 Mechanical damage to a battery can be dangerous, and a puncture or large force
 applied to a battery causes a serious risk of fire. To avoid this, your battery
