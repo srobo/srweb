@@ -86,6 +86,47 @@ Smaller images will process faster, but markers will be less likely to be detect
 Additionally, the act of changing resolution takes a significant amount of time.
 The optimum resolution to use in a given situation is best determined through experiment.
 
+[Definition of Axes](#axes) {#axes}
+===================================
+
+The vision system describes the markers it can see using three coordinate
+systems. These are intended to be complementary to each other and contain
+the same information in different forms.
+
+The individual coordinate systems used are detailed below on the
+[`Point`](#Point) object, which represents a point in space.
+
+The axis definitions match those in common use, as follows:
+
+x-axis
+:   The horizontal axis running left-to-right in front of the camera.
+    Rotation about this axis is equivalent to leaning towards or away from
+    the camera.
+
+y-axis
+:   The vertical axis running top-to-bottom in front of the camera.
+    Rotation about this axis is equivalent to turning on the spot,
+    to the left or right.
+
+z-axis
+:   The axis leading away from the camera to infinity.
+    Rotation about this axis is equivalent to being rolled sideways.
+
+<!---
+It would be nice to be able to include here what happens to the values:
+* which way is positive, which is negative
+ * what about if a marker is upside down but also leant forwards
+* if a marker is seen at a side angle, but is also leant forwards, does
+  the value of rot_x measure its lean _towards the camera_ or from its
+  _own veritcal_?
+-->
+
+<div class="info">
+Note that the axes are all defined relative to the camera. Since we have
+no way to know how you've mounted your camera, you may need to account
+for that in your usage of the vision system's data.
+</div>
+
 [Objects of the Vision System](#vision_objects) {#vision_objects}
 ==============================
 
