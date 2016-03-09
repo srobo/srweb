@@ -112,14 +112,9 @@ z-axis
 :   The axis leading away from the camera to infinity.
     Rotation about this axis is equivalent to being rolled sideways.
 
-<!---
-It would be nice to be able to include here what happens to the values:
-* which way is positive, which is negative
- * what about if a marker is upside down but also leant forwards
-* if a marker is seen at a side angle, but is also leant forwards, does
-  the value of rot_x measure its lean _towards the camera_ or from its
-  _own veritcal_?
--->
+See the documentation on the [`Orientation`](#Orientation) object for a
+description of how rotating a marker about these axes affects the measurements
+the robot receives from the camera.
 
 <div class="info">
 Note that the axes are all defined relative to the camera. Since we have
@@ -241,8 +236,28 @@ An `Orientation` object describes the orientation of a marker.  It has three att
 rot_x
 :   Rotation of the marker about the x-axis.
 
+    Leaning a marker away from the camera increases the value of `rot_x`, while
+    leaning it towards the camera decreases it. A value of 0 indicates that the
+    marker is upright.
+
 rot_y
 :   Rotation of the marker about the y-axis.
 
+    Turning a marker clockwise (as viewed from above) increases the value of
+    `rot_y`, while turning it anticlockwise decreases it. A value of 0 means
+    that the marker is perpendicular to the line of sight of the camera.
+
 rot_z
 :   Rotation of the marker about the z-axis.
+
+    Turning a marker anticlockwise (as viewed from the camera) increases the
+    value of `rot_z`, while turning it clockwise decreases it. A value of 0
+    indicates that the marker is upright.
+
+<!---
+It would be nice to be able to include here what happens to the values:
+* what about if a marker is upside down but also leant forwards
+* if a marker is seen at a side angle, but is also leant forwards, does
+  the value of rot_x measure its lean _towards the camera_ or from its
+  _own vertical_?
+-->
