@@ -206,6 +206,8 @@ image
 world
 :   The [Cartesian coordinates](https://en.wikipedia.org/wiki/Cartesian_coordinate_system) of the point in 3D space.
     This has three attributes: `x`, `y`, and `z`, each of which specifies a distance in metres.
+    Positions in front of, to the right, or above the camera are positive.
+    Positions to the left or below are negative.
 
 polar
 :   The [polar coordinates](https://en.wikipedia.org/wiki/Polar_coordinate_system) of the point in 3D space.<br />
@@ -216,9 +218,11 @@ polar
 
     rot_x
     :   Rotation about the x-axis in degrees.
+        Positions above the camera are positive.
 
     rot_y
     :   Rotation about the y-axis in degrees.
+        Positions to the right of the camera are positive.
 
     For example, the following code displays the polar coordinate of a `Point` object `p`:
 
