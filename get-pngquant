@@ -1,0 +1,30 @@
+#!/bin/bash
+
+target=$1
+
+if [[ -z $target ]]
+then
+    echo Usage: $0 TARGET_DIR
+    exit 1
+fi
+
+set -e
+
+mkdir -p $target
+
+cd $target
+
+wget --continue http://downloads.sourceforge.net/project/libpng/libpng16/1.6.21/libpng-1.6.21.tar.xz
+tar -xf libpng-1.6.21.tar.xz
+
+git clone --depth 1 git://github.com/pornel/pngquant.git pngquant
+
+cd libpng-1.6.21
+# Build libpng
+./configure
+make check
+
+cd ../pngquant
+# Build pngquant
+./configure --with-libpng=../libpng-1.6.21
+make
