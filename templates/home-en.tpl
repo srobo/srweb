@@ -81,7 +81,7 @@
 				<div>
 					<h2>The Competition</h2>
 					<p>Teams come together for a two-day robot spectacular. Here, their robot will be pitted against other teams' robots to compete for the coveted Student Robotics trophy.</p>
-					<p class="readmore"><a href="{$root_uri}events/competition">Read more about the Comeptition&hellip;</a></p>
+					<p class="readmore"><a href="{$root_uri}events/competition">Read more about the Competition&hellip;</a></p>
 				</div>
 			</div>
 		</section>
