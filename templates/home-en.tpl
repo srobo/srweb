@@ -31,9 +31,6 @@
 	<script type="text/javascript" src="{$root_uri}js/competition-filters.js"></script>
 	<script type="text/javascript" src="{$root_uri}js/competition-resources.js"></script>
 	<script type="text/javascript" src="{$root_uri}js/controllers/CompMode.js"></script>
-
-	<script type="text/javascript" src="https://jwpsrv.com/library/XE4vyEM1EeOQDCIACqoGtw.js"></script>
-	<script type="text/javascript" src="{$root_uri}js/live-streams.js"></script>
 {/if}
 
 	{include file="tracking.tpl"}
