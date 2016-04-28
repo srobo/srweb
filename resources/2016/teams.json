@@ -9,11 +9,6 @@
         "name": "Bedford School",
         "rookie": false
     },
-    "BGS": {
-        "URL": "http://www.bristolgrammarschool.co.uk/",
-        "name": "Bristol Grammar School",
-        "rookie": false
-    },
     "BPV": {
         "URL": "http://www.barton-peveril.ac.uk/",
         "name": "Barton Peveril College",
@@ -117,11 +112,6 @@
     "HAY": {
         "URL": "http://www.haydonschool.com/",
         "name": "Haydon School",
-        "rookie": true
-    },
-    "HLB": {
-        "URL": "https://www.haileybury.com/",
-        "name": "Haileybury",
         "rookie": true
     },
     "HRS": {
